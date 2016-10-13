@@ -1,0 +1,5 @@
+Wer sind die Teilnehmer?
+<<<<<<< HEAD
+Alle die heute im Raum sind.
+
+Gute Antwort!
