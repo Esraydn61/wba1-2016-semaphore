@@ -1,1 +1,8 @@
 Wer sind die Teilnehmer?
+<<<<<<< HEAD
+Alle die heute im Raum sind.
+
+Gute Antwort!
+=======
+Das ist ein doofe frage.
+>>>>>>> 96edaa00c84c1c1d15b516057c6facdd8cbe1fe8
