@@ -5,3 +5,5 @@
 ---
 
 ## Super Headline von c-noss
+
+Team LOGIG
