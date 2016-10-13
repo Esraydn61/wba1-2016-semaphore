@@ -1,2 +1,6 @@
 Wer sind die Teilnehmer?
-Das ist ein doofe frage.
+<<<<<<< HEAD
+Alle die heute im Raum sind.
+
+Gute Antwort!
+Test123
