@@ -1,0 +1,24 @@
+#header {
+    background-color: #504F48;
+}
+
+#navi {
+    background-color: #000000;
+}
+
+#logo {
+    //height: 100px;
+    //width: 100px;
+}
+
+#Font {
+    font: Oswald;
+    font-size: 20px;
+    color: crimson;
+}
+
+td {
+    font: Oswald;
+    font-size: 20px;
+    color: crimson;
+}
