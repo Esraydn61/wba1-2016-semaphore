@@ -26,14 +26,14 @@ p {
     text-align: center;
 }
 
-#main {
+#quizcontent {
     display: block;
     width: 100%;
     margin:1em;
     padding: 0em;
 }
 
-#main article{
+#quizcontent article{
     display:block;
     width: 100%;
     background: white;
@@ -43,7 +43,7 @@ p {
     text-align: center;
 }
 
-#main article img {
+#quizcontent article img {
     width:100%;
     
 }
@@ -63,6 +63,10 @@ p {
     text-decoration: none;
 }
 
-#main .teasertext {
+#quizcontent .teasertext {
     opacity: 0.5;
+}
+
+#highscorecontent {
+    background: white;
 }
