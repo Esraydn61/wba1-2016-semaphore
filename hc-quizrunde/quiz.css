@@ -21,8 +21,8 @@ h1{
   margin-bottom: 10px;
 }
 
-.logo{
-  height: 30px;
+h1 > p{
+  margin-left: 10px;
 }
 h2{
     width:500px;
@@ -58,5 +58,6 @@ h2{
   padding-right: 5px;
   padding-top: 5px;
   background-color:#F8F5E4;
+  box-sizing: border-box;
 
 }
