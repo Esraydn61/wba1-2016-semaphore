@@ -3,3 +3,7 @@
 ![Company Logo](company_assets/logo.png)
 
 ---
+
+## Super Headline von c-noss
+
+Team LOGIG
