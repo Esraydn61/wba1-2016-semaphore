@@ -43,7 +43,8 @@ h2{
 .Antwort{
     width:345px;
     height:50px;
-    margin-left: 10px;
+    margin-left:10px;
+    margin-top:px;
     background-color: #F8F5E4;
     opacity: 70%;
     box-sizing: border-box;

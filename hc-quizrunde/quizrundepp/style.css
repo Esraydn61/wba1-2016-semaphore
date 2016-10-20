@@ -1,0 +1,93 @@
+html, body{
+    margin: 0px;
+	  font-family: 'Oswald-Light' , sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.menu {
+
+
+}
+.headerallegleich {
+    width: 375px;
+    height: 50px;
+}
+
+.background {
+    width: 375px;
+    height: 667px;
+    background-image:url("img/background.jpg");
+    background-repeat: no-repeat;
+    float: none;
+}
+
+header {
+    background-color: #504F48;
+    height: 50px;
+}
+
+.logo {
+    float: left;
+    left: 10px;
+    width: 100px;
+    height: 43px;
+    margin-top: 5px;
+}
+.beiwelcherfragesindwir {
+  margin-top: 1px;
+  margin-left: 10px;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.question {
+  margin-top:-47px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #504F48;
+  font-size: 24px;
+  background-color: #F8F5E4;
+}
+
+.answer1 {
+  opacity: 70%;
+  margin-top:212px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
+.answer2 {
+  opacity: 70%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
+.answer3 {
+  opacity: 70%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
+.answer4 {
+  opacity: 70%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
