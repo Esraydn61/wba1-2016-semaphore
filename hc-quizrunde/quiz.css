@@ -2,14 +2,27 @@ html{
 }
 
 head{
+    background-color: #504F48;
+    opacity: 50%;
 
 }
 body{
     font-family: Oswald, sans-serif;
     font-color: black;
     font-weight: lighter;
-    font-size: 24 px;
+    font-size: 24px;
     background-image:
+}
+
+header{
+    background-color: #504F48;
+    height: 200px;
+    }
+
+h1{
+    width:
+    height:
+    
 }
 
 h2{
@@ -28,5 +41,16 @@ h2{
 }
 
 .Antwort{
+    width:345px;
+    height:50px;
+    margin-left: 10px;
+    background-color: #F8F5E4;
+    opacity: 70%;
+    box-sizing: border-box;
 
+}
+.Antwort p{
+    padding-top: 10px;
+    text-align:center;
+    
 }
