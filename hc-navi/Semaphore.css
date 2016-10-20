@@ -1,6 +1,3 @@
-/*
-1. Seite auf fixed setzen
-*/
 html, body{
     margin: 0px;
 	font-family: 'Oswald-Light' , sans-serif;
@@ -26,18 +23,34 @@ a:hover {
     color: #E9C20C;
 }
 
+a:active {
+    color: #E9C20C;
+}
+
 ul {
     margin: 0px;
-    margin-left: 7vw;
 }
 
 li {
     display: inline-block;
 }
 
+.container {
+    position: fixed;
+    width: 100%;
+}
+
+p {
+    width: 130px;
+    text-align: right;
+    margin-left: 50;
+    margin-top: 0px;
+    padding: 0.5rem;
+}
+
 .head {
     float: right;
-    z-index: 2;
+    z-index: 1;
 }
 
 .head > li {
@@ -49,6 +62,10 @@ li {
     margin-top: 2px;
     height: 46px;
     left: 10px;
+}
+
+.navi {
+    margin-left: 7vw;
 }
 
 .navi > li {
@@ -67,16 +84,67 @@ li {
     right: 10px;
     width: 40px;
     height: 40px;
-    z-index: 1;
+    z-index: 2;
     margin-top: 5px;
     visibility: hidden;
 }
 
-@media only screen and (max-width: 1000px) {
+.avatar {
+    float: left;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    margin-top: 5px;
+}
+
+.burgerheader {
+    width: 200px;
+    height: 50px;
+}
+
+.burgernav {
+    width: 200px;
+    height: 500px;
+}
+
+.burgernav > ul {
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.burgernav > ul > li {
+    display: block;  
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #504F48;
+}
+
+.quizbeenden {
+    background-color: #CB0727;
+    color: #FFFFFF;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-family: 'Noto Sans' , sans-serif;
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+.menu {
+    width: 200px;
+    position: relative;
+    float: right;
+    right: -100px;
+}
+
+.gesamtcontainer {
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
     body {
         background-color: lightgrey;
     }
-    
     .head {
         visibility: hidden;
     }
@@ -88,9 +156,16 @@ li {
     nav {
         visibility: hidden;
     }
+    
+    .gesamtcontainer {
+        /*
+        position: relative;
+        right: 200px;
+        */
+    }
 }
-
-@media only screen and (max-width: 500px) {
+/*
+@media only screen and (max-width: 439px) {
     body {
         background-color: darkgrey;
     }
@@ -106,4 +181,12 @@ li {
     nav {
         visibility: hidden;
     }
+    
+    .gesamtcontainer {
+        
+        position: relative;
+        right: 200px;
+        
+    }
+*/
 }
