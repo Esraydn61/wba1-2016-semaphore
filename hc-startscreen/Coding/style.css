@@ -1,0 +1,217 @@
+body {
+    background:grey;
+    font-size: 100%;
+    margin: 0em;
+    padding: 0em;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 3.8em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #E2DBDB;
+    margin: 0em;
+}
+
+h2 {
+    font-size: 1.563em;
+    line-height: 1.8em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: 0em;
+    padding: 1.25em;
+    text-align: left;
+}
+
+p {
+    line-height: 1.25em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: 0em;
+    padding: 1.25em;
+    text-align: justify;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: square;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    line-height: 1.25em;
+    margin: 0em;
+    padding: 1.25em;
+    margin: 0.313em 0em 0.313em 0em;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#menubar {
+    display: block;
+    background: #504F48;
+}
+
+#menubar ul {
+    display:block;
+    width:2em;
+    padding:0.9em;
+}
+
+#menubar li {
+    display:inline;
+}
+
+#menubar ul li a.menubutton{
+    display: none;
+}
+
+nav {
+    display: block;
+    height: 2.5em;
+    background: black;
+    text-align: center;
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0em 0.188em 0em 0.188em;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.125em;
+    line-height: 2.5em;
+    padding: 0.563em 0.938em 0.375em 0.983em;
+    -webkit-transition:background 0.2s;
+}
+
+nav ul li a:hover {
+    background: #DBD9D8;
+   
+}
+
+nav ul li a.active {
+    
+}
+
+#main {
+    display: block;
+    width: 96%;
+    max-width: 980px;
+    margin: 1.25em auto;
+    padding: 0em;
+}
+
+#main article{
+    display:inline-block;
+    width: 65.3%;
+    background: white;
+    vertical-align: top;
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+
+#main arcticle img {
+    max-width: 560px;
+    box-shadow: 0px 0px 10px -5px #4c4948;
+    border-radius: 5px;
+}
+
+#main aside {
+    display: inline-block;
+    width:30.6%;
+    margin-left: 3%;
+    padding: 0em;
+    vertical-align: top;
+}
+
+#main aside section {
+    background: white;
+}
+
+#main aside section ul {
+    padding: 0em 1.875em 0em 1.875em;
+}
+
+footer {
+    display: block;
+    background: #504F48;
+    text-align: center;
+}
+
+footer ul {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    text-align: left;
+    margin: 0px auto;
+}
+
+footer ul li {
+    display:inline;
+    font-size: 0.8em;
+    line-height: 2.8em;
+    color: black;
+    padding: 0em 0.625em 0em 0.625em;
+}
+
+footer ul li a {
+    color: black;
+}
+
+/*Mobil*/
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 90%;
+    } 
+}
+
+@media screen and (max-width:600px) {
+    #main aside, #main article {
+        width: 100%;
+        display: block;
+        margin: 0.625em 0em 0.625em 0em;
+    }
+}
+
+@media screen and (max-width:550px) {
+    body {
+        font-size: 86%;
+    }
+    #menubar ul li a.menubutton {
+        display: block;
+        
+        
+    } 
+    nav {
+        display: none;
+        height: auto;
+    }
+    nav ul li {
+        display: block;
+        margin: 0.3em 0em 0.3em 0em;
+    }
+}
+
+

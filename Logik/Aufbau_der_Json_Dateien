@@ -1,0 +1,7 @@
+Die Datenstrukturen sind auf folgende Weise auf Json Dateien aufgeteilt:
+
+In der Quizübersicht.json sind alle Quizes mit den für die Beschreibung relevanten Informationen aufgelistet.
+
+Für jedes Quiz gibt es eine eigene Json Datei in der die Fragen gespeichert sind.
+In dieser Datei wird auch der Highscore gespeichert.
+
