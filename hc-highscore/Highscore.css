@@ -1,0 +1,110 @@
+.header{
+    height: 50px;
+    width: 100%;
+    background: #504F48;
+    margin: 0;
+}
+body{
+    margin: 0;
+    background-image: url(https://static.haga-welt.de/IMAGES/WOHNIDEEN/FOTOTAPETEN/KOMAR/8_Teile/8-324_fussballstadion.jpg);
+    background-size: cover;
+}
+
+.headline{
+    height: 55px;
+    background: #F8F5E4;
+    width:calc(100% - 40px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+#headlinetext{
+    text-align: center;
+    margin-top: 3px;
+    font-family: 'Oswald';
+}
+#teaser-image{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+#author{
+    font-family: 'Oswald';
+    font-size: 20px;
+    width: 450px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: -25px;
+    background: #F8F5E4
+}
+#teasertext{
+    width: 450px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: -5px;
+    font-family: 'Noto Sans';
+    background:rgba(248, 245, 228, 0.7);
+}
+.start{
+    background: #CB0727;
+    color: #fff;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: none;
+    height: 40px;
+    width: 450px;
+  
+}
+.liste{
+    font-family: 'Oswald';
+    margin-left: 490px;
+    margin-top: -559px;
+    width: 754px;
+    border-spacing: 0px 10px;   
+}
+
+.liste th{
+    background-color: #E9C20C;
+    text-align: left;
+}
+.liste tr th:nth-child(1),
+.liste tr td:nth-child(1) {
+    width: 10%;
+   text-align: center;
+}
+.liste tr th:nth-child(2),
+.liste tr td:nth-child(2) {
+    width: 40%;
+}
+.liste tr th:nth-child(4),
+.liste tr td:nth-child(4) {
+    width: 10%;
+    text-align: right;
+    
+}
+th, td{
+    padding: 4px;
+    
+    /*border-bottom-color:  white;*/
+    color: black;
+}
+td{
+    background:rgba(248, 245, 228, 0.7);
+}
+
+}
+.example {
+    background: red;
+    color: #fff;
+    font-family: 'Oswald';
+    border: none;
+    height: 50px;
+    width: 100px;
+}
+
+.example:hover {
+    background: yellow;
+}
