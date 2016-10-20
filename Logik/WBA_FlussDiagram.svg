@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="95cm" height="93cm" viewBox="-377 22 1892 1846" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ff5226" x="771.364" y="96.75" width="592.484" height="700.231"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="771.364" y="96.75" width="592.484" height="700.231"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1067.61" y="450.766">
+      <tspan x="1067.61" y="450.766"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #cacaca" x="777.004" y="139.526" width="573.158" height="135.394"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="777.004" y="139.526" width="573.158" height="135.394"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1063.58" y="211.124">
+      <tspan x="1063.58" y="211.124"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #d8e5e5" x="-169.383" y="382.699" width="525.555" height="200.972"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #000000" x="-169.383" y="382.699" width="525.555" height="200.972"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="93.3943" y="487.086">
+      <tspan x="93.3943" y="487.086"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ced7ff" x="-154.959" y="967.958" width="503.563" height="578.531"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #000000" x="-154.959" y="967.958" width="503.563" height="578.531"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="96.8223" y="1261.12">
+      <tspan x="96.8223" y="1261.12"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 201.849 23.5521 L 239.943,23.5521 C 245.203,23.5521 249.467,29.4065 249.467,36.6283 C 249.467,43.8501 245.203,49.7046 239.943,49.7046 L 201.849,49.7046 C 196.589,49.7046 192.325,43.8501 192.325,36.6283 C 192.325,29.4065 196.589,23.5521 201.849,23.5521z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 201.849 23.5521 L 239.943,23.5521 C 245.203,23.5521 249.467,29.4065 249.467,36.6283 C 249.467,43.8501 245.203,49.7046 239.943,49.7046 L 201.849,49.7046 C 196.589,49.7046 192.325,43.8501 192.325,36.6283 C 192.325,29.4065 196.589,23.5521 201.849,23.5521"/>
+    <text font-size="10.1598" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="220.896" y="39.8033">
+      <tspan x="220.896" y="39.8033">Start</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="163.758" y="79.4378" width="115.4" height="70"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="163.758" y="79.4378" width="115.4" height="70"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="221.458" y="102.338">
+      <tspan x="221.458" y="102.338">Hole Quiz-</tspan>
+      <tspan x="221.458" y="118.338">Archiv vom </tspan>
+      <tspan x="221.458" y="134.338">Server</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="159.48" y="174.797" width="129.8" height="42.4704"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="159.48" y="174.797" width="129.8" height="42.4704"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="224.38" y="199.932">
+      <tspan x="224.38" y="199.932">Sortierung = Top</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="155.563" y="242.485" width="136.312" height="44.0786"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="155.563" y="242.485" width="136.312" height="44.0786"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="169.194" y1="242.485" x2="169.194" y2="286.564"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="278.244" y1="242.485" x2="278.244" y2="286.564"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="223.719" y="260.524">
+      <tspan x="223.719" y="260.524">Sortiere gemäß </tspan>
+      <tspan x="223.719" y="276.524">Modus</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="220.896" y1="49.7046" x2="221.374" y2="74.9665"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="216.228,67.2984 221.416,77.2021 226.226,67.1094 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="222.787" y1="151.507" x2="223.425" y2="169.333"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="218.15,161.753 223.505,171.568 228.144,161.395 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="224.38" y1="217.268" x2="223.837" y2="238.015"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="219.042,230.122 223.778,240.25 229.038,230.384 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="223.719" y1="286.564" x2="223.068" y2="322.928"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="218.208,315.075 223.028,325.163 228.206,315.255 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="397.265,107.4 594.886,107.4 569.408,177.4 371.787,177.4 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="397.265,107.4 594.886,107.4 569.408,177.4 371.787,177.4 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="483.336" y="130.3">
+      <tspan x="483.336" y="130.3">Button</tspan>
+      <tspan x="483.336" y="146.3">"Top"/"A-Z"/"New"/"Last"</tspan>
+      <tspan x="483.336" y="162.3">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="373.139" y="207.445" width="195.95" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="373.139" y="207.445" width="195.95" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="471.114" y="230.345">
+      <tspan x="471.114" y="230.345">Sortierung = "Top"/"A-Z"/...</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="402.323" y="284.974" width="136.312" height="44.0786"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="402.323" y="284.974" width="136.312" height="44.0786"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="415.954" y1="284.974" x2="415.954" y2="329.052"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="525.004" y1="284.974" x2="525.004" y2="329.052"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="470.479" y="303.013">
+      <tspan x="470.479" y="303.013">Sortiere gemäß </tspan>
+      <tspan x="470.479" y="319.013">Modus</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="280.863,347.399 332.695,347.399 332.695,142.4 380.054,142.4 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="372.29,147.4 382.29,142.4 372.29,137.4 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="470.597" y1="177.4" x2="471.037" y2="202.974"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="465.905,195.297 471.076,205.21 475.903,195.125 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="471.114" y1="245.445" x2="470.551" y2="280.502"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="465.677,272.659 470.515,282.738 475.675,272.82 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="470.479,329.052 470.479,345.124 470.608,345.124 470.608,356.723 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="465.608,348.959 470.608,358.959 475.608,348.959 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="155.867,409.494 289.964,409.494 270.31,463.494 136.213,463.494 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="155.867,409.494 289.964,409.494 270.31,463.494 136.213,463.494 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="213.089" y="432.394">
+      <tspan x="213.089" y="432.394">Quiztitel-Button</tspan>
+      <tspan x="213.089" y="448.394">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="143.591" y="513.338" width="188.828" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="143.591" y="513.338" width="188.828" height="54"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="238.005" y="536.238">
+      <tspan x="238.005" y="536.238">Erweitere detailliertere</tspan>
+      <tspan x="238.005" y="552.238">Quizdarstellung</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-85.9671,513.439 82.08,513.439 62.4256,567.439 -105.621,567.439 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-85.9671,513.439 82.08,513.439 62.4256,567.439 -105.621,567.439 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-11.7708" y="536.339">
+      <tspan x="-11.7708" y="536.339">Weitersuchen-Button</tspan>
+      <tspan x="-11.7708" y="552.339">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="171.009,614.555 313.006,614.555 293.352,668.555 151.355,668.555 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="171.009,614.555 313.006,614.555 293.352,668.555 151.355,668.555 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="232.18" y="637.455">
+      <tspan x="232.18" y="637.455">Auswähle-Button</tspan>
+      <tspan x="232.18" y="653.455">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="222.988" y1="367.399" x2="222.923" y2="405.022"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.937,397.25 222.92,407.258 227.937,397.267 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="236.786" y1="463.494" x2="237.896" y2="508.867"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="232.707,501.228 237.951,511.103 242.704,500.983 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="143.591" y1="540.338" x2="76.7249" y2="540.432"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="84.4818,535.421 74.4888,540.436 84.4959,545.421 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1.94356,513.439 -1.94356,388.447 218.48,388.447 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="210.716,393.447 220.716,388.447 210.716,383.447 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="241.172" y1="569.229" x2="241.925" y2="610.083"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="236.783,602.413 241.966,612.319 246.781,602.228 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="222.353" y1="668.555" x2="222.922" y2="706.885"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.807,699.196 222.955,709.121 227.806,699.048 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="373.28,703.65 518.027,703.65 498.373,757.65 353.626,757.65 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="373.28,703.65 518.027,703.65 498.373,757.65 353.626,757.65 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="435.827" y="726.55">
+      <tspan x="435.827" y="726.55">HIghscore-Button</tspan>
+      <tspan x="435.827" y="742.55">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="158.235,802.644 286.182,802.644 266.528,856.644 138.581,856.644 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="158.235,802.644 286.182,802.644 266.528,856.644 138.581,856.644 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="212.381" y="825.544">
+      <tspan x="212.381" y="825.544">Spielen-Button</tspan>
+      <tspan x="212.381" y="841.544">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="222.988" y1="751.357" x2="222.277" y2="798.173"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.395,790.334 222.243,800.409 227.394,790.486 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="202.554" y1="856.644" x2="201.876" y2="886.491"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="197.054,878.615 201.826,888.726 207.051,878.842 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="416.308" y="361.196" width="108.6" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="416.308" y="361.196" width="108.6" height="54"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="470.608" y="384.096">
+      <tspan x="470.608" y="384.096">Aktualisiere</tspan>
+      <tspan x="470.608" y="400.096">Auswahl.html</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="416.308,388.196 319.63,388.196 319.63,388.447 227.424,388.447 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="235.188,383.447 225.188,388.447 235.188,393.447 "/>
+  </g>
+  <g>
+    <rect style="fill: #ff5226" x="165.113" y="327.399" width="115.75" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="165.113" y="327.399" width="115.75" height="40"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="176.688" y1="327.399" x2="176.688" y2="367.399"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="269.288" y1="327.399" x2="269.288" y2="367.399"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="222.988" y="343.399">
+      <tspan x="222.988" y="343.399">Lade</tspan>
+      <tspan x="222.988" y="359.399">Auswahl.html</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ff5226" x="174.957" y="711.357" width="96.0625" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="174.957" y="711.357" width="96.0625" height="40"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="184.563" y1="711.357" x2="184.563" y2="751.357"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="261.413" y1="711.357" x2="261.413" y2="751.357"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="222.988" y="727.357">
+      <tspan x="222.988" y="727.357">Lade</tspan>
+      <tspan x="222.988" y="743.357">Detail.html</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ff5226" x="155.087" y="890.962" width="93.375" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="155.087" y="890.962" width="93.375" height="40"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="164.425" y1="890.962" x2="164.425" y2="930.962"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="239.125" y1="890.962" x2="239.125" y2="930.962"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="201.775" y="906.962">
+      <tspan x="201.775" y="906.962">Lade</tspan>
+      <tspan x="201.775" y="922.962">Frage.html</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ff5226" x="148.819" y="1608.35" width="133.687" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="148.819" y="1608.35" width="133.687" height="40"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="162.188" y1="1608.35" x2="162.188" y2="1648.35"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="269.138" y1="1608.35" x2="269.138" y2="1648.35"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="215.663" y="1624.35">
+      <tspan x="215.663" y="1624.35">Lade</tspan>
+      <tspan x="215.663" y="1640.35">GameOver.html</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ff5226" x="360.615" y="820.958" width="130.625" height="45.2547"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="360.615" y="820.958" width="130.625" height="45.2547"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="373.677" y1="820.958" x2="373.677" y2="866.213"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="478.177" y1="820.958" x2="478.177" y2="866.213"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="425.927" y="839.586">
+      <tspan x="425.927" y="839.586">Lade</tspan>
+      <tspan x="425.927" y="855.586">HighScore.html</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="136.747,1058.62 267.794,1058.62 248.14,1112.62 117.093,1112.62 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="136.747,1058.62 267.794,1058.62 248.14,1112.62 117.093,1112.62 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="192.444" y="1081.52">
+      <tspan x="192.444" y="1081.52">Antwort-Button</tspan>
+      <tspan x="192.444" y="1097.52">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="215.983,1148.2 290.192,1198.5 215.983,1248.79 141.773,1198.5 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="215.983,1148.2 290.192,1198.5 215.983,1248.79 141.773,1198.5 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="215.983" y="1194.4">
+      <tspan x="215.983" y="1194.4">Richtige</tspan>
+      <tspan x="215.983" y="1210.4"> Antwort?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="141.773" y1="1198.5" x2="86.4053" y2="1197.33"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="94.2725,1192.5 84.1697,1197.29 94.0625,1202.49 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="108.097" y="1214.82">
+    <tspan x="108.097" y="1214.82">Ja</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="-34.7382" y="1178.24" width="116.672" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-34.7382" y="1178.24" width="116.672" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="23.598" y="1201.14">
+      <tspan x="23.598" y="1201.14">erhöhe Score</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="166.8" y="1305.73" width="98.3" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="166.8" y="1305.73" width="98.3" height="54"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="215.95" y="1328.63">
+      <tspan x="215.95" y="1328.63">Decke </tspan>
+      <tspan x="215.95" y="1344.63">Fragen auf</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="215.983" y1="1248.79" x2="215.952" y2="1301.26"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="210.957,1293.5 215.951,1303.5 220.957,1293.5 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="23.598,1216.24 23.598,1332.73 162.328,1332.73 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="154.564,1337.73 164.564,1332.73 154.564,1327.73 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="231.84" y="1272.09">
+    <tspan x="231.84" y="1272.09">Nein</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="201.775" y1="930.962" x2="202.253" y2="1054.14"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="197.223,1046.4 202.262,1056.38 207.223,1046.36 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="215.378" y1="1112.62" x2="215.907" y2="1143.72"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="210.775,1136.05 215.945,1145.96 220.774,1135.88 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-115.893" y="1404.46" width="113.75" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-115.893" y="1404.46" width="113.75" height="54"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-59.0182" y="1427.36">
+      <tspan x="-59.0182" y="1427.36">aktualisiere</tspan>
+      <tspan x="-59.0182" y="1443.36">Nächste Frage</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="215.389,1392.25 296.827,1432.97 215.389,1473.69 133.95,1432.97 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="215.389,1392.25 296.827,1432.97 215.389,1473.69 133.95,1432.97 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="215.389" y="1436.87">
+      <tspan x="215.389" y="1436.87">Spiel vorbei?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="215.95" y1="1359.73" x2="215.466" y2="1387.78"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="210.601,1379.93 215.427,1390.02 220.599,1380.1 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="133.95" y1="1432.97" x2="2.32867" y2="1431.51"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="10.1476,1426.6 0.0927445,1431.49 10.0367,1436.6 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="91.3678" y="1424.83">
+    <tspan x="91.3678" y="1424.83">Nein</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-59.0182,1404.46 -59.0182,994.994 202.023,994.994 202.023,999.261 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="197.023,987.025 202.023,997.025 207.023,987.025 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="215.389" y1="1473.69" x2="215.654" y2="1603.88"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="210.638,1596.12 215.658,1606.11 220.638,1596.1 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="237.031" y="1514.63">
+    <tspan x="237.031" y="1514.63">ja</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="271.019" y1="731.357" x2="358.981" y2="730.684"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="351.256,735.743 361.217,730.667 351.179,725.744 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="425.999" y1="757.65" x2="425.932" y2="816.486"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="420.941,808.716 425.93,818.722 430.941,808.728 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="398.289,1600.31 543.036,1600.31 523.381,1654.31 378.634,1654.31 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="398.289,1600.31 543.036,1600.31 523.381,1654.31 378.634,1654.31 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="460.835" y="1623.21">
+      <tspan x="460.835" y="1623.21">HIghscore-Button</tspan>
+      <tspan x="460.835" y="1639.21">wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ff5226" x="385.623" y="1721.16" width="130.625" height="45.2547"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="385.623" y="1721.16" width="130.625" height="45.2547"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="398.686" y1="1721.16" x2="398.686" y2="1766.41"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="503.186" y1="1721.16" x2="503.186" y2="1766.41"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="450.936" y="1739.78">
+      <tspan x="450.936" y="1739.78">Lade</tspan>
+      <tspan x="450.936" y="1755.78">HighScore.html</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="451.008" y1="1654.31" x2="450.94" y2="1716.68"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="445.949,1708.91 450.938,1718.92 455.949,1708.92 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="282.506" y1="1628.35" x2="383.99" y2="1627.36"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="376.275,1632.43 386.226,1627.33 376.177,1622.43 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-355.436,1600.68 -181.189,1600.68 -200.843,1654.68 -375.09,1654.68 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-355.436,1600.68 -181.189,1600.68 -200.843,1654.68 -375.09,1654.68 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-278.14" y="1623.58">
+      <tspan x="-278.14" y="1623.58">Erneut-Spielen-</tspan>
+      <tspan x="-278.14" y="1639.58">Button wurde geklickt</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="148.819" y1="1628.35" x2="-186.544" y2="1627.69"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-178.77,1622.7 -188.78,1627.68 -178.79,1632.7 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-268.312,1600.68 -270.683,1600.68 -270.683,910.962 150.615,910.962 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="142.851,915.962 152.851,910.962 142.851,905.962 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="93.3943" y="483.186">
+    <tspan x="93.3943" y="483.186"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-154.247" y="417.176">
+    <tspan x="-154.247" y="417.176">Nur für Smartphone</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-123.975" y="994.866">
+    <tspan x="-123.975" y="994.866">Spiellogik</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #00ff00" cx="429.391" cy="938.254" rx="32.2845" ry="29.6679"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="429.391" cy="938.254" rx="32.2845" ry="29.6679"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="429.391" y="942.154">
+      <tspan x="429.391" y="942.154">?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="428.718" y1="870.687" x2="429.312" y2="904.114"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="424.175,896.44 429.351,906.35 434.173,896.263 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="451.491" cy="1837" rx="32.2845" ry="29.6679"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="451.491" cy="1837" rx="32.2845" ry="29.6679"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="451.491" y="1840.9">
+      <tspan x="451.491" y="1840.9">?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="450.936" y1="1766.41" x2="451.431" y2="1802.86"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="446.326,1795.16 451.461,1805.09 456.325,1795.03 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="477.172" y="929.778">
+    <tspan x="477.172" y="929.778">Das Mockup hat hier </tspan>
+    <tspan x="477.172" y="945.778">eine Lücke</tspan>
+  </text>
+  <text font-size="12.8016" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="782.982" y="122.137">
+    <tspan x="782.982" y="122.137">Lade Frage.html</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="799.491" y="179.864" width="392.35" height="69.4244"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="799.491" y="179.864" width="392.35" height="69.4244"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="808.491" y="210.476">
+      <tspan x="808.491" y="210.476">gewähltes Quiz = Hole gewähltes Quiz aus Browsercache</tspan>
+      <tspan x="808.491" y="226.476">aktuallisiere fragen()</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="779.007" y="286.291" width="575.575" height="246"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="779.007" y="286.291" width="575.575" height="246"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="788.007" y="309.191">
+      <tspan x="788.007" y="309.191">FUNKTION AKTUALISIERE FRAGEN</tspan>
+      <tspan x="788.007" y="325.191"></tspan>
+      <tspan x="788.007" y="341.191">aktuelle Frage = nehme ZufälligeFrage(gewähltes Quiz)</tspan>
+      <tspan x="788.007" y="357.191">antworten[] = nehme antworten(aktuelle Frage)</tspan>
+      <tspan x="788.007" y="373.191">Lösung = nehme Lösung(aktuelle Frage)</tspan>
+      <tspan x="788.007" y="389.191">gemischte antworten[]</tspan>
+      <tspan x="788.007" y="405.191">WHILE(antworten nicht leer){</tspan>
+      <tspan x="788.007" y="421.191">     element = nehme und entferne element aus antworten[] an zufälliger Position</tspan>
+      <tspan x="788.007" y="437.191">     gemischte antworten[] füge element hinten an</tspan>
+      <tspan x="788.007" y="453.191">}</tspan>
+      <tspan x="788.007" y="469.191">Antwortknopf1.text = gemischte Antworten</tspan>
+      <tspan x="788.007" y="485.191">Antwortknopf2...</tspan>
+      <tspan x="788.007" y="501.191"></tspan>
+      <tspan x="788.007" y="517.191"></tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1063.58" y="207.224">
+    <tspan x="1063.58" y="207.224"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="786.727" y="155.597">
+    <tspan x="786.727" y="155.597">On Load</tspan>
+  </text>
+  <g>
+    <rect style="fill: #cacaca" x="778.772" y="536.387" width="576.693" height="251.182"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="778.772" y="536.387" width="576.693" height="251.182"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1067.12" y="665.878">
+      <tspan x="1067.12" y="665.878"></tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="794.682" y="557.761">
+    <tspan x="794.682" y="557.761">On Click</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="788.72" y="574.096" width="271.2" height="86"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="788.72" y="574.096" width="271.2" height="86"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="797.72" y="596.996">
+      <tspan x="797.72" y="596.996">Knopf1 eventhandler:</tspan>
+      <tspan x="797.72" y="612.996">IF(Lösung = 1)</tspan>
+      <tspan x="797.72" y="628.996">     erhöhe score</tspan>
+      <tspan x="797.72" y="644.996">decke auf()</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1071.42" y="572.627" width="271.2" height="86"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1071.42" y="572.627" width="271.2" height="86"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1080.42" y="595.527">
+      <tspan x="1080.42" y="595.527">Knopf2 eventhandler:</tspan>
+      <tspan x="1080.42" y="611.527">IF(Lösung = 2)</tspan>
+      <tspan x="1080.42" y="627.527">     erhöhe score</tspan>
+      <tspan x="1080.42" y="643.527">decke auf()</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="790.789" y="678.338" width="271.2" height="86"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="790.789" y="678.338" width="271.2" height="86"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="799.789" y="701.238">
+      <tspan x="799.789" y="701.238">Knopf3 eventhandler:</tspan>
+      <tspan x="799.789" y="717.238">IF(Lösung = 3)</tspan>
+      <tspan x="799.789" y="733.238">     erhöhe score</tspan>
+      <tspan x="799.789" y="749.238">decke auf()</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1072.3" y="679.752" width="271.2" height="86"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1072.3" y="679.752" width="271.2" height="86"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1081.3" y="702.652">
+      <tspan x="1081.3" y="702.652">Knopf4 eventhandler:</tspan>
+      <tspan x="1081.3" y="718.652">IF(Lösung = 4)</tspan>
+      <tspan x="1081.3" y="734.652">     erhöhe score</tspan>
+      <tspan x="1081.3" y="750.652">decke auf()</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1379.48" y="558.957">
+    <tspan x="1379.48" y="558.957">NOTE:</tspan>
+    <tspan x="1379.48" y="574.957">Redundanz umgehen</tspan>
+  </text>
+</svg>
