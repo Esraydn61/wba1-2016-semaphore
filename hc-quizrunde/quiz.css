@@ -2,20 +2,31 @@ html{
 }
 
 head{
-   
-}
 
+}
 body{
     font-family: Oswald, sans-serif;
     font-color: black;
     font-weight: lighter;
     font-size: 24 px;
-    background-image: 
+    background-image:
 }
 
 h2{
     width:500px;
     height:200px;
-    color:#F8F5E4; 
+    color:#F8F5E4;
     opacity: 70%;
+}
+
+.Fragenblock{
+    
+}
+
+.AlleAntworten{
+
+}
+
+.Antwort{
+
 }
