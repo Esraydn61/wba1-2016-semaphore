@@ -1,9 +1,9 @@
 var output = document.getElementById('output');
 var ajaxhttp = new XMLHttpRequest();
-var url = "quiz.json";
+var url = "quizübersicht.json";
 
 ajaxhttp.open("GET", url, true);
-ajaxhttp.setRequestHeader("content-type", "quiz/json");
+ajaxhttp.setRequestHeader("content-type", "quizübersicht/json");
 ajaxhttp.onreadystatechange = function () {
     if (ajaxhttp.readyState == 4 && ajaxhttp.status == 200) {
         
