@@ -9,11 +9,14 @@ body{
     background-image: url(https://static.haga-welt.de/IMAGES/WOHNIDEEN/FOTOTAPETEN/KOMAR/8_Teile/8-324_fussballstadion.jpg);
     background-size: cover;
 }
+p {
+    margin: 0;
+}
 
 .headline{
     height: 55px;
     background: #F8F5E4;
-    width:calc(100% - 40px);
+    width:calc(100% - 30px);
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -24,24 +27,28 @@ body{
     margin-top: 3px;
     font-family: 'Oswald';
 }
-#teaser-image{
-    margin-top: 80px;
-    margin-left: 20px;
+.teaser {
+    width: calc(35% - 20px);
+    display: inline-block;
+    float: left;
+    margin-top: 75px;
+    margin-left: 15px
+    
 }
+#teaser-image{}
+
 #author{
     font-family: 'Oswald';
     font-size: 20px;
-    width: 450px;
+    width: 100%;
     height: 40px;
-    margin-left: 20px;
-    margin-top: -25px;
+    margin: 0;
     background: #F8F5E4
 }
 #teasertext{
-    width: 450px;
+    width: 100%;
     height: 100px;
-    margin-left: 20px;
-    margin-top: -5px;
+    margin-top: 10px;
     font-family: 'Noto Sans';
     background:rgba(248, 245, 228, 0.7);
 }
@@ -50,19 +57,21 @@ body{
     color: #fff;
     font-family: 'Noto Sans';
     font-size: 30px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 50px;
     border: none;
     height: 40px;
-    width: 450px;
-  
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container-table {
+    float: right;
+    margin: 15px;
+    width: calc(65% - 25px);
 }
 .liste{
     font-family: 'Oswald';
-    margin-left: 490px;
-    margin-top: -559px;
-    width: 754px;
+    width: 100%;
+    margin-top: 50px;
     border-spacing: 0px 10px;   
 }
 
