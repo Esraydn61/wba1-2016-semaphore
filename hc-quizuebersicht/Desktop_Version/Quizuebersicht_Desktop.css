@@ -1,0 +1,113 @@
+body{
+    background-image: url(/Pfad);
+    font-size: 100%;
+    margin: 0em;
+    padding: 0em;
+}
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Sortierliste, .Quizkachel{
+    
+}
+
+.Sortierliste{
+    background-color:rgba(233,194,12,1);
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.Quizkachel {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 15px;
+    margin-bottom: -5px;
+    margin-left: auto;
+    background-color: rgba(248,245,228,1);
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    width: 272px;
+}
+
+.Quizkachel:nth-child(4) {
+    
+}
+
+.Quizbild{
+    display: block;
+    margin: auto;
+    width: 272px;
+    height: auto;
+}
+
+.Quizkachel h3{
+    font-family: Oswald;
+    margin-top: 0%;
+    margin: auto;
+    font-size: 24px;
+    line-height: 100%;
+    background-color: rgba(248,245,228,1);
+    text-align: center;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.Erstellinfos{
+    line-height: 20px;
+    font-family: Oswald;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: 0em;
+    text-align: left;
+    padding: 5px;
+    padding-left: 5px;
+    background-color: rgba(248,245,228,1);    
+}
+
+.Beschreibung{
+    line-height: 20px;
+    font-family: Oswald;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: 0em;
+    text-align: left;    
+    background-color: rgba(248,245,228,0.7); 
+    padding: 10px;
+}
+.AnzGespielt{
+    line-height: 12px;
+    font-family: Oswald;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: 0em;
+    text-align: right;
+    padding: 5px;
+}
+
+.Auswahl{
+    padding: 0em;
+    background-color: #CB0727 ;
+    width: 100%;
+    height: 10%;
+    display: inline-block; 
+    text-align: center; 
+    line-height: 220%; 
+    font-family: arial;
+    font-weight: lighter; 
+    color: white;
+    text-decoration: none;
+}
+}
+
+.Quizkachel Erstellinfos{
+    font-size: 20px;
+    background-color: rgba(248,245,228,1);        /*UNKLAR WIE HOCH DIE DECKKRAFT IST*/
+}
