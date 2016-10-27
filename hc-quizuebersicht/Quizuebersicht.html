@@ -9,154 +9,279 @@
         <title>Fubuizz Quizübersicht</title>
         
         <!-- leerer Header bisher. Navigationsbar muss von dem anderen Team übernommen und eingebunden werden. -->
-        <link rel="stylesheet" href="Quizuebersicht.css" />
+        <link rel="stylesheet" type ="text/css" href="Quizuebersicht.css" />
+        <script src="navi.js" type="text/javascript" language="JavaScript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     </head>
     
     <body>
         
-        <div class="Sortierliste">
+            <div id="move">
+                <div class="container">
+                <header>
+                        <a href="https://www.google.de"><img class="logo" src="img/Logo_Fubuizz.png" title="Startseite" alt="Fubuizz"></a>
+                        <img class="burgermenu" src="img/Logo_Fubuizz.png" onclick="myMove()">
+                    <ul class="head">
+                        <li><a href="https://www.google.de">Registrieren</a></li>
+                        <li><a href="https://www.google.de">Login</a></li>
+                    </ul>
+                </header>
+                <nav>
+                    <ul class="navi">
+                        <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
+                        <li><a href="https://www.google.de">Highscore</a></li>
+                        <li><a href="https://www.google.de">Über Fubuizz</a></li>
+                        <li><a href="https://www.google.de">Kontakt</a></li>
+                        <li><a href="https://www.google.de">Einstellungen</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="menu">
+                    <header class="burgerheader">
+                        <a href="https://www.google.de"><img class="avatar" src="img/Logo_Fubuizz.png"></a>
+                        <p>Nico Schnurbusch</p>
+                    </header>
+                    <nav class="burgernav">
+                        <ul>
+                            <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
+                            <li><a href="https://www.google.de">Highscore</a></li>
+                            <li><a href="https://www.google.de">Über Fubuizz</a></li>
+                            <li><a href="https://www.google.de">Kontakt</a></li>
+                            <li><a href="https://www.google.de">Einstellungen</a></li>
+                        </ul>
+                        <button class="quizbeenden" type="button">Quiz beenden</button>
+                    </nav>
+                </div>
+            </div>
+        
+        <div id="Sortierliste">
             <!-- Hier wird die Sortierliste eingefügt. Zu allererst als Bild, danach mittels CSS & HTML -->
         </div>
         
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
-        </div>
-
-        <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
-            </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
         
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
         <div class="Quizkachel">
-            <div id="Quizbild">
-                <img src="img/Platzhalter_Bild.png" alt="Bild konnte nicht gefunden werden. Nicht vorhanden/falsch eingebunden?"/>     
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
             </div>
-            <h3>~QUIZNAME~</h3>
-            <p class="Erstellinfos">
-                von ~AUTOR~ erstellt </br>
-                am ~DATUM~
-            </p>
-            <p class="AnzGespielt">
-                ~ANZAHL~ mal gespielt
-            </p>
         </div>
-
+        
+        <div class="Quizkachel">
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
+            </div>
+        </div>
+        
+        <div class="Quizkachel">
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
+            </div>
+        </div>
+        
+        <div class="Quizkachel">
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
+            </div>
+        </div>
+        
+        <div class="Quizkachel">
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
+            </div>
+        </div>
+        
+        <div class="Quizkachel">
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
+            </div>
+        </div>
+        
+        <div class="Quizkachel">
+            <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz Quizbild"/>     
+            <div class="kachelcontent">
+                <div class="Textinhalt">
+                    <h3>~QUIZNAME~</h3>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
+                        am ~DATUM~  </p>
+                    </div>
+                <div class="AnzGespielt">
+                   ~ANZAHL~ mal gespielt 
+                </div>
+            </div>
+        </div>
+        
     </body>
 </html>

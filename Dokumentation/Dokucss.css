@@ -24,3 +24,12 @@ footer{
     vertical-align: baseline;
     border: 0;
 }
+img{
+    float: right;
+}
+.clearfix{
+    overflow: auto;
+}
+img1-container{
+
+}
