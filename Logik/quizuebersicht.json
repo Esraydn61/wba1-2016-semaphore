@@ -1,0 +1,22 @@
+{
+    "quiz1": 	{
+			"quizIdx": 1,
+			"name": "Deutschland",
+			"author": "Paulo_Pinto",
+			"date": "2016-09-12T19:28:35+02:00",
+			"counter": 212,
+            "image": "http://i.imgur.com/T4DVE73.png",
+			"description": "Alles rund um Sieg und Niederlage der Nationalelf. Dieses Quiz ist eine Herausforderung für alle Fußballkenner",
+			
+		},
+    "quiz2": 	{
+			"quizIdx": 2,
+			"name": "La Liga",
+			"author": "Antonio_Senio",
+			"date": "2015-12-01T11:58:35+02:00",
+			"counter": 149,
+            "image": "http://i.imgur.com/T4DVE73.png",
+			"description": "Alles rund um Sieg und Niederlage der Nationalelf. Dieses Quiz ist eine Herausforderung für alle Fußballkenner",
+			
+		}
+}
