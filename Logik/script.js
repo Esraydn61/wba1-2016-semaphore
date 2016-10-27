@@ -22,7 +22,7 @@ ajaxhttp.onreadystatechange = function () {
         console.log(jcontent);
     }
 }
-ajaxhttp.send(null);
+
 
 
 
