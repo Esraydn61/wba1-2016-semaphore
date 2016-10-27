@@ -1,0 +1,71 @@
+body{
+    background-image: url(../grafiker/~BILDPFAD EINFÜGEN~);
+}
+
+#Sortierliste{
+    background-color:rgba(233,194,12,1);
+    height: 50px;
+}
+
+.Quizbild{
+    float: left;
+}
+
+.Quizkachel h3, p{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 439px){
+ 
+    #Sortierliste, .Quizkachel{
+        margin: 5px 15px;
+    }
+    
+    .Quizkachel{
+        display: inline-block;
+        width: calc(100% - 30px);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        position: relative;
+    }
+    
+    .kachelcontent{
+        width: calc(100% - 113px);
+        height: 70px;
+        float: left;
+        position: relative;
+        background-color: rgba(248,245,228,1);
+        align-content: center;
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        padding: 0;
+    }
+    
+    .Quizkachel h3{
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+    
+    .Erstellinfos{
+        font-size: 10px;
+        font-style: normal;
+        margin: 5px;
+        position: absolute;
+    }
+    
+    .AnzGespielt{
+        font-size: 8px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0px 5px 5px 0px;
+    }
+
+    .Textinhalt{
+        padding-top: 0px;
+        padding-right: 5px;
+    }
+}
