@@ -1,59 +1,51 @@
-body {
-    background:grey;
-    font-size: 100%;
-    margin: 0em;
-    padding: 0em;
+.quizbox {
+    max-width: 439px;
+    max-height: 600px;
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
 }
 
-h2 {
-    font-size: 1.563em;
-    line-height: 1.8em;
-    font-family: Helvetica;
-    font-weight: 100;
-    color: #2F2D2C;
-    margin: 0em;
-    padding: 0em;
-    text-align: center;
-}
-
-p {
-    line-height: 1.25em;
-    font-family: Helvetica;
-    font-weight: 100;
-    color: #2F2D2C;
-    margin: 0em;
-    padding: 1em;
-    text-align: center;
-}
-
-#quizcontent {
-    display: block;
+.titel {
+    background-color: #F8F5E4;
     width: 100%;
-    margin:1em;
-    padding: 0em;
-}
-
-#quizcontent article{
-    display:block;
-    width: 100%;
-    background: white;
-    vertical-align: top;
-    margin: 0em;
-    padding: 0em;
     text-align: center;
-}
-
-#quizcontent article img {
-    width:100%;
+    padding: 0.001em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
     
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.author {
+    background-color: #F8F5E4;
+}
+
+.teasertext {
+    background-color: #F8F5E4;
+}
+
+#highscorecontent {
+    float:right;
+    background-color: grey;
+    
+}
+
 .btn {
     padding: 0em;
+    margin-bottom: 0.5em;
     background-color: #CB0727 ;
     width: 100%;
     height: 10%;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
     display: inline-block; 
     text-align: center; 
     line-height: 550%; 
@@ -63,10 +55,27 @@ p {
     text-decoration: none;
 }
 
-#quizcontent .teasertext {
-    opacity: 0.5;
+.btn1 {
+    padding: 0em;
+    background-color: #CB0727 ;
+    width: 100%;
+    height: 10%;
+    display: none;
+    text-align: center; 
+    line-height: 550%; 
+    font-family: arial;
+    font-weight: bold; 
+    color: white;
+    text-decoration: none;
 }
 
-#highscorecontent {
-    background: white;
+@media screen and (max-width:439px) {
+    .btn1 {
+        display: inline-block;
+    }
+    #highscorecontent {
+        display:none;
+    }
 }
+
+
