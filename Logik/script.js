@@ -1,9 +1,9 @@
 var output = document.getElementById('output');
 var ajaxhttp = new XMLHttpRequest();
-var url = "quizübersicht.json";
+var url = "http://www.coseon.com/logik/quizuebersicht.json";
 
 ajaxhttp.open("GET", url, true);
-ajaxhttp.setRequestHeader("content-type", "quizübersicht/json");
+ajaxhttp.setRequestHeader("content-type", "http://www.coseon.com/logik/quizuebersicht.json");
 ajaxhttp.onreadystatechange = function () {
     if (ajaxhttp.readyState == 4 && ajaxhttp.status == 200) {
         

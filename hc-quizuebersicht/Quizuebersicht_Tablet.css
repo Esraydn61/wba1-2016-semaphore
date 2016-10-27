@@ -1,0 +1,95 @@
+
+
+body {
+    
+    background-image: url(image/8-324_fussballstadion.jpg);
+    background-color: darkgray;                 /**ENTFERNEN!!**/
+    font-size: 100%;
+    margin: 0em;
+    padding: 0em;
+}
+
+@media screen and (max-width: 1024px){
+
+h1 {
+    font-size: 1em;
+    line-height: 2.5em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: -0.6em;
+}
+    
+h2 {
+    font-size: 0.7em;
+    line-height: 1.0em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: 4.5em;
+    position: absolute;
+}
+    
+
+
+p {
+    line-height: 0.75em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: -0.5em;
+    padding: 1.25em;
+    text-align: justify;
+}
+
+
+
+
+.kachel{
+    float: left;
+    display:inline-block;
+    padding:10px 10px 0px 10px;
+    background:rgba(255,255,255,0.7) ;
+    width:200px;
+    height: 300px;
+    margin: 20px 0 0 20px;
+    position: relative;
+    text-align:center;
+    
+}
+.button {
+    background-color:red; 
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+.Erstellinfos{
+        background:beige;
+        display:block;
+        height: 30px;
+        width: 110%;
+        margin-left:-10px;
+        margin-right: 0px;     
+    
+    }
+#img{
+        background-color: burlywood;        /**ENTFERNEN!!**/
+        margin-left: -10px;
+        width: 220px;
+        height: 100px;
+        
+    }
+}
+
+
+
+
+
+

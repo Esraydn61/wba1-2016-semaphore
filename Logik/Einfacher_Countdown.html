@@ -1,0 +1,66 @@
+<!Doctype HTML>
+<html>
+<head>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.js">
+
+
+
+</script>
+
+<script>
+function bla(i){
+
+    //  var time2=moment().format("hh:mm:ss");
+    //  var sek=time3-time2;
+
+
+    //  var sek=moment(end.diff(time3)).format("hh:mm:ss");
+
+
+
+
+    //  i=i+1;
+      console.log(String(i));
+      document.getElementById("text").innerHTML = i;
+      if(i==0){
+
+        clearInterval(count);
+
+      }
+
+
+
+
+
+
+}
+
+</script>
+
+</head>
+
+<body>
+<p id="text">10</p>
+
+<script type="text/javascript">
+var startTime= moment().format("hh:mm:ss");
+
+var zeit=String(startTime);
+var i=9;
+var count=setInterval("bla(i--)", 1000);
+
+console.log(zeit);
+
+</script>
+
+
+
+</body>
+
+
+
+
+
+<html>
