@@ -110,7 +110,7 @@ p {
 
 .burgernav {
     width: 170px;
-    height: 550px;
+    height: 550;
 }
 
 .burgernav > ul {
@@ -164,7 +164,7 @@ p {
     }
     
     .burgerheader {
-    height: 40px;
+        height: 40px;
     }
     
     nav {
@@ -188,7 +188,7 @@ p {
 }
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     body {
         background-color: #FFFFFF;
     }
@@ -198,6 +198,10 @@ p {
     }
     
     header {
+        height: 37px;
+    }
+    
+    .burgerheader {
         height: 37px;
     }
     
