@@ -1,4 +1,6 @@
-"allQuestions_deutschland": [{
+{
+"allQuestions_deutschland": [
+{
 
 	"question1":	[{
 			"questionIdx": 1,
@@ -13,7 +15,7 @@
 			"optionD": "01.Januar 1920"
 			}],
 			"answer": "1"
-			}],
+			}]
 },
 {
 
@@ -31,7 +33,7 @@
 			"option": "Hattrick"
 			}],
 			"answer": "4"
-			}],
+			}]
 },
 {
 
@@ -48,8 +50,9 @@
 			"option": "Norbert 'Nobbi' Germeshausen"
 			}],
 			"answer": "3"
-			}],
+			}]
 
 
 
 }]
+}
