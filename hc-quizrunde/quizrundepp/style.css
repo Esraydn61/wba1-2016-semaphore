@@ -1,6 +1,6 @@
 html, body{
     margin: 0px;
-	  font-family: 'Oswald-Light' , sans-serif;
+	  font-family: 'Oswald-Light' , sans-serif; /*Schon eingefügt in Haupt*/
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -10,20 +10,20 @@ html, body{
 
 }
 .headerallegleich {
-    width: 375px;
+    width: 375px; /*Width,height nicht genutzt, nicht responsive*/
     height: 50px;
 }
 
 .background {
-    width: 375px;
+    width: 375px; /*Width,height nicht genutzt, nicht responsive*/
     height: 667px;
     background-image:url("img/background.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;/*siehe oben*/
     float: none;
 }
 
 header {
-    background-color: #504F48;
+    background-color: #504F48; /*eingefügt, siehe h1*/
     height: 50px;
 }
 
@@ -34,6 +34,7 @@ header {
     height: 43px;
     margin-top: 5px;
 }
+/*eingefügt*/
 .beiwelcherfragesindwir {
   margin-top: 1px;
   margin-left: 10px;
@@ -50,6 +51,7 @@ header {
   background-color: #F8F5E4;
 }
 
+/*Extreme Code Doppelung, könnte in einem zusammengefasst werden*/
 .answer1 {
   opacity: 70%;
   margin-top:212px;
