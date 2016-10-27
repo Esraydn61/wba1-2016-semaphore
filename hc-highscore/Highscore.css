@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-image: url(https://static.haga-welt.de/IMAGES/WOHNIDEEN/FOTOTAPETEN/KOMAR/8_Teile/8-324_fussballstadion.jpg);
     background-size: cover;
+   
 }
 
 .header{
@@ -106,3 +107,35 @@ th, td{
 td{
     background:rgba(248, 245, 228, 0.7);
 }
+
+
+@media only screen and (max-width: 439px) {
+    
+    .teaser{
+        display: none;
+    }
+    
+    .container-table{
+        float: none;
+        margin: 15px;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 150px;
+    }
+    
+    .headline{
+        margin-left: 15px;
+        height: 55px;
+        width: 140px;
+        height: 45px;
+        position: absolute;
+        margin-top: 105px;
+        left: 70px;
+
+    }
+    
+    
+
+}
+
