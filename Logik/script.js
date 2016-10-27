@@ -1,6 +1,6 @@
 var output = document.getElementById('output');
 var ajaxhttp = new XMLHttpRequest();
-var url = "https://th-koeln.github.io/wba1-2016-semaphore/Logik/quizuebersicht.json";
+var url = "http://www.corseon.com/Logik/quizuebersicht.json";
 
 ajaxhttp.open("GET", url, true);
 ajaxhttp.setRequestHeader("content-type", "https://th-koeln.github.io/wba1-2016-semaphore/Logik/quizuebersicht.json");
