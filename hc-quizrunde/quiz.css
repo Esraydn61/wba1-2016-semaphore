@@ -1,18 +1,21 @@
 html{
 }
 
+/*Siehe h1, überflüssig?*/
 header{
 width: auto;
 height: 50px;
 }
+/*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
 body{
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: lighter;
-    background-image:;
+    background-image:; /*TO-DO*/
+/*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
     background-color: grey;
 }
-
+/*Hintergrund der Header Leiste, ohne Navigation, (geht das so klar?)*/
 h1{
   background-color: #504F48;
   box-sizing: padding-box;
@@ -20,10 +23,11 @@ h1{
   height: 50px;
   margin-bottom: 10px;
 }
-
+/*Unschöne Anpassung des Logos, 10 px vom linken Rand weg*/
 h1 > p{
   margin-left: 10px;
 }
+/*Nicht genutzt, kann theoretisch entfernt werden*/
 h2{
     width:500px;
     height:200px;
@@ -31,6 +35,7 @@ h2{
     opacity: 70%;
 }
 
+/*Formatierung Frage und Hintergrund der Frage*/
 .Fragenblock{
   margin-top: 10px;
   margin-left: 15px;
@@ -40,6 +45,8 @@ h2{
 
 }
 
+/*Allgemeine Formatierung der Antworten,
+hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
 .AlleAntworten{
   position: absolute;
   bottom: 0;
@@ -47,6 +54,8 @@ h2{
 
 }
 
+/*Antworten FOrmatierunge, jede Frage bekommt einen eigenen Hintergrund,
+Abstände zwischen den Fragen*/
 .Antwort{
   position: relative;
 
