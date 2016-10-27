@@ -1,14 +1,20 @@
+.boxbox{
+    display:flex;
+}
+
 .quizbox {
     max-width: 439px;
     max-height: 600px;
-    float: left;
     margin-right: 1em;
     margin-top: 0.5em;
     margin-left: 1em;
     margin-bottom: 0.5em;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
 }
 
 .titel {
+    font-family: 'Oswald', sans-serif;
     background-color: #F8F5E4;
     width: 100%;
     text-align: center;
@@ -35,8 +41,9 @@ img {
 }
 
 #highscorecontent {
-    float:right;
-    background-color: grey;
+    display: inline-block;
+    width:100%;
+    
     
 }
 
@@ -76,6 +83,49 @@ img {
     #highscorecontent {
         display:none;
     }
+}
+
+.liste{
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    margin-top: 0,5em;
+    border-spacing: 0px 10px;   
+}
+
+.liste th{
+    background-color: #E9C20C;
+    text-align: left;
+}
+
+.liste tr th:nth-child(1),
+.liste tr td:nth-child(1) {
+    width: 10%;
+   text-align: center;
+}
+
+.liste tr th:nth-child(2),
+.liste tr td:nth-child(2) {
+    width: 40%;
+}
+
+.liste tr th:nth-child(4),
+.liste tr td:nth-child(4) {
+    width: 10%;
+    text-align: right;
+}
+
+th, td{
+    padding: 4px;
+    color: black;
+}
+
+td{
+    background:rgba(248, 245, 228, 0.7);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('Oswald-Regular.tff') format('truetype');
 }
 
 
