@@ -134,10 +134,14 @@ p {
     width: 200px;
     position: relative;
     float: right;
-    right: -100px;
+    left: 200px;
 }
 
 .gesamtcontainer {
+    position: relative;
+}
+
+#move {
     position: relative;
 }
 
@@ -149,21 +153,28 @@ p {
         visibility: hidden;
     }
     
-    .burgermenu {
-        visibility: visible;
-    }
-    
     nav {
         visibility: hidden;
     }
     
-    .gesamtcontainer {
-        /*
-        position: relative;
-        right: 200px;
-        */
+    .burgernav {
+        visibility: visible;
+    }
+    
+    .logo {
+        /*left: -200px;*/
+    }
+    
+    .burgermenu {
+        visibility: visible;
+        /*right: 210px;*/
+    }
+    
+    .menu {
+        /*right: 0px*/
     }
 }
+
 /*
 @media only screen and (max-width: 439px) {
     body {
@@ -188,5 +199,5 @@ p {
         right: 200px;
         
     }
-*/
-}
+
+}*/
