@@ -16,13 +16,18 @@ body{
     
 }
 
+/* Sortierliste wurde angepasst, muss aber noch bearbeitet werden */
+
 .Sortierliste{
     background-color:rgba(233,194,12,1);
     height: 50px;
-    width: 100%;
+    width: 98.38%;
     margin: auto;
     margin-top: 20px;
+    margin-left: 0px;
 }
+
+/* wurde größengerecht angepasst */
 
 .Quizkachel {
     display: block;
@@ -37,9 +42,7 @@ body{
     width: 272px;
 }
 
-.Quizkachel:nth-child(4) {
-    
-}
+/* NEU Klasse "Quizbild" wurde eingefügt und größengerecht angepasst */
 
 .Quizbild{
     display: block;
@@ -60,6 +63,8 @@ body{
     padding-top: 5px;
 }
 
+/* wurde an Desktopversion angepasst und ist in einer Reihe, anstatt in 2 Reihen*/
+
 .Erstellinfos{
     line-height: 20px;
     font-family: Oswald;
@@ -72,7 +77,11 @@ body{
     background-color: rgba(248,245,228,1);    
 }
 
+/* NEU Klasse "Beschreibung" wurde eingefügt: 3 Zeilen pro Beschreibung */
+
 .Beschreibung{
+    font-size: 1em;
+    height: 2em;
     line-height: 20px;
     font-family: Oswald;
     font-weight: 100;
@@ -82,8 +91,12 @@ body{
     background-color: rgba(248,245,228,0.7); 
     padding: 10px;
 }
+
+/* Schriftgröße wurde verändert */
+
 .AnzGespielt{
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 20px;
     font-family: Oswald;
     font-weight: 100;
     color: #2F2D2C;
@@ -91,6 +104,8 @@ body{
     text-align: right;
     padding: 5px;
 }
+
+/* NEU Button "Auswahl" wurde eingefügt, farblich gemacht und angepasst */
 
 .Auswahl{
     padding: 0em;
@@ -100,14 +115,14 @@ body{
     display: inline-block; 
     text-align: center; 
     line-height: 220%; 
-    font-family: arial;
+    font-family: Oswald;
     font-weight: lighter; 
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 }
-}
+
 
 .Quizkachel Erstellinfos{
     font-size: 20px;
-    background-color: rgba(248,245,228,1);        /*UNKLAR WIE HOCH DIE DECKKRAFT IST*/
+    background-color: rgba(248,245,228,1);     
 }
