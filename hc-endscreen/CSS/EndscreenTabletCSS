@@ -1,0 +1,49 @@
+html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+.header {
+    background-color: rgba (80, 79, 72,1);
+    text-align: center;
+    
+}
+
+#logo {
+    height: 80px;
+}
+
+.header {
+    color: black;
+    background-color: rgba (255, 255, 255, 1);
+
+}
+
+.button {
+    background-color: rgba ( 203, 7, 39, 1 );
+    border: none;
+    color: rgba ( 255, 255, 255, 1 );
+    padding: 50px 345px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Noto-Sans;
+}
+
+.linkeSeite {
+    float: left;
+    padding: 20px;
+}
+
+.rechteSeite {
+    float: right;
+    padding: 20px;
+}
+
+/*.inhalt {
+    float:left;
+}*/
