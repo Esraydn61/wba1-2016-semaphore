@@ -8,7 +8,7 @@
         function frame() {
             if(ende == false)
             {
-                if (pos == 200) {
+                if (pos == 170) {
                 clearInterval(id);
                 ende = true;
                 } 
