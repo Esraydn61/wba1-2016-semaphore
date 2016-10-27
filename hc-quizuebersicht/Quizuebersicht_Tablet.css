@@ -3,6 +3,7 @@
 body {
     
     background-image: url(image/8-324_fussballstadion.jpg);
+    background-color: darkgray;                 /**ENTFERNEN!!**/
     font-size: 100%;
     margin: 0em;
     padding: 0em;
@@ -44,7 +45,7 @@ p {
 
 
 
-.Quizkachel{
+.kachel{
     float: left;
     display:inline-block;
     padding:10px 10px 0px 10px;
@@ -78,19 +79,13 @@ p {
         margin-right: 0px;     
     
     }
-.Quizbild{
+#img{
+        background-color: burlywood;        /**ENTFERNEN!!**/
         margin-left: -10px;
         width: 220px;
         height: 100px;
         
     }
-    
-   
-.kachelcontent{
-    
-}
-    
-    
 }
 
 
