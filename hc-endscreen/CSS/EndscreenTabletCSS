@@ -23,15 +23,25 @@ html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h
 
 }
 
-.button {
-    background-color: rgba ( 203, 7, 39, 1 );
-    border: none;
-    color: rgba ( 255, 255, 255, 1 );
-    padding: 50px 345px;
-    text-align: center;
-    display: inline-block;
+.Heading {
+font-size: 24px;
+}
+
+.Knopf {
+    background-color: rgba(203,7,39,1); 
+    color: rgba(255,255,255,1 );
     font-size: 20px;
+    border:none;
+    text-align: center;
+    text-decoration:none;
+    width: 345px;
+    height: 50px;
+    display: inline-block;
     font-family: Noto-Sans;
+}
+
+.Knopf p{
+text-align:center;
 }
 
 .linkeSeite {
