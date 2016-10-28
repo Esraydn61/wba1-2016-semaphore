@@ -4,11 +4,12 @@ body{
     margin: 0em;
     padding: 0em;
 }
-
+    
+   
+    
 .content {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 900pt; 
+    margin: 0 auto;
 }
 
 
@@ -18,13 +19,18 @@ body{
 
 /* Sortierliste wurde angepasst, muss aber noch bearbeitet werden */
 
+.Reihe{
+    margin-left: 31pt;
+}
+
+
 .Sortierliste{
     background-color:rgba(233,194,12,1);
-    height: 50px;
-    width: 98.38%;
-    margin: auto;
+    height: 27pt;
+    width: 735pt;
     margin-top: 20px;
-    margin-left: 0px;
+    margin-bottom: 13pt;
+    margin-left: 31pt;
 }
 
 /* wurde größengerecht angepasst */
@@ -33,13 +39,13 @@ body{
     display: block;
     float: left;
     padding: 0;
-    margin: 15px;
-    margin-bottom: -5px;
-    margin-left: auto;
+    margin-right: 15pt;
+    margin-bottom: 29.5pt;
     background-color: rgba(248,245,228,1);
     font-family: Oswald, sans-serif;
     font-style: normal;
-    width: 272px;
+    width: 172.5pt;
+    height: 232pt;
 }
 
 /* NEU Klasse "Quizbild" wurde eingefügt und größengerecht angepasst */
@@ -47,82 +53,93 @@ body{
 .Quizbild{
     display: block;
     margin: auto;
-    width: 272px;
-    height: auto;
+    width: 172.5pt;
+    height: 107pt;
 }
 
 .Quizkachel h3{
     font-family: Oswald;
-    margin-top: 0%;
     margin: auto;
-    font-size: 24px;
+    font-size: 12pt;
     line-height: 100%;
     background-color: rgba(248,245,228,1);
     text-align: center;
-    height: 30px;
+    height: 18pt;
     padding-top: 5px;
+    padding-left: 4.5pt;
+    padding-right: 6.7pt;
 }
 
 /* wurde an Desktopversion angepasst und ist in einer Reihe, anstatt in 2 Reihen*/
 
 .Erstellinfos{
-    line-height: 20px;
     font-family: Oswald;
     font-weight: 100;
     color: #2F2D2C;
-    margin: 0em;
     text-align: left;
-    padding: 5px;
-    padding-left: 5px;
-    background-color: rgba(248,245,228,1);    
+    padding-top: 1pt;
+    padding-bottom: 2pt;
+    padding-left: 7.5pt;
+    padding-right: 5pt;
+    background-color: rgba(248,245,228,1);   
+    margin: auto;
 }
 
 /* NEU Klasse "Beschreibung" wurde eingefügt: 3 Zeilen pro Beschreibung */
 
-.Beschreibung{
-    font-size: 1em;
-    height: 2em;
-    line-height: 20px;
+.Inhalt{
+    height: 64pt;
     font-family: Oswald;
-    font-weight: 100;
+    font-size: 10pt;
     color: #2F2D2C;
-    margin: 0em;
-    text-align: left;    
     background-color: rgba(248,245,228,0.7); 
-    padding: 10px;
+
+}
+
+.Beschreibung{
+    text-align: left; 
+    font-weight: lighter;
+    background-color: rgba(248,245,228,1);
+    margin: 0em;
+    height: 48pt;
+    padding-left: 7.5pt;
+    padding-right: 7.5pt;
+    padding-bottom: 5pt;
+    padding-top: 5pt;
 }
 
 /* Schriftgröße wurde verändert */
 
 .AnzGespielt{
-    font-size: 12px;
-    line-height: 20px;
-    font-family: Oswald;
-    font-weight: 100;
-    color: #2F2D2C;
-    margin: 0em;
+    font-size: 10pt;
     text-align: right;
-    padding: 5px;
+    font-weight: lighter;
+    background-color: rgba(248,245,228,1);
+    margin: 0em;
+    height: 16pt;
+    padding-right: 7.5pt;
 }
 
 /* NEU Button "Auswahl" wurde eingefügt, farblich gemacht und angepasst */
 
+.button{
+    padding-bottom: 8pt;
+    margin: 0em;
+    height: 25pt;
+}
+
 .Auswahl{
-    padding: 0em;
     background-color: #CB0727 ;
     width: 100%;
-    height: 10%;
-    display: inline-block; 
-    text-align: center; 
-    line-height: 220%; 
-    font-family: Oswald;
-    font-weight: lighter; 
-    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font-family: Noto Sans; 
+    color: rgba(255,255,255,1);
     text-decoration: none;
+    height: 25pt;
+    font-size: 12pt;
+    margin-top: 10pt;
+    margin-bottom: 7.5pt;
+    padding-top: 3.5pt;
 }
 
-
-.Quizkachel Erstellinfos{
-    font-size: 20px;
-    background-color: rgba(248,245,228,1);     
-}
