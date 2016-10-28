@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<!--[if IE]><![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<!-- !CSS -->
+	<link rel="stylesheet" href="css/style.css?v=1">
+
+
+	<style type="text/css">                                // css für den Hintergrund zu verändern
+
+    	.normal {
+		    	background-color: #000000;
+	    }
+	   .richtig {
+		    	background-color: #006400;
+    	}
+
+			.falsch {
+					background-color: #FF0001;
+			}
+	</style>
+	<!-- Uncomment if you are specifically targeting less enabled mobile browsers
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+
+	<!-- !Modernizr - All other JS at bottom -->
+	<script src="js/modernizr-1.5.min.js"></script>
+
+	<script>
+
+	var quiz = {
+		"allQuestions": [{
+
+			"question":	{
+					"questionIdx": 1,
+					"question": "Wann wurde der Verein - damals noch FV Werder Bremen - gegründet?",
+					"options": [{
+					"option": "01.Oktober 1893"
+					},{
+					"option": "04.Februar 1899"
+					},{
+					"option": "07.Juli 1907"
+					},{
+					"option": "01.Januar 1920"
+					}],
+					"answer": "1"
+
+		},
+},
+{
+
+			"question":	{
+
+					"questionIdx": 2,
+					"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
+					"options": [{
+					"option": "Don Jupp"
+					},{
+					"option": "Hoeneß"
+					},{
+					"option": "Mia san Triple"
+					},{
+					"option": "Hattrick"
+					}],
+					"answer": "4"
+
+		},
+
+	},
+	{
+
+			"question":	{
+					"questionIdx": 3,
+					"question": "Arnd Zeigler ist einer der größten Fußball-Nerds der Republik, regiert 'Zeiglerswunderbare Welt des Fußball' in Radio und Fernsehen und ist außerdem Stadionsprecher im Weserstadion. Wie aber heißt sein Co-Stadionsprecher?",
+					"options":[{
+					"option": "Manfred 'Wolle' Wollenhaupt"
+					},{
+					"option": "Christian 'Stolli' Stoll"
+					},{
+					"option": "Andres 'Action-Andy' Schneider"
+					},{
+					"option": "Norbert 'Nobbi' Germeshausen"
+					}],
+					"answer": "3"
+
+		},
+	},
+	{
+
+			"question":	{
+
+					"questionIdx": 4,
+					"question": "blabla",
+					"options": [{
+					"option": "Don Jupp"
+					},{
+					"option": "Hoeneß"
+					},{
+					"option": "Mia san Triple"
+					},{
+					"option": "Hattrick"
+					}],
+					"answer": "4"
+
+		},
+	},
+	{
+
+			"question":	{
+
+					"questionIdx": 5,
+					"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
+					"options": [{
+					"option": "Don Jupp"
+					},{
+					"option": "Hoeneß"
+					},{
+					"option": "Mia san Triple"
+					},{
+		 			"option": "Hattrick"
+					}],
+					"answer": "4"
+
+		},
+	},
+	{
+
+				"question":	{
+
+						"questionIdx": 6,
+						"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
+						"options": [{
+						"option": "Don Jupp"
+						},{
+						"option": "Hoeneß"
+						},{
+						"option": "Mia san Triple"
+						},{
+						"option": "Hattrick"
+						}],
+						"answer": "4"
+
+		},
+	},
+	{
+
+			"question":	{
+
+					"questionIdx": 7,
+					"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
+					"options": [{
+					"option": "Don Jupp"
+					},{
+					"option": "Hoeneß"
+					},{
+					"option": "Mia san Triple"
+					},{
+					"option": "Hattrick"
+					}],
+					"answer": "4"
+
+
+		},
+	},
+	{
+
+			"question":	{
+
+					"questionIdx": 8,
+					"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
+					"options": [{
+					"option": "Don Jupp"
+					},{
+					"option": "Hoeneß"
+					},{
+					"option": "Mia san Triple"
+					},{
+					"option": "Hattrick"
+					}],
+					"answer": "4"
+
+
+		},
+	},
+	{
+
+			"question":	{
+
+					"questionIdx": 9,
+					"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
+					"options": [{
+					"option": "Don Jupp"
+					},{
+					"option": "Hoeneß"
+					},{
+					"option": "Mia san Triple"
+					},{
+					"option": "Hattrick"
+					}],
+					"answer": "4"
+
+
+		},
+	},
+	{
+
+			"question":	{
+
+					"questionIdx": 10,
+					"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
+					"options": [{
+						"option": "Don Jupp"
+						},{
+						"option": "Hoeneß"
+						},{
+						"option": "Mia san Triple"
+						},{
+						"option": "Hattrick"
+					}],
+					"answer": "4"
+
+       }
+		}]
+
+
+};
+
+	</script>
+</head>
+<!-- !Body -->
+<body>
+	<p id="timer"></p>
+	<p id="frage"></p>
+	<div id="antworten">
+		<button id="antwort1" data-antwortId="1"></button>
+		<button id="antwort2" data-antwortId="2"></button>
+		<button id="antwort3" data-antwortId="3"></button>
+		<button id="antwort4" data-antwortId="4"></button>
+	</div>
+
+	<p id="rof"> </p>
+	<!-- !Javascript - at the bottom for fast page loading -->
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+	<script src="js/plugins.js?v=1"></script>
+	<script src="js/script.js?v=1"></script>
+
+	<script>
+
+	function antwortPruefen(ele, answer){
+	//	var $ele = $(ele);
+	  $ele= $(ele);                              // cast zu jQuery
+		antwortId = $(ele).attr("data-antwortId");
+
+		console.log($ele);
+	  console.log(antwortId);
+		console.log(answer);
+
+		if(answer === antwortId){
+			$("#rof").html("Richtig");
+//			$ele.addClass("richtig");
+			//setTimeout()
+		} else {
+			$("#rof").html("falsch");
+//			$ele.addClass("falsch");
+
+		}
+
+
+
+	}
+
+	function count(){
+		i--;
+		console.log(i);
+		if(i===5){
+
+			aktuelleFrage++;
+			neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
+		}
+
+
+	}
+	function neueFrage( data, aktuelleFrage ){
+
+		$("#frage").html(data.question);
+		$("#antwort1").html(data.options[0].option);    // ändert per Id den Inhalt
+		$("#antwort2").html(data.options[1].option);    //$ signalisiert das jQuery Objekt, # ersetzt getElementbyId, .html signalisiert html Objekt(Inhalt)
+		$("#antwort3").html(data.options[2].option);
+		$("#antwort4").html(data.options[3].option);
+
+		clearInterval(timer);
+		i=10;
+		timer = setInterval("count()", 1000);
+
+		$("#antworten").click(function(e){
+		//	var cButton = e.target;
+			antwortPruefen(e.target, quiz.allQuestions[aktuelleFrage].question.answer);    // Antwort
+
+			aktuelleFrage++;
+
+			neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
+		});
+	}
+		var $ele;
+		var antwortId;
+		var timer= null;
+		var i=10;
+    var data = {};
+    var aktuelleFrage = 1;
+    data = quiz.allQuestions[0].question;
+
+
+     neueFrage( data, aktuelleFrage );
+
+	</script>
+</body>
+</html>
