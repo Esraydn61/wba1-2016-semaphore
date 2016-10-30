@@ -7,7 +7,6 @@
 header {
     background-color: #504F48;
     height: 53px;
-    font-size: 20px;
    
 }
 
@@ -43,15 +42,6 @@ li {
     width: 100%;
 }
 
-p {
-    position: relative;
-    width: 115px;
-    text-align: right;
-    margin-left: 50;
-    margin-top: 0px;
-    padding-top: 10px;
-    font-size: 14px;
-}
 
 .head {
     float: right;
@@ -76,8 +66,8 @@ p {
 }
 
 .navi > li {
-    width: 161px;
-    padding: 8px 0px;
+    width: 180px;
+    padding: 10px 0px;
     text-align: center;
     border-left: 1px solid #504F48;
 }
@@ -89,7 +79,7 @@ p {
 .burgermenu {
     position: absolute;
     right: 15px;
-    width: 40px;
+    width: 60px;
     height: 40px;
     z-index: 2;
     visibility: hidden;
