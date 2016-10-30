@@ -11,21 +11,25 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: lighter;
-    background-image:; /*TO-DO*/
-/*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
     background-color: grey;
+    background-image: url("quizrundepp/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+/*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
 }
 /*Hintergrund der Header Leiste, ohne Navigation, (geht das so klar?)*/
 h1{
   background-color: #504F48;
-  box-sizing: padding-box;
   width: auto;
   height: 50px;
   margin-bottom: 10px;
 }
 /*Unschöne Anpassung des Logos, 10 px vom linken Rand weg*/
 h1 > p{
-  margin-left: 10px;
+  margin-left: 15px;
+  padding-top:6px;
+  
+    
 }
 /*Nicht genutzt, kann theoretisch entfernt werden*/
 h2{
@@ -47,7 +51,7 @@ h2{
   margin-left: 15px;
   margin-right: 15px;
   background-color:#F8F5E4;
-  padding-left: 5px;
+  padding:15px;
 
 
 }
