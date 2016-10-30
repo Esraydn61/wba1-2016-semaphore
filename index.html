@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Semaphore | wba1-2016</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background:#134869;
+                font-family:roboto,'helvetica neue',helvetica,arial,sans-serif;
+            }
+            main{
+                position:absolute;
+                top:50%;
+                left:50%;
+                -webkit-transform:translate(-50%,-50%);
+                -ms-transform:translate(-50%,-50%);
+                transform:translate(-50%,-50%);
+            }
+            h1,h2{
+                margin:0;
+                color:#ffffff;
+                font-family:roboto,'helvetica neue',helvetica,arial,sans-serif;
+                font-weight:300;
+                text-align:right;
+            }
+            h1{
+                font-size:72px;
+            }
+            h2{
+                font-size:20px;margin-top:-15px;
+            }
+        </style>
+        <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <main>
+            <h1>Semaphore</h1>
+            <h2>wba1-2016</h2>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+	        var res = "http://wba1-semaphore.christiannoss.de/Logik/Questions_laliga_Highscore.json";
+
+	        $.get( res, function( data ) {
+				console.log(data);
+			});
+	    </script>
+    </body>
+</html>
