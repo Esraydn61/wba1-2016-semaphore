@@ -2,21 +2,63 @@
 <html>
     <head>
         
-        <link href="Quizuebersicht_Desktop.css" type="text/css" rel="stylesheet">
+        <link href="navi.css" type="text/css" rel="stylesheet">
+        <script src="navi.js" type="text/javascript" language="JavaScript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> <!--Schiftart Oswald-->
+        <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximal-scale=1.0"> <!--Responsive-->
         <title>Fubuizz Quizübersicht</title>
         
     </head>
     <!-- neue Klassen im Body eingefügt -->
     <body>
-        
+        <section>
+        <div id="move">
+                <div class="container">
+                <header>
+                        <a  class="navia" href="https://www.google.de"><img class="logo" src="img/Logo_Fubuizz.png" title="Startseite" alt="Fubuizz"></a>
+                        <img class="burgermenu" src="img/Logo_Fubuizz.png" onclick="myMove()">
+                    <ul class="head">
+                        <li><a class="navia" href="https://www.google.de">Registrieren</a></li>
+                        <li><a class="navia" href="https://www.google.de">Login</a></li>
+                    </ul>
+                </header>
+                <nav>
+                    <ul class="navi">
+                        <li><a class="navia" href="Index.html">Aktuelle Quizze</a></li>
+                        <li><a class="navia" href="Highscore.html">Highscore</a></li>
+                        <li><a class="navia" href="EndscreenTablet.html">Über Fubuizz</a></li>
+                        <li><a class="navia" href="https://www.google.de">Kontakt</a></li>
+                        <li><a class="navia" href="https://www.google.de">Einstellungen</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="menu">
+                    <header class="burgerheader">
+                        <a class="navia" href="https://www.google.de"><img class="avatar" src="img/Logo_Fubuizz.png"></a>
+                        <p class="navip">Nico Schnurbusch</p>
+                    </header>
+                    <nav class="burgernav">
+                        <ul>
+                            <li><a class="navia" href="Index.html">Aktuelle Quizze</a></li>
+                            <li><a class="navia" href="Highscore.html">Highscore</a></li>
+                            <li><a class="navia" href="EndscreenTablet.html">Über Fubuizz</a></li>
+                            <li><a class="navia" href="https://www.google.de">Kontakt</a></li>
+                            <li><a class="navia" href="https://www.google.de">Einstellungen</a></li>
+                        </ul>
+                        <button class="quizbeenden" type="button">Quiz beenden</button>
+                    </nav>
+                </div>
+            </div>
+        </section>
         <!-- NEU Klasse Content eingefügt! enthält Sotierleiste und Quizkacheln -->
         
         <div class="content">
             
         <!-- Sortierleiste muss noch angepasst werden-->
             
-        <div class="Sortierliste">
-        </div>
+        <!-- <div class="Sortierliste">
+        </div> -->
             
         <!-- einzelne Quizkacheln, 4 nebeneinander pro Riehe -->
             
@@ -51,7 +93,7 @@
             <!-- NEU Klasse Button eingefügt -->
             
             <div class="button"> 
-<a class="Auswahl" href="">Auswaehlen</a>
+<a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
             
@@ -73,7 +115,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
             
@@ -95,7 +137,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
 
@@ -117,7 +159,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
         
@@ -143,7 +185,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
         
@@ -165,7 +207,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
 
@@ -187,7 +229,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
         
@@ -209,7 +251,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
         
@@ -235,7 +277,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
 
@@ -257,7 +299,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
             
@@ -279,7 +321,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
             
@@ -301,7 +343,7 @@
             </p>
             </div>
             <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                <a class="Auswahl" href="Start.html">Auswaehlen</a>
             </div>
         </div>
         
