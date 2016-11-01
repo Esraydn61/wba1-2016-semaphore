@@ -106,11 +106,11 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #DBD9D8;
-   
+
 }
 
 nav ul li a.active {
-    
+
 }
 
 #main {
@@ -179,12 +179,132 @@ footer ul li a {
     color: black;
 }
 
+
+/*Header*/
+/*
+1. Seite auf fixed setzen
+*/
+html, body{
+    margin: 0px;
+	font-family: 'Oswald-Light' , sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #504F48;
+    height: 50px;
+}
+
+nav {
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #E9C20C;
+}
+
+ul {
+    margin: 0px;
+    margin-left: 7vw;
+}
+
+li {
+    list-style: auto;
+    font-family: Helvetica;
+    font-size: 0.82em;
+    padding: auto;
+    margin: auto;
+    display: inline-block;
+}
+
+.head {
+    float: right;
+    z-index: 2;
+}
+
+.head > li {
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    width: auto;
+    position: absolute;
+    margin-top: 2px;
+    height: 46px;
+    left: 10px;
+}
+
+.navi > li {
+    width: 150px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-left: 1px solid #504F48;
+}
+
+.navi > li:last-child {
+    border-right: 1px solid #504F48;
+}
+
+.burgermenu {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightgrey;
+    }
+
+    .head {
+        visibility: hidden;
+    }
+
+    .burgermenu {
+        visibility: visible;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: darkgrey;
+    }
+
+    .head {
+        visibility: hidden;
+    }
+
+    .burgermenu {
+        visibility: visible;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+}
+
 /*Mobil*/
 
+
+/*
 @media screen and (max-width:800px) {
     body {
         font-size: 90%;
-    } 
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -201,9 +321,9 @@ footer ul li a {
     }
     #menubar ul li a.menubutton {
         display: block;
-        
-        
-    } 
+
+
+    }
     nav {
         display: none;
         height: auto;
@@ -213,5 +333,4 @@ footer ul li a {
         margin: 0.3em 0em 0.3em 0em;
     }
 }
-
-
+*/

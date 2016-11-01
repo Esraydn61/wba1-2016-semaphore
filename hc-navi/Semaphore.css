@@ -76,15 +76,15 @@ li {
     body {
         background-color: lightgrey;
     }
-    
+
     .head {
         visibility: hidden;
     }
-    
+
     .burgermenu {
         visibility: visible;
     }
-    
+
     nav {
         visibility: hidden;
     }
@@ -94,15 +94,15 @@ li {
     body {
         background-color: darkgrey;
     }
-    
+
     .head {
         visibility: hidden;
     }
-    
+
     .burgermenu {
         visibility: visible;
     }
-    
+
     nav {
         visibility: hidden;
     }
