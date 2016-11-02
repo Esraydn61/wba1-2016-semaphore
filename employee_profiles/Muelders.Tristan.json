@@ -1,6 +1,16 @@
 {
+<<<<<<< HEAD
+"surname"     : "Muelders",
+"name"        : "Tristan",
+"work_package": "Quizüberischt",
+"motto"       : "____"
+}
+
+
+=======
 	"surname"	: "Muelders",
 	"name"		: "Tristan" , 
 	"work_package"	: "Quizuebersicht", 
 	"motto"		: "----"
 }
+>>>>>>> d1a1c97f60dd0eae31e53ece5c0cabe451b71b09

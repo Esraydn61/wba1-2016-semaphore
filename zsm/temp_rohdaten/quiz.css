@@ -1,0 +1,89 @@
+html{
+}
+
+/*Siehe h1, überflüssig?*/
+header{
+width: auto;
+height: 50px;
+}
+/*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    background-color: grey;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+/*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
+}
+/*Hintergrund der Header Leiste, ohne Navigation, (geht das so klar?)*/
+h1{
+  background-color: rgba( 80, 79, 72, 1 );
+
+
+  box-sizing: padding-box;
+  width: auto;
+  height: 50px;
+  margin-bottom: 10px;
+}
+/*Unschöne Anpassung des Logos, 10 px vom linken Rand weg*/
+h1 > p{
+  margin-left: 15px;
+  padding-top:6px;
+
+
+}
+/*Nicht genutzt, kann theoretisch entfernt werden*/
+h2{
+    width:500px;
+    height:200px;
+    color:#F8F5E4;
+    opacity: 70%;
+}
+/*Anzeige "Frage 2/10"*/
+.beiwelcherfragesindwir {
+  margin-top: 1px;
+  margin-left: 15px;
+  color: #FFFFFF;
+}
+
+/*Formatierung Frage und Hintergrund der Frage*/
+.Fragenblock{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
+  background-color:rgba(248,245,228,0.6);
+padding-left: 20px;
+  padding-right: 20px;
+
+
+
+
+}
+
+/*Allgemeine Formatierung der Antworten,
+hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
+.AlleAntworten{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+/*Antworten FOrmatierunge, jede Frage bekommt einen eigenen Hintergrund,
+Abstände zwischen den Fragen*/
+.Antwort{
+  position: relative;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 17px;
+  margin-right: 23px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:rgba(248,245,228,0.7);
+  box-sizing: border-box;
+
+}

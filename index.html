@@ -41,5 +41,13 @@
             <h1>Semaphore</h1>
             <h2>wba1-2016</h2>
         </main>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+	        var res = "http://wba1-semaphore.christiannoss.de/Logik/Questions_laliga_Highscore.json";
+
+	        $.get( res, function( data ) {
+				console.log(data);
+			});
+	    </script>
     </body>
 </html>
