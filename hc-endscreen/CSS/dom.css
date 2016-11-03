@@ -1,0 +1,86 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    background-color: gainsboro;
+}
+
+
+h1{
+    text-align: center;
+    background-color: #F8F5E4;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h2{
+    font-size: 20px
+}
+
+#main {
+    padding: 15px;
+}
+
+.obereHälfte {
+    height: 300px;
+}
+
+
+.linkeSeite{
+    float: left;
+    width: 50%;
+    box-sizing: content-box;
+}
+
+.linkeSeite h2{
+    text-align: center;
+    background-color: #E9C20C;
+}
+
+.hauptbild{
+}
+
+.playbutton {
+    background-color: #CB0727;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    
+
+}
+
+
+.rechteSeite{
+    float: right;
+    width: 50%;
+    box-sizing: content-box;
+    
+}
+
+.highscoretable{
+    margin: auto;
+    width: 100%;
+    height: 300px;
+}
+
+.highscoretable tr{
+    background-color: #E9C20C;
+}
+
+.highscoretable td {
+    background-color: #F8F5E4;
+}
+
+.suggestions{
+    margin: auto;
+    text-align: center;
+}
+
+.suggestions h2{
+    background-color: #E9C20C;
+}
