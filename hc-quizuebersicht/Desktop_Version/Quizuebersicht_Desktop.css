@@ -30,7 +30,38 @@ body{
     width: 735pt;
     margin-top: 20px;
     margin-bottom: 13pt;
-    margin-left: 31pt;
+    margin-left: 31pt;  
+    font-family: Oswald; 
+}
+
+.neu{
+    width: 735pt;
+    font-size: 16.1pt;
+    line-height: 24.3pt;
+    text-align: center;
+    padding: 0em;
+}
+
+.Sortierliste a{
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.Top{
+    margin-left: 83pt;
+}
+
+.AZ{
+    margin-left: 280pt;
+}
+
+.New{
+    margin-left: 450pt;
+}
+
+.Last{
+    margin-left: 630pt;
 }
 
 /* wurde größengerecht angepasst */
