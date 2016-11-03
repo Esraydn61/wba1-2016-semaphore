@@ -3,6 +3,10 @@ html, body{
 	font-family: 'Oswald-Light' , sans-serif;
     color: #FFFFFF;
 }
+@font-face {
+    font-family: "Oswald-Light";
+    src: url("fonts/Oswald-Light.ttf") format("truetype");
+}
 
 header {
     background-color: #504F48;
