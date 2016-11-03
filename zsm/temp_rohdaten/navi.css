@@ -320,7 +320,6 @@ body {
 }
 
 .boxbox{
-    margin-top: 50px;
     display:flex;
     margin-right: 1em;
 }
@@ -424,6 +423,10 @@ td{
     }
     #highscorecontent {
         display:none;
+    }
+    .boxbox{
+        width: 100%;
+        
     }
 }
 
