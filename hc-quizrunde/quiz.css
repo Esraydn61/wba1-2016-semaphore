@@ -21,12 +21,17 @@ body{
 
 /*Formatierung Frage und Hintergrund der Frage*/
 .Fragenblock{
-  margin-top: 10px;
-  margin-left: 10px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 20;
+  margin-left: 15px;
   margin-right: 15px;
   background-color:rgba(248,245,228,0.6);
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 
 
 
@@ -36,25 +41,48 @@ body{
 /*Allgemeine Formatierung der Antworten,
 hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
 .AlleAntworten{
-  position: absolute;
-  bottom: 0;
+  position:absolute;
   left: 0;
   right: 0;
-
+  bottom: 0;
 }
 
 /*Antworten FOrmatierunge, jede Frage bekommt einen eigenen Hintergrund,
 Abstände zwischen den Fragen*/
 .Antwort{
-  position: relative;
-  height: 60px;
+  /*height: 60px;*/
   margin-top: 10px;
-  margin-left: 17px;
-  margin-right: 23px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   background-color:rgba(248,245,228,0.7);
-  box-sizing: border-box;
-
 }
+.Antwort:hover{
+  background-color:rgba(248,245,228,1);
+}
+
+@media only screen and (min-width: 439px) {
+    .Antwort{
+        margin-top:20px;
+    }
+    .Fragenblock{
+        height: 10%;
+        Font-size:28px;
+    }
+    .AlleAntworten{
+        margin-top:-20px;
+    }
+    }
+@media only screen and (min-width: 1024px) {
+    .Antwort{
+        margin-top:40px;
+    }
+    .Fragenblock{
+        height:15%;
+        font-size:32px;
+    }
+    }

@@ -320,16 +320,15 @@ body {
 }
 
 .boxbox{
-    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
     display:flex;
-    margin-right: 1em;
 }
 .quizbox {
     max-width: 439px;
     max-height: 600px;
     margin-right: 1em;
     margin-top: 0.5em;
-    margin-left: 1em;
     margin-bottom: 0.5em;
     font-family: 'Oswald', sans-serif;
     display: inline-block;
@@ -338,12 +337,15 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: #F8F5E4;
     text-align: center;
-    padding: 0.001em;
+    color: black;
+    padding-top: 0.0001em;
     margin-right: 1em;
     margin-top: 0.5em;
     margin-left: 1em;
     margin-bottom: 0.5em;
 }
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -353,6 +355,11 @@ img {
 }
 .teasertext {
     background-color: rgba(248, 245, 228, 0.7);
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+}
+.teasertext2{
+    margin-top: -60px;
 }
 #highscorecontent {
     display: inline-block;
@@ -424,6 +431,10 @@ td{
     }
     #highscorecontent {
         display:none;
+    }
+    .boxbox{
+        width: 100%;
+        
     }
 }
 
