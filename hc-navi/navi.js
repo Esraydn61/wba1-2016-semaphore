@@ -1,5 +1,16 @@
+    var burgermenu = document.getElementsByClassName("burgermenu");
+    burgermenu[0].addEventListener("click", myMove);
     var pos = 0;
     var ende = false;
+    
+    /*
+    window.onresize=function()
+    {
+        if(window.innerWidth >= 1024 && ende == true) {
+            myMove();
+        }
+    }
+    */
 
     function myMove() {
         var elem = document.getElementById("move");
