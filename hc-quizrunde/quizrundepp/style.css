@@ -1,0 +1,95 @@
+html, body{
+    margin: 0px;
+	  font-family: 'Oswald-Light' , sans-serif; /*Schon eingefügt in Haupt*/
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.menu {
+
+
+}
+.headerallegleich {
+    width: 375px; /*Width,height nicht genutzt, nicht responsive*/
+    height: 50px;
+}
+
+.background {
+    width: 375px; /*Width,height nicht genutzt, nicht responsive*/
+    height: 667px;
+    background-image:url("img/background.jpg");
+    background-repeat: no-repeat;/*siehe oben*/
+    float: none;
+}
+
+header {
+    background-color: #504F48; /*eingefügt, siehe h1*/
+    height: 50px;
+}
+
+.logo {
+    float: left;
+    left: 10px;
+    width: 100px;
+    height: 43px;
+    margin-top: 5px;
+}
+/*eingefügt*/
+.beiwelcherfragesindwir {
+  margin-top: 1px;
+  margin-left: 10px;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.question {
+  margin-top:-47px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #504F48;
+  font-size: 24px;
+  background-color: #F8F5E4;
+}
+
+/*Extreme Code Doppelung, könnte in einem zusammengefasst werden*/
+.answer1 {
+  opacity: 70%;
+  margin-top:212px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
+.answer2 {
+  opacity: 70%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
+.answer3 {
+  opacity: 70%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
+.answer4 {
+  opacity: 70%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+color: #504F48;
+font-size: 24px;
+background-color: #F8F5E4;
+padding: 5px;
+}
