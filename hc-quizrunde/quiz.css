@@ -64,3 +64,25 @@ Abstände zwischen den Fragen*/
 .Antwort:hover{
   background-color:rgba(248,245,228,1);
 }
+
+@media only screen and (min-width: 439px) {
+    .Antwort{
+        margin-top:20px;
+    }
+    .Fragenblock{
+        height: 10%;
+        Font-size:28px;
+    }
+    .AlleAntworten{
+        margin-top:-20px;
+    }
+    }
+@media only screen and (min-width: 1024px) {
+    .Antwort{
+        margin-top:40px;
+    }
+    .Fragenblock{
+        height:15%;
+        font-size:32px;
+    }
+    }
