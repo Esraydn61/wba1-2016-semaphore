@@ -3,13 +3,11 @@
     margin: 0px;
 }
 
-.clear {
-    clear: both;
-}
 
 
 body{
     background-color: gainsboro;
+    background-image: url(https://static.haga-welt.de/IMAGES/WOHNIDEEN/FOTOTAPETEN/KOMAR/8_Teile/8-324_fussballstadion.jpg);
 }
 
 
@@ -29,6 +27,7 @@ h2{
 }
 
 
+
 .linkeSeite{
     float: left;
     width: 50%;
@@ -38,6 +37,10 @@ h2{
 .linkeSeite h2{
     text-align: center;
     background-color: #E9C20C;
+}
+
+.hauptbild{
+    height: 314px;
 }
 
 .playbutton {
@@ -59,8 +62,10 @@ h2{
 }
 
 .highscoretable{
-    margin: auto;
+    margin: 0;
     width: 100%;
+    height: 300px;  
+    border-spacing: 0 10px;
 }
 
 .highscoretable tr{
@@ -68,7 +73,7 @@ h2{
 }
 
 .highscoretable td {
-    background-color: #F8F5E4
+    background-color: #F8F5E4;
 }
 
 .suggestions{

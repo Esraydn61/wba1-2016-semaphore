@@ -1,34 +1,72 @@
 <html>
     <head>
       <title>Quizrunde</title>
+        <!--link href="navi.css" type="text/css" rel="stylesheet">
+        <script src="navi.js" type="text/javascript" language="JavaScript"></script-->
+      <link href="reset.css" rel="stylesheet"/>
       <link href="quiz.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <h1 id="Logo">
-            <p> <a href="Logo Fubuizz.png"><img src="Logo Fubuizz.png" alt="Fubuizz"/></a> </p>
-        </h1>
-        <nav>
-          <!-- Siehe hc-navi, später einfügen -->
-        </nav>
-      </header>
+     <!--div id="move">
+                <div class="container">
+                <header>
+                       <p> <a href="/quizrundepp/img/Logo_Fubuizz.png"><img src="quizrundepp/img/Logo_Fubuizz.png" height= 40px alt="Fubuizz"/></a>
+                       <img class="burgermenu" src="quizrundepp/img/Logo_Fubuizz.png" onclick="myMove()"/>
+                    <ul class="head">
+                        <li><a href="https://www.google.de">Registrieren</a></li>
+                        <li><a href="https://www.google.de">Login</a></li>
+                    </ul>
+                </header>
+                <nav>
+                    <ul class="navi">
+                        <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
+                        <li><a href="https://www.google.de">Highscore</a></li>
+                        <li><a href="https://www.google.de">Über Fubuizz</a></li>
+                        <li><a href="https://www.google.de">Kontakt</a></li>
+                        <li><a href="https://www.google.de">Einstellungen</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="menu">
+                    <header class="burgerheader">
+                        <p> <a href="/quizrundepp/img/Logo_Fubuizz.png"><img src="quizrundepp/img/Logo_Fubuizz.png" height= 40px alt="Fubuizz"/></a>
+                    </header>
+                    <nav class="burgernav">
+                        <ul>
+                            <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
+                            <li><a href="https://www.google.de">Highscore</a></li>
+                            <li><a href="https://www.google.de">Uber Fubuizz</a></li>
+                            <li><a href="https://www.google.de">Kontakt</a></li>
+                            <li><a href="https://www.google.de">Einstellungen</a></li>
+                        </ul>
+                        <button class="quizbeenden" type="button">Quiz beenden</button>
+                    </nav>
+                </div>
+            </div-->
+        <p class = "beiwelcherfragesindwir">Frage:2/10</p>
         <div class="Fragenblock">
+            <!--Hier steht der Fragenblock. Diese Fragen werden später durch das Skript zufällig wiedergegeben (hier wird das Skript implementiert).-->
             <p>
-                Fragestellung
+                Wann wurde der Verein - damals noch FV Werder Bremen - gegruendet?
+                Wann wurde der Verein - damals noch FV Werder Bremen - gegruendet?
+                Wann wurde der Verein - damals noch FV Werder Bremen - gegruendet?
             </p>
         </div>
         <div class= "AlleAntworten">
+            <!--Die Klasse "AlleAntworten" gruppiert alle möglichen Antworten zur Frage.-->
           <div class="Antwort">
-            <p> Antwort A</p>
+              <!--Hier steht nacheinander aufgelistet die Klasse "Antwort". Vorerst haben wir hier die Antworten A - D benannt, später soll hier aber das Javaskript zur Generierung von Antworten eingebunden sein.-->
+            <p> 01.Oktober 1893</p>
           </div>
           <div class="Antwort">
-            <p> Antwort B</p>
+            <p> 04.Februar 1899</p>
           </div>
           <div class="Antwort">
-            <p> Antwort C</p>
+            <p> 07.Juli 1907</p>
           </div>
           <div class="Antwort">
-            <p> Antwort D</p>
+            <p> 01.Januar 1920</p>
           </div>
         </div>
     </body>
