@@ -1,11 +1,6 @@
 html{
 }
 
-/*Siehe h1, überflüssig?*/
-header{
-width: auto;
-height: 50px;
-}
 /*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
 body{
     font-family: 'Oswald', sans-serif;
@@ -16,30 +11,6 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
-}
-/*Hintergrund der Header Leiste, ohne Navigation, (geht das so klar?)*/
-h1{
-  background-color: rgba( 80, 79, 72, 1 );
-
-
-  box-sizing: padding-box;
-  width: auto;
-  height: 50px;
-  margin-bottom: 10px;
-}
-/*Unschöne Anpassung des Logos, 10 px vom linken Rand weg*/
-h1 > p{
-  margin-left: 15px;
-  padding-top:6px;
-  
-    
-}
-/*Nicht genutzt, kann theoretisch entfernt werden*/
-h2{
-    width:500px;
-    height:200px;
-    color:#F8F5E4;
-    opacity: 70%;
 }
 /*Anzeige "Frage 2/10"*/
 .beiwelcherfragesindwir {
@@ -54,10 +25,10 @@ h2{
   margin-left: 10px;
   margin-right: 15px;
   background-color:rgba(248,245,228,0.6);
-padding-left: 20px;
+  padding-left: 20px;
   padding-right: 20px;
 
-  
+
 
 
 }

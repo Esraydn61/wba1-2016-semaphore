@@ -7,7 +7,8 @@
 header {
     background-color: #504F48;
     height: 53px;
-   
+    font-size: 20px;
+
 }
 
 nav {
@@ -41,7 +42,15 @@ li {
     position: fixed;
     width: 100%;
 }
-
+/*p {
+    position: relative;
+    width: 115px;
+    text-align: right;
+    margin-left: 50;
+    margin-top: 0px;
+    padding-top: 10px;
+    font-size: 14px;
+}*/
 
 .head {
     float: right;
@@ -110,7 +119,7 @@ li {
 }
 
 .burgernav > ul > li {
-    display: block;  
+    display: block;
     padding: 10px 20px;
     font-size: 17px;
     border-bottom: 1px solid #504F48;
@@ -153,26 +162,26 @@ li {
     header {
         height: 40px;
     }
-    
+
     .burgerheader {
     height: 40px;
     }
-    
+
     nav {
         visibility: hidden;
     }
-    
+
     .burgernav {
         visibility: visible;
     }
-    
+
     .logo {
         left: 20px;
         height: 38px;
         margin: 0px;
         top: 2px;
     }
-    
+
     .burgermenu {
         visibility: visible;
     }
@@ -183,33 +192,33 @@ li {
     body {
         background-color: #FFFFFF;
     }
-    
+
     .head {
         visibility: hidden;
     }
-    
+
     header {
         height: 37px;
     }
-    
+
     .burgermenu {
         visibility: visible;
         right: 10px;
     }
-    
+
     nav {
         visibility: hidden;
     }
-    
+
     .logo {
         left: 10px;
         height: 31px;
         margin: 0px;
         top: 3px;
     }
-    
+
     .gesamtcontainer {
-        
+
         position: relative;
     }
 
