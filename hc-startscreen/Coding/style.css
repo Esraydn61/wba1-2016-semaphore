@@ -25,16 +25,20 @@ body {
 .titel {
     font-family: 'Oswald', sans-serif;
     background-color: #F8F5E4;
-    text-align: center;
-    padding: 0.001em;
+    color:black;
+    padding-top: 0.0001em;
+    margin-top: 3em;
     margin-right: 1em;
-    margin-top: 0.5em;
     margin-left: 1em;
-    margin-bottom: 0.5em;   
+    margin-bottom: 0.5em;
+}
+h2{
+  text-align:center;
+  padding-left:5em;
 }
 img {
     max-width: 100%;
-    height: auto;   
+    height: auto;
 }
 .author {
     background-color:rgba(248, 245, 228, 0.7);
@@ -44,7 +48,7 @@ img {
 }
 #highscorecontent {
     display: inline-block;
-    width:100%;   
+    width:100%;
 }
 .btn {
     padding: 0em;
@@ -52,11 +56,11 @@ img {
     background-color: #CB0727 ;
     width: 100%;
     height: 10%;
-    display: inline-block; 
-    text-align: center; 
-    line-height: 550%; 
+    display: inline-block;
+    text-align: center;
+    line-height: 550%;
     font-family: arial;
-    font-weight: bold; 
+    font-weight: bold;
     color: white;
     text-decoration: none;
 }
@@ -66,10 +70,10 @@ img {
     width: 100%;
     height: 10%;
     display: none;
-    text-align: center; 
-    line-height: 550%; 
+    text-align: center;
+    line-height: 550%;
     font-family: arial;
-    font-weight: bold; 
+    font-weight: bold;
     color: white;
     text-decoration: none;
 }
@@ -78,7 +82,7 @@ img {
     width: 100%;
     margin-top: 0,5em;
     margin-right: 1em;
-    border-spacing: 0px 10px;   
+    border-spacing: 0px 10px;
 }
 .liste th{
     background-color: #E9C20C;
@@ -130,7 +134,7 @@ header {
 
 nav {
     background-color: #000000;
-    height: 53px;
+    /*height: 53px;*/
     font-size: 25px;
 }
 
@@ -237,7 +241,7 @@ li {
 }
 
 .burgernav > ul > li {
-    display: block;  
+    display: block;
     padding: 10px 20px;
     font-size: 17px;
     border-bottom: 1px solid #504F48;
@@ -268,6 +272,7 @@ li {
 
 #move {
     position: relative;
+    padding-bottom: 0.001em;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -280,26 +285,26 @@ li {
     header {
         height: 40px;
     }
-    
+
     .burgerheader {
     height: 40px;
     }
-    
+
     nav {
         visibility: hidden;
     }
-    
+
     .burgernav {
         visibility: visible;
     }
-    
+
     .logo {
         left: 20px;
         height: 38px;
         margin: 0px;
         top: 2px;
     }
-    
+
     .burgermenu {
         visibility: visible;
     }
@@ -310,33 +315,33 @@ li {
     body {
         background-color: #FFFFFF;
     }
-    
+
     .head {
         visibility: hidden;
     }
-    
+
     header {
         height: 37px;
     }
-    
+
     .burgermenu {
         visibility: visible;
         right: 10px;
     }
-    
+
     nav {
         visibility: hidden;
     }
-    
+
     .logo {
         left: 10px;
         height: 31px;
         margin: 0px;
         top: 3px;
     }
-    
+
     .gesamtcontainer {
-        
+
         position: relative;
     }
 
