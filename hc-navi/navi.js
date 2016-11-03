@@ -1,6 +1,6 @@
     var pos = 0;
     var ende = false;
-    
+
     function myMove() {
         var elem = document.getElementById("move");
         var id = setInterval(frame, 1);

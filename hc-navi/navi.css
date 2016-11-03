@@ -48,8 +48,8 @@ p {
     text-align: right;
     margin-left: 50;
     margin-top: 0px;
-    padding-top: 10px;
-    font-size: 14px;
+    padding-top: 9px;
+    font-size: 15px;
 }
 
 .head {
@@ -201,12 +201,19 @@ p {
         height: 37px;
     }
     
+    .avatar {
+        height: 37px;
+        width: 37px;
+    }
+    
     .burgerheader {
         height: 37px;
     }
     
     .burgermenu {
         visibility: visible;
+        height: 37px;
+        width: 37px;
         right: 10px;
     }
     
