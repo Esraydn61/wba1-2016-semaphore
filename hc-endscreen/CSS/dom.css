@@ -26,9 +26,6 @@ h2{
     padding: 15px;
 }
 
-.obereHälfte {
-    height: 300px;
-}
 
 
 .linkeSeite{
@@ -43,6 +40,7 @@ h2{
 }
 
 .hauptbild{
+    height: 314px;
 }
 
 .playbutton {
