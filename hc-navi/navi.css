@@ -58,7 +58,7 @@ p {
 }
 
 .head > li {
-    padding: 11px 0px;
+    padding: 0.5em 0em;
     padding-right: 33px;
 }
 
@@ -76,7 +76,7 @@ p {
 
 .navi > li {
     width: 161px;
-    padding: 8px 0px;
+    padding: 0.3em 0em;
     text-align: center;
     border-left: 1px solid #504F48;
 }
@@ -100,7 +100,6 @@ p {
     width: 40px;
     height: 40px;
     z-index: 2;
-    margin-top: 4px;
 }
 
 .burgerheader {
@@ -173,6 +172,7 @@ p {
     
     .burgernav {
         visibility: visible;
+        
     }
     
     .logo {
