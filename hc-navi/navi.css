@@ -97,8 +97,10 @@ p {
 .avatar {
     float: left;
     left: 10px;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
+    padding-top: 4px;
+    padding-left: 5px;
     z-index: 2;
 }
 
@@ -193,6 +195,10 @@ p {
         background-color: #FFFFFF;
     }
     
+    p {
+        font-size: 13px;
+    }
+    
     .head {
         visibility: hidden;
     }
@@ -202,8 +208,10 @@ p {
     }
     
     .avatar {
-        height: 37px;
-        width: 37px;
+        width: 28px;
+        height: 28px;
+        padding-top: 6px;
+        padding-left: 5px;
     }
     
     .burgerheader {
@@ -227,10 +235,4 @@ p {
         margin: 0px;
         top: 3px;
     }
-    
-    .gesamtcontainer {
-        
-        position: relative;
-    }
-
 }
