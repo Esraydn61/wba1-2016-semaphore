@@ -5,10 +5,12 @@ body{
    
 }
 
-.header{
-    height: 50px;
-    width: 100%;
-    background: #504F48;
+#teaserimage {
+    padding: 0;
+    margin: 0;
+}
+
+#teasertext {
     margin: 0;
 }
 
@@ -19,7 +21,7 @@ body{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin-top: 10px;
+    margin-top: 120px;
 }
 
 #headlinetext{
@@ -28,39 +30,56 @@ body{
     font-family: 'Oswald';
 }
 
+#move{
+    margin: 0px;
+	font-family: 'Oswald-Light' , sans-serif;
+    color: #FFFFFF;
+     z-index: 1;
+}
+
 .teaser {
     width: calc(35% - 20px);
     display: inline-block;
     float: left;
-    margin-top: 75px;
-    margin-left: 15px
+    margin-top: 190px;
+    margin-left: 15px;
 }
-
+#teaserimage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 #author{
     font-family: 'Oswald';
     font-size: 20px;
-    width: 100%;
-    height: 40px;
+    width: calc(100% - 20px);
     margin: 0;
-    background: #F8F5E4
+    background: #F8F5E4;
+    padding: 10px;
+    float: left;
 }
 
-#teasertext{
-    width: 100%;
-    height: 100px;
+#teasertext {
+    width: auto;
     margin-top: 10px;
     font-family: 'Noto Sans';
     background:rgba(248, 245, 228, 0.7);
+    padding: 10px;
+    float: left;
+    text-align: left;
+    font-size: 18px;
 }
 
-.start{
+.start {
     background: #CB0727;
     color: #fff;
     font-family: 'Noto Sans';
     font-size: 30px;
     border: none;
-    height: 40px;
+    padding: 5px;
     width: 100%;
+    float: left;
     margin-top: 10px;
 }
 
@@ -68,6 +87,10 @@ body{
     float: right;
     margin: 15px;
     width: calc(65% - 25px);
+    position: absolute;
+    right: 0px;
+    margin-top: 131px;
+    
 }
 
 .liste{
@@ -134,8 +157,6 @@ td{
         left: 70px;
 
     }
-    
-    
-
+  
 }
 

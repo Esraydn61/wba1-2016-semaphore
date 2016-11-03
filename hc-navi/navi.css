@@ -1,17 +1,19 @@
 html, body{
     margin: 0px;
 	font-family: 'Oswald-Light' , sans-serif;
-    font-size: 20px;
     color: #FFFFFF;
 }
 
 header {
     background-color: #504F48;
-    height: 50px;
+    height: 53px;
+    font-size: 20px;
 }
 
 nav {
     background-color: #000000;
+    height: 53px;
+    font-size: 25px;
 }
 
 a {
@@ -41,11 +43,13 @@ li {
 }
 
 p {
-    width: 130px;
+    position: relative;
+    width: 115px;
     text-align: right;
     margin-left: 50;
     margin-top: 0px;
-    padding: 0.5rem;
+    padding-top: 10px;
+    font-size: 14px;
 }
 
 .head {
@@ -54,23 +58,25 @@ p {
 }
 
 .head > li {
-    padding: 0.5rem 1rem;
+    padding: 11px 0px;
+    padding-right: 33px;
 }
 
 .logo {
     position: absolute;
-    margin-top: 2px;
-    height: 46px;
-    left: 10px;
+    margin-top: 4px;
+    height: 43px;
+    left: 33px;
 }
 
 .navi {
-    margin-left: 7vw;
+    margin-left: 161px;
+    padding-left: 0px;
 }
 
 .navi > li {
-    width: 150px;
-    padding: 0.5rem 1rem;
+    width: 161px;
+    padding: 8px 0px;
     text-align: center;
     border-left: 1px solid #504F48;
 }
@@ -81,11 +87,10 @@ p {
 
 .burgermenu {
     position: absolute;
-    right: 10px;
+    right: 15px;
     width: 40px;
     height: 40px;
     z-index: 2;
-    margin-top: 5px;
     visibility: hidden;
 }
 
@@ -95,17 +100,17 @@ p {
     width: 40px;
     height: 40px;
     z-index: 2;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .burgerheader {
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 37px;
 }
 
 .burgernav {
-    width: 200px;
-    height: 500px;
+    width: 170px;
+    height: 550;
 }
 
 .burgernav > ul {
@@ -115,7 +120,8 @@ p {
 
 .burgernav > ul > li {
     display: block;  
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
+    font-size: 17px;
     border-bottom: 1px solid #504F48;
 }
 
@@ -123,18 +129,19 @@ p {
     background-color: #CB0727;
     color: #FFFFFF;
     border: none;
-    width: 200px;
+    width: 170px;
     height: 40px;
     font-family: 'Noto Sans' , sans-serif;
     font-size: 20px;
-    margin-top: 200px;
+    position: relative;
+    top: 260px;
 }
 
 .menu {
-    width: 200px;
+    width: 170px;
     position: relative;
     float: right;
-    left: 200px;
+    left: 170px;
 }
 
 .gesamtcontainer {
@@ -147,10 +154,17 @@ p {
 
 @media only screen and (max-width: 1024px) {
     body {
-        background-color: lightgrey;
+        background-color: #FFFFFF;
     }
     .head {
         visibility: hidden;
+    }
+    header {
+        height: 40px;
+    }
+    
+    .burgerheader {
+        height: 40px;
     }
     
     nav {
@@ -162,42 +176,54 @@ p {
     }
     
     .logo {
-        /*left: -200px;*/
+        left: 20px;
+        height: 38px;
+        margin: 0px;
+        top: 2px;
     }
     
     .burgermenu {
         visibility: visible;
-        /*right: 210px;*/
-    }
-    
-    .menu {
-        /*right: 0px*/
     }
 }
 
-/*
-@media only screen and (max-width: 439px) {
+
+@media only screen and (max-width: 800px) {
     body {
-        background-color: darkgrey;
+        background-color: #FFFFFF;
     }
     
     .head {
         visibility: hidden;
     }
     
+    header {
+        height: 37px;
+    }
+    
+    .burgerheader {
+        height: 37px;
+    }
+    
     .burgermenu {
         visibility: visible;
+        right: 10px;
     }
     
     nav {
         visibility: hidden;
     }
     
+    .logo {
+        left: 10px;
+        height: 31px;
+        margin: 0px;
+        top: 3px;
+    }
+    
     .gesamtcontainer {
         
         position: relative;
-        right: 200px;
-        
     }
 
-}*/
+}

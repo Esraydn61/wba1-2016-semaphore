@@ -2,33 +2,147 @@
 <head>
     <title>Fubuizz</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> <!--Schiftart Oswald-->
     <meta charset="utf-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximal-scale=1.0"> <!--Responsive-->
+    <script src="navi.js" type="text/javascript" language="JavaScript"></script>
+
 </head>
 <body>
-
-<div class="titel">
+<div id="move">
+                <div class="container">
+                <header>
+                        <a  class="navia" href="https://www.google.de"><img class="logo" src="img/Logo_Fubuizz.png" title="Startseite" alt="Fubuizz"></a>
+                        <img class="burgermenu" src="img/Logo_Fubuizz.png" onclick="myMove()">
+                    <ul class="head">
+                        <li><a class="navia" href="https://www.google.de">Registrieren</a></li>
+                        <li><a class="navia" href="https://www.google.de">Login</a></li>
+                    </ul>
+                </header>
+                <nav>
+                    <ul class="navi">
+                        <li><a class="navia" href="https://www.google.de">Aktuelle Quizze</a></li>
+                        <li><a class="navia" href="https://www.google.de">Highscore</a></li>
+                        <li><a class="navia" href="https://www.google.de">Über Fubuizz</a></li>
+                        <li><a class="navia" href="https://www.google.de">Kontakt</a></li>
+                        <li><a class="navia" href="https://www.google.de">Einstellungen</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="menu">
+                    <header class="burgerheader">
+                        <a class="navia" href="https://www.google.de"><img class="avatar" src="img/Logo_Fubuizz.png"></a>
+                        <p class="navip">Nico Schnurbusch</p>
+                    </header>
+                    <nav class="burgernav">
+                        <ul>
+                            <li><a class="navia" href="https://www.google.de">Aktuelle Quizze</a></li>
+                            <li><a class="navia" href="https://www.google.de">Highscore</a></li>
+                            <li><a class="navia" href="https://www.google.de">Über Fubuizz</a></li>
+                            <li><a class="navia" href="https://www.google.de">Kontakt</a></li>
+                            <li><a class="navia" href="https://www.google.de">Einstellungen</a></li>
+                        </ul>
+                        <button class="quizbeenden" type="button">Quiz beenden</button>
+                    </nav>
+                </div>
+            </div>
+<div id="start">
+    <div class="titel"> <!--Titel oberste Zeile-->
         <h2>Quiztitel</h2>
     </div>
-<div class="quizbox">
-   
-    <div class="teaserbild">
-        <img src="quizbild.jpg"/>
+    <div class="boxbox"> <!--Box, die alle anderen Boxen umschließt. Außer den Titel.-->
+        <div class="quizbox">
+            <div class="teaserbild">
+                <img src="quizbild.jpg"/>
+            </div>
+        <div class="author">
+            <p>von XYZ erstellt am 12.10.2014</p>
+        </div>
+    <div class="teasertext">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
     </div>
-    <div class="author">
-        <p>von XYZ erstellt am 12.10.2014</p>
-   </div>
-    <div class="teasertext"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p></div>
-    
-    <div class="buttons"> 
-<a class="btn" href="">Spielen</a>
-<a class="btn1" href="">Highscore</a>
-</div>
-</div>
-    
-<div id="highscorecontent">
-<h2>Hier kommt später der Highscore rein</h2>
-</div> 
+    <div class="buttons">
+        <a class="btn" href="">Spielen</a>
+        <a class="btn1" href="">Highscore</a>
+    </div>
+        </div>
+    <div id="highscorecontent"> <!--Highscoreliste-->
+        <table class="liste">
+            <tr>
+                <th>Rang</th>
+                <th>Spieler</th>
+                <th>Zeit</th>
+                <th>Punkte</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Name</td>
+                <td>02.06.2016</td>
+                <td>900</td>
+            </tr>
+        </table>
+    </div>
+    </div>
 </div>
 </body>
 </html>
