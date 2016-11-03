@@ -359,7 +359,7 @@ img {
     padding-bottom: 0em;
 }
 .teasertext2{
-    padding-top: 0em;
+    margin-top: -60px;
 }
 #highscorecontent {
     display: inline-block;
