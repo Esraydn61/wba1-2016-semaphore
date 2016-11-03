@@ -12,9 +12,7 @@
 /* Gestaltung der labels */
 .toggleBox label {
     display: block;
-    background: #68B022;
-    color: #fff;
-    padding: .4em;
+    color: black;
     text-align: center;
     cursor: pointer;
 }
@@ -31,12 +29,7 @@
  
 .toggleBox input:checked ~ div {
     opacity: 1;
-    padding: .8em;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    padding: 0em;
 }
  
 /* Steuerung der Sichtbarkeit der labels */
