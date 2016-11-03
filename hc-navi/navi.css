@@ -48,8 +48,8 @@ p {
     text-align: right;
     margin-left: 50;
     margin-top: 0px;
-    padding-top: 10px;
-    font-size: 14px;
+    padding-top: 9px;
+    font-size: 15px;
 }
 
 .head {
@@ -58,7 +58,7 @@ p {
 }
 
 .head > li {
-    padding: 11px 0px;
+    padding: 0.5em 0em;
     padding-right: 33px;
 }
 
@@ -76,7 +76,7 @@ p {
 
 .navi > li {
     width: 161px;
-    padding: 8px 0px;
+    padding: 0.3em 0em;
     text-align: center;
     border-left: 1px solid #504F48;
 }
@@ -97,10 +97,11 @@ p {
 .avatar {
     float: left;
     left: 10px;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
+    padding-top: 4px;
+    padding-left: 5px;
     z-index: 2;
-    margin-top: 4px;
 }
 
 .burgerheader {
@@ -173,6 +174,7 @@ p {
     
     .burgernav {
         visibility: visible;
+        
     }
     
     .logo {
@@ -193,6 +195,10 @@ p {
         background-color: #FFFFFF;
     }
     
+    p {
+        font-size: 13px;
+    }
+    
     .head {
         visibility: hidden;
     }
@@ -201,12 +207,21 @@ p {
         height: 37px;
     }
     
+    .avatar {
+        width: 28px;
+        height: 28px;
+        padding-top: 6px;
+        padding-left: 5px;
+    }
+    
     .burgerheader {
         height: 37px;
     }
     
     .burgermenu {
         visibility: visible;
+        height: 37px;
+        width: 37px;
         right: 10px;
     }
     
@@ -220,10 +235,4 @@ p {
         margin: 0px;
         top: 3px;
     }
-    
-    .gesamtcontainer {
-        
-        position: relative;
-    }
-
 }

@@ -37,7 +37,15 @@ p4{
     float: right;
 
 }
+p5{
+    float: right;
+
+}
 body{
     padding: 50px;
+
+}
+h2{
+    font-size: 120%;
 
 }
