@@ -1,5 +1,7 @@
 {
-	"question1":{
+	"allQuestions":[{
+
+	"question":{
 		"questionIdx": 1,
 		"question": "Wann wurde der Verein - damals noch FV Werder Bremen - gegründet?",
 		"options": [{
@@ -12,9 +14,11 @@
 			"option": "01.Januar 1920"
 		}],
 		"answer": "2"
-	},
+	}
+},
+{
 
-	"question2":{
+	"question":{
 		"questionIdx": 2,
 		"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
 		"options": [{
@@ -27,10 +31,11 @@
 			"option": "Hattrick"
 		}],
 		"answer": "3"
-	},
+	}
+},
+{
 
-
-	"question3":{
+	"question":{
 		"questionIdx": 3,
 		"question": "Arnd Zeigler ist einer der größten Fußball-Nerds der Republik, regiert 'Zeiglerswunderbare Welt des Fußball' in Radio und Fernsehen und ist außerdem Stadionsprecher im Weserstadion. Wie aber heißt sein Co-Stadionsprecher?",
 		"options": [{
@@ -43,9 +48,11 @@
 			"option": "Norbert 'Nobbi' Germeshausen"
 		}],
 		"answer": "2"
-	},
+	}
+},
+{
 
-	"question4":{
+	"question":{
 		"questionIdx": 4,
 		"question": "Wie heißt ein langjähriges Maskottchen des SV Werder?",
 		"options": [{
@@ -58,9 +65,11 @@
 			"option": "König Otto (Comic-Figur)"
 		}],
 		"answer": "1"
-	},
+	}
+},
+{
 
-	"question5":{
+	"question":{
 		"questionIdx": 5,
 		"question": " Wie lautet ein Spitzname von Werders Cheftrainer Viktor Skripnik?",
 		"options": [{
@@ -73,9 +82,11 @@
 			"option": "Die Axt"
 		}],
 		"answer": "1"
-	},
+	}
+},
+{
 
-	"question6":{
+	"question":{
 		"questionIdx": 6,
 		"question": "Wie lauten die Vornamen der drei Bundesliga-Rekordspieler des SV Werder?",
 		"options": [{
@@ -88,9 +99,10 @@
 			"option": "Dieter, Horst-Dieter, Horst"
 		}],
 		"answer": "2"
-	},
-
-	"question7":{
+	}
+},
+{
+	"question":{
 		"questionIdx": 7,
 		"question": "Wann wurde Werder Bremen zum ersten Mal Deutscher Meister?",
 		"options": [{
@@ -103,9 +115,11 @@
 			"option": "2004"
 		}],
 		"answer": "2"
-	},
+	}
+},
+{
 
-	"question8":{
+		"question":{
 		"questionIdx": 8,
 		"question": "2013 wurde Werder Bremen Deutscher Meister. In welcher Sportart?",
 		"options": [{
@@ -118,9 +132,11 @@
 			"option": "Feldhockey"
 		}],
 		"answer": "3"
-	},
+	}
+},
+{
+	"question":{
 
-	"question9":{
 		"questionIdx": 9,
 		"question": "Welches dieser Zitate wird nicht Werders „Ostfriesen-Alemao“ Dieter Eilts zugeschrieben?",
 		"options": [{
@@ -133,9 +149,11 @@
 			"option": "„Moin moin, Gascoigne.“"
 		}],
 		"answer": "2"
-	},
+	}
+},
+{
+		"question":{
 
-	"question10":{
 		"questionIdx": 10,
 		"question": "Claudio Pizarro hat in dieser Saison Marco Bode als Werders Bundesliga-Rekordtorschütze abgelöst. Gegen wen und wie erzielte er sein erstes Bundesliga-Tor?",
 		"options": [{
@@ -148,5 +166,7 @@
 			"option": "1. FC Köln, Hackentrick"
 		}],
 		"answer": "2"
-	},
+	}
+}]
+
 }
