@@ -1,0 +1,46 @@
+.toggleBox {
+    position: relative;
+   
+}
+ 
+/* Ausblenden des input-Feldes */
+.toggleBox input {
+    position: absolute;
+    left: -99999px;
+}
+ 
+/* Gestaltung der labels */
+.toggleBox label {
+    display: block;
+    background: #68B022;
+    color: #fff;
+    padding: .4em;
+    text-align: center;
+    cursor: pointer;
+}
+ 
+.toggleBox label:hover {
+    background: #ddd;
+}
+ 
+/* Der Aufklappmechanismus */
+.toggleBox input:not(:checked) ~ div {
+    opacity: 0;
+    height: 0;
+}
+ 
+.toggleBox input:checked ~ div {
+    opacity: 1;
+    padding: .8em;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+ 
+/* Steuerung der Sichtbarkeit der labels */
+.toggleBox input:not(:checked) ~ .close,
+.toggleBox input:checked ~ .open {
+    display: none;
+}
