@@ -37,7 +37,7 @@
 	<script src="js/modernizr-1.5.min.js"></script>
 
 	<script>
-
+            
 	var quiz = {
 		"allQuestions":[{
 
@@ -192,8 +192,8 @@
 		}
 	},
 	{
+        
 			"question":{
-
 			"questionIdx": 10,
 			"question": "Claudio Pizarro hat in dieser Saison Marco Bode als Werders Bundesliga-Rekordtorschütze abgelöst. Gegen wen und wie erzielte er sein erstes Bundesliga-Tor?",
 			"options": [{
@@ -209,8 +209,8 @@
 		}
 	}]
 
-
 };
+
 
 	</script>
 </head>
@@ -233,6 +233,10 @@
 	<script src="js/plugins.js?v=1"></script>
 	<script src="js/script.js?v=1"></script>
 
+    <p id="text">10</p>
+    <p id="question">Frage</p>
+
+    
 	<script>
 
 	function antwortPruefen(ele, answer){
@@ -260,12 +264,20 @@
 
 	function count(){
 		i--;
-		console.log(i);
+        document.getElementById("text").innerHTML = i;
+		//console.log(i);
 		if(i===5){
 
 			aktuelleFrage++;
-			neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
-		}
+            clearInterval(timer);
+            if(aktuelleFrage<=9){
+			     neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
+            }
+            else{
+                clearInterval(timer);
+                $("#question").html("Quizrunde ist vorbei" + test++ );
+            }
+        }
 
 
 	}
@@ -281,24 +293,46 @@
 		i=10;
 		timer = setInterval("count()", 1000);
 
-		$("#antworten").click(function(e){
+        $("#question").html(aktuelleFrage);
+    }
+        
+    function buttonKlick(){   
+		$("#antworten").click(function(e){ //click-Funktion außerhalb von neueFrage schreiben, 
 		//	var cButton = e.target;
 			antwortPruefen(e.target, quiz.allQuestions[aktuelleFrage].question.answer);    // Antwort
 
-			aktuelleFrage++;
+            
+            aktuelleFrage++;
+            console.log(aktuelleFrage);
+            
 
-			neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
+            if(aktuelleFrage<=9){
+                 neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
+                
+            }
+            else{
+                //window.location="http://www.google.de";
+                //document.getElementById("text").innerHTML = "Jetzt auf Endscreen leiten";
+                clearInterval(timer);
+                $("#question").html("Quizrunde ist vorbei" + test++ );
+
+                
+            }
 		});
 	}
-		var $ele;
-		var antwortId;
-		var timer= null;
-		var i=10;
+        
+        
+    var test=0;
+    var $ele;
+	var antwortId;
+    var timer= null;
+	var i=10;
+    
     var data = {};
-    var aktuelleFrage = 1;
+    var aktuelleFrage = 0;
     data = quiz.allQuestions[0].question;
 
-
+    buttonKlick();
      neueFrage( data, aktuelleFrage );
 
 	</script>
