@@ -1,0 +1,95 @@
+{
+        "highscore": [
+				{
+					"rankIdx": 1,
+					"player": "Nicole Trommler",
+					"date": "2016-06-02T14:33:37+02:00",
+					"points": 900
+				},
+				{
+					"rankIdx": 2,
+					"player": "Markus Boehm",
+					"date": "2016-05-25T17:58:57+02:00",
+					"points": 875
+				},	
+				{
+					"rankIdx": 3,
+					"player": "Peter Scholz",
+					"date": "2016-07-23T18:53:17+02:00",
+					"points": 700
+				},
+				{
+					"rankIdx": 4,
+					"player": "Stefanie Dresner",
+					"date": "2016-05-15T22:33:37+02:00",
+					"points": 725
+				},
+				{
+					"rankIdx": 5,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 6,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 7,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 8,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 9,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 10,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+				{
+					"rankIdx": 11,
+					"player": "Ich",
+					"date": "2016-08-18T14:33:37+02:00",
+					"points": 600
+				},
+        {
+					"rankIdx": 12,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 13,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 14,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				},
+        {
+					"rankIdx": 15,
+					"player": "Silke Bader",
+					"date": "2016-07-17T14:33:37+02:00",
+					"points": 725
+				}
+        ]
+
+}
