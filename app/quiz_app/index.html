@@ -67,38 +67,42 @@
 
 
 =======
-<!-------------------------------------------------
-Tim: Diese Datei ist der Ausgangspunkt unserer Anwendung.
-Sie wird als erstes aufgerufen. Von hier aus werden die 
-anderen HTML Seiten einmalig geladen und anschließend wenn
-sie angefordert werden in die Seite geschrieben.
+<!--############################################################
+Tim: Diese Datei wird als erstes aufgerufen. 
+Von hier aus sollen die anderen HTML Seiten einmalig
+geladen und anschließend, wenn sie vom Benutzer angefragt  
+werden in die Seite geschrieben.
 
-Diese Seite besteht aus zwei Teilen. Zum einen die 
-Navigation und zum anderen dem "Content", also dem 
-eigentlichen Inhalt. Wobei der Navigationsteil immer
-erhalten bleibt und sich der Content dynamisch ändert.
+Im Moment werden die Seiten erst beim Clicken
+auf die Navigation geladen und in das Dokument 
+geschrieben.
 
-Weil ich mich hauptsächlich mit der Javascript Ebene beschäftigt 
-habe und kaum mit css, habe ich nur die wichtigsten 
-HTML Elemente geschrieben die ich für die Bearbeitung mit JS brauche.
-Zu mal es nicht meine Aufgabe ist die HTML Seiten zusammen zu fügen.
+Ich habe hier nur die wenigsten HTML Elemente in das Dokument
+geschrieben, die ich für das Script brauche.
 
-Allerdings muss ich das Script zu schreiben, dass 
-die Daten läd und in das DOM einbindet bzw löscht. 
-Und die Eventhandler, die diese Aktionen ausführen.
+Wenn die eigentliche Navigation eingesetzt wird,
+ist es wichtig, dass die ids auf den Elementen, die als
+Schaltfläche dienen sollen erhalten bleiben.
 
+<<<<<<< HEAD
 ---------------------------------------------------->
+=======
+Unten kurz vor Ende des Bodys sind alle Scripte aufgeführt.
+
+##############################################################-->
+
+>>>>>>> 9cd0bcd8339d63bb96ff4bb928e92700dc3fbd5f
 <!DOCTYPE>
 
 <html>
     <body>
-        <!---------------------------------------------------------------
+        <!--##############################################################
         Die vereinfachte Navigation. Sie muss nachher
         ausgetauscht werden mit der richtigen!
-        Wichtig ist hierbei, dass das name Attribut mit diesen Werten 
+        Wichtig ist hierbei, dass das Id Attribut mit diesen Werten 
         bei behalten werden muss. Die Schaltflächen der richtigen Navigation 
-        brauchen also dieses name Attribut.
-            ------------------------------------------------------------->
+        brauchen also diese Id Attribute.
+            ##############################################################-->
         <table>
             <tr>
                 <a id = 'beenden'> Quiz Beenden </a> |   
@@ -120,22 +124,33 @@ Und die Eventhandler, die diese Aktionen ausführen.
             </tr>
         </table>
         
-        <!-------------------------------------------------------------------
-        Dieses div Element ist der Knoten an dem der Content reingeschrieben wird. 
-        Es gilt wie Bei den Schaltfächen, dass das name Attribut bei behalten werden muss.
+        <!--###########################################################################
+        Dieses div Element ist der Knoten an dem der Content hineingeschrieben wird. 
+        Es gilt wie Bei den Schaltfächen, dass das Id Attribut bei behalten werden muss.
         Allerdings wird hier auch kein weiterer HTML code in diese Datei gespeichert, 
         das wird ausgelagert!
-        --------------------------------------------------------------------->
+        ##############################################################################-->
         <div id = 'content'></div>
         
-        <!--------------------------------------------------------------------
-        Das Script "naiv-eventhandler.js" holt die Schaltflächen der Navigation
+        <!--###########################################################################
+        Das Script "navi-eventhandler.js" holt die Schaltflächen der Navigation
         und bestimmt wie sie auf ein Ereignis reagieren sollen. 
 
+<<<<<<< HEAD
         Das "loader.js" script läd alle Daten.
         ---------------------------------------------------------------------->
 
         <!----
+=======
+        Das "loader.js" script soll später alle HTML Dokumente laden. 
+        Im Moment listet es nur die URIs auf.
+        
+        Die Scripte, die mit create... beginnen schreiben die Seite in dieses 
+        Dokument und laden die aktuellen Json Dateien. Momentan ist das Laden und Schreiben
+        allerdings noch in einer Funktion, die wegen der Asynchronität der AJAX befehle
+        nicht so einfach auseinander ziehen lässt.
+        ##############################################################################-->
+>>>>>>> 9cd0bcd8339d63bb96ff4bb928e92700dc3fbd5f
         <script type="text/javascript" src="../assets/js/loader.js"></script>
         <script type="text/javascript" src="../assets/js/createHighscore.js"></script>
         <script type="text/javascript" src="../assets/js/createUbersicht.js"></script>
