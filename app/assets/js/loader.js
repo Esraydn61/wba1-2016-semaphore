@@ -23,9 +23,10 @@ urls.schlussscreen = "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen = "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
-jsons.quizubersicht = "/data/quizuebersicht.json";
+jsons.quizubersicht = "http://wba1-semaphore.christiannoss.de/app/data/quizuebersicht.json";
+jsons.highscore ="/data/ranking-1.json";
 
-
+/*
 //Diese Funktion läd den Text aus deiner Datei und gibt ihn zurück
 function loadTemplate ( docLocation) {
     
@@ -54,3 +55,4 @@ document.onload = function (){
 
 
 console.log(loadTemplate(urls.highscore));
+*/
