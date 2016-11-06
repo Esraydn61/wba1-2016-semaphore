@@ -13,8 +13,6 @@ function createStartscreen(quizId){//id, name, author, date, counter, image, des
     console.log("Übergabe: " + quizId);
     // console.log("Übergebene Werte:" + id + " name: " + name + " author: " + " date: " + "counter: " + counter + " image: " + image + " description: " + description);
     
-    var quizId = 1;
-    
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
@@ -41,7 +39,7 @@ function createStartscreen(quizId){//id, name, author, date, counter, image, des
                
                 var temp = snippetInfo.outerHTML;
 
-                var quiz = json["quiz" + quizId];
+                var quiz = json[quizId];
 
 
                 temp = temp.replace(/{{quizname}}/, quiz.name);

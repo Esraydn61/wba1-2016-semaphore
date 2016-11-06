@@ -46,7 +46,9 @@ function createUbersicht(){
 			
                         var item = document.createElement("div");
                         item.innerHTML = temp;
-                        //item.firstChild.onclick = createStartscreen(quizId);
+                        item.firstChild.onclick = function() {
+                            createStartscreen(tempId);
+                        };
                         
                         // HTML in Wrap einfügen
                         document.getElementById("content").appendChild(item.firstChild);
