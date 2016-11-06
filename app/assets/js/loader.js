@@ -14,17 +14,20 @@ Autor: Tim
 
 console.log("Das loader.js Script wird ausgeführt..")
 
+// Welcher Server stellt die Daten bereit?
+var server = "http://wba1-semaphore.christiannoss.de/app";
+
 //Dateipfade für die jeweiligen HTML Dokumente
 var urls = {};
-urls.highscore = "/quiz_app/highscore/highscore.html";
-urls.quizrunde = "/quiz_app/quizrunde/quizrunde.html";
-urls.quizubersicht = "/quiz_app/quizubersicht/quizubersicht.html";
-urls.schlussscreen = "/quiz_app/schlussscreen/schlussscreen.html";
-urls.startscreen = "/quiz_app/startscreen/startscreen.html";
+urls.highscore      = server + "/quiz_app/highscore/highscore.html";
+urls.quizrunde      = server + "/quiz_app/quizrunde/quizrunde.html";
+urls.quizubersicht  = server + "/quiz_app/quizubersicht/quizubersicht.html";
+urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
+urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
-jsons.quizubersicht = "http://wba1-semaphore.christiannoss.de/app/data/quizuebersicht.json";
-jsons.highscore ="/data/ranking-1.json";
+jsons.quizubersicht  = server + "/data/quizuebersicht.json";
+jsons.highscore      = server + "/data/ranking-1.json";
 
 /*
 //Diese Funktion läd den Text aus deiner Datei und gibt ihn zurück
