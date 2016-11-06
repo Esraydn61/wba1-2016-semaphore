@@ -23,6 +23,7 @@ body {
     display: inline-block;
 }
 .titel {
+    color: black;
     font-family: 'Oswald', sans-serif;
     background-color: #F8F5E4;
     text-align: center;

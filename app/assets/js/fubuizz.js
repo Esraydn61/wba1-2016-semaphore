@@ -10,8 +10,6 @@ jsons.quizRanking = "http://wba1-semaphore.christiannoss.de/app/data/ranking-";
 var model = {};
 model.data = {};
 
-var snippetquiz;
-
 
 
 // Funktion parsed die JSON welche alle Basis Informationen zu allen Quizes beinhaltet 
@@ -36,16 +34,9 @@ function parseQuizes() {
             
                 var quiz = model.data.uebersichtjson[quizId];
                 
-               // console.log(quiz);
-                
-                
-                var test = model.data.uebersichtjson[quizId];
-                
-               // console.log(test);
+                //console.log(model.data.uebersichtjson);
 
-                
-                //console.log("object" + "  " + model.data.uebersichtjson);
-                
+
                 temp = temp.replace(/{{quizIdx}}/, quiz.quizIdx);
                 temp = temp.replace(/{{name}}/, quiz.name);
                 temp = temp.replace(/{{author}}/, quiz.author);
@@ -54,10 +45,11 @@ function parseQuizes() {
                 temp = temp.replace(/{{description}}/, quiz.description);
                 temp = temp.replace(/{{image}}/, quiz.image);
                 
+
                 
                 var item = document.createElement("div");
                 item.innerHTML = temp;
-                item.firstChild.onclick = function() {console.log(this);createStart(this);};
+                item.firstChild.onclick = function() {createStart(this);};
                 
                 document.getElementById("content").appendChild(item.firstChild);
                 
@@ -75,17 +67,43 @@ function parseQuizes() {
 
 // Funktion parsed eine von mehreren Ranking JSONS. Mit quizIdx wird angegeben von welchem Quiz genau man das Ranking braucht.
 // Inhalt wird benötigt beim Startscreen und beim Highscorescreen
-function parseRanking(quizIdx) {
+function parseRanking(quizIdx, quizscreen) {
+
+    var rankingjson
         
     var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
+
+            // JSON Merken
+            model.data.rankingjson = JSON.parse(this.responseText);
 		
-			// JSON Merken
-			var json = JSON.parse(this.responseText);
-			console.log(json);
-		
+              for (var rankIdx in model.data.rankingjson["highscore"]){
+                var temp = quizscreen;
+
+                  var highscore = model.data.rankingjson.highscore[rankIdx];
+
+               // console.log(model.data.rankingjson["rankIdx"]);
+                 // console.log("counter" + " " + rankIdx);
+
+                //console.log("object" + "  " + model.data.uebersichtjson);
+
+                temp = temp.replace(/{{rankIdx}}/, highscore.rankIdx);
+                temp = temp.replace(/{{player}}/, highscore.player);
+                temp = temp.replace(/{{points}}/, highscore.points);
+                temp = temp.replace(/{{date}}/, highscore.date);
+
+                //console.log(temp);
+                  var item = document.createElement("th");
+                item.innerHTML = temp;
+
+                //  console.log(temp);
+
+                document.getElementById("content").appendChild(item.firstChild);
+
+
 		}
+        }
 	};
 // Bisher sind noch nicht alle quizspezifischen Ranking JSONS verfügbar. Nur die für Deutschland welches die Idx 1 hat. Dieses eine ist erreichbar unter folgender URL:
 // http://wba1-semaphore.christiannoss.de/app/data/ranking-1.json
@@ -127,8 +145,6 @@ function createStart( quiz ) {
     var data = model.data.uebersichtjson["quiz" + start[0].id];
     
     //console.log(quiz.getElementsByTagName("div"));
-
-
   
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -136,16 +152,25 @@ function createStart( quiz ) {
         
         var template = this.responseText;
         
-       // console.log(quiz);
+        console.log(this.responseText);
         
-        template = template.replace(/{{name}}/, data.name)
-        template = template.replace(/{{date}}/, data.date)
-        template = template.replace(/{{image}}/, data.image)
+       // console.log(template);
+
+       // console.log(quiz);
+
+        template = template.replace(/{{name}}/, data.name);
+        template = template.replace(/{{date}}/, data.date);
+        template = template.replace(/{{image}}/, data.image);
+        template = template.replace(/{{description}}/, data.description);
+
+
+        parseRanking(start[0].id, template);
         
         document.getElementById("content").innerHTML = template;
         
         
-        return this.responseText;
+       // return this.responseText;
+
     }
     };
     
