@@ -43,7 +43,7 @@ beenden.addEventListener('click', function (event) {
 });
 
 quizze.addEventListener('click', function (event) {
-    console.log("Die Quizze Schaltfäche wurde ausgelost.");  
+    createUbersicht();
 });
 
 highscore.addEventListener('click', function (event) {

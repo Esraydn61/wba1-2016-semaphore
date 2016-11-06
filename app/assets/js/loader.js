@@ -22,7 +22,10 @@ urls.quizubersicht = "/quiz_app/quizubersicht/quizubersicht.html";
 urls.schlussscreen = "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen = "/quiz_app/startscreen/startscreen.html";
 
+var jsons = {};
+jsons.quizubersicht = "/data/quizuebersicht.json";
 
+/*
 function returnResponseText() {
     if (this.readyState == 4 && this.status == 200) {
     // console.log(xhttp.responseText);
@@ -56,3 +59,4 @@ document.onload = function (){
 
 
 console.log(loadTemplate(urls.highscore));
+*/
