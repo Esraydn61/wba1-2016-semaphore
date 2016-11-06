@@ -61,7 +61,7 @@ function createHighscore(){
      return this.responseText;
     }
   };
-  console.log(urls.highscore);
+
   xhttp.open("GET", urls.highscore, true);
   xhttp.send();
 }
