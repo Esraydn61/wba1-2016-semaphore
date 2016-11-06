@@ -35,9 +35,7 @@ function createUbersicht(){
                     // JSON verarbeiten
                     for(var quizId in json){
                         var temp = snippetQuizItem.outerHTML;
-                        
                         var quiz = json[quizId];
-                        console.log(json);
 
                         temp = temp.replace(/{{quizname}}/, quiz.name);
                         temp = temp.replace(/{{autor}}/, quiz.author);
@@ -48,9 +46,8 @@ function createUbersicht(){
 			
                         var item = document.createElement("div");
                         item.innerHTML = temp;
-                        item.firstChild.onclick = function(event){ 
-                            createStartscreen(event.target);
-			 			 };
+                        //item.firstChild.onclick = createStartscreen(quizId);
+                        
                         // HTML in Wrap einfügen
                         document.getElementById("content").appendChild(item.firstChild);
                     }
