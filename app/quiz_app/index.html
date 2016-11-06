@@ -1,0 +1,78 @@
+<!-------------------------------------------------
+Tim: Diese Datei ist der Ausgangspunkt unserer Anwendung.
+Sie wird als erstes aufgerufen. Von hier aus werden die 
+anderen HTML Seiten einmalig geladen und anschließend wenn
+sie angefordert werden in die Seite geschrieben.
+
+Diese Seite besteht aus zwei Teilen. Zum einen die 
+Navigation und zum anderen dem "Content", also dem 
+eigentlichen Inhalt. Wobei der Navigationsteil immer
+erhalten bleibt und sich der Content dynamisch ändert.
+
+Weil ich mich hauptsächlich mit der Javascript Ebene beschäftigt 
+habe und kaum mit css, habe ich nur die wichtigsten 
+HTML Elemente geschrieben die ich für die Bearbeitung mit JS brauche.
+Zu mal es nicht meine Aufgabe ist die HTML Seiten zusammen zu fügen.
+
+Allerdings muss ich das Script zu schreiben, dass 
+die Daten läd und in das DOM einbindet bzw löscht. 
+Und die Eventhandler, die diese Aktionen ausführen.
+
+---------------------------------------------------->
+
+<!DOCTYPE>
+<html>
+    <body>
+        <!---------------------------------------------------------------
+        Die vereinfachte Navigation. Sie muss nachher
+        ausgetauscht werden mit der richtigen!
+        Wichtig ist hierbei, dass das name Attribut mit diesen Werten 
+        bei behalten werden muss. Die Schaltflächen der richtigen Navigation 
+        brauchen also dieses name Attribut.
+            ------------------------------------------------------------->
+        <table>
+            <tr>
+                <a id = 'beenden'> Quiz Beenden </a> |   
+            </tr>
+            <tr>
+                 <a id = 'quizze'> Aktuelle Quizze </a> |      
+            </tr>
+            <tr>
+                <a id = 'highscore'> Highscore </a> |
+            </tr>
+            <tr>
+                <a id = 'uber'> Über Fubuizz </a> |        
+            </tr>
+            <tr>
+               <a id = 'kontakt'> Kontakt </a>| 
+            </tr>
+            <tr>
+               <a id = 'einstellungen'> Einstellungen </a>   
+            </tr>
+        </table>
+        
+        <!-------------------------------------------------------------------
+        Dieses div Element ist der Knoten an dem der Content reingeschrieben wird. 
+        Es gilt wie Bei den Schaltfächen, dass das name Attribut bei behalten werden muss.
+        Allerdings wird hier auch kein weiterer HTML code in diese Datei gespeichert, 
+        das wird ausgelagert!
+        --------------------------------------------------------------------->
+        <div id = 'content'></div>
+        
+        <!--------------------------------------------------------------------
+        Das Script "naiv-eventhandler.js" holt die Schaltflächen der Navigation
+        und bestimmt wie sie auf ein Ereignis reagieren sollen. 
+
+        Das "loader.js" script läd alle Daten.
+        ---------------------------------------------------------------------->
+        <script type="text/javascript" src="../assets/js/loader.js"></script>
+        <script type="text/javascript" src="../assets/js/createHighscore.js"></script>
+        <script type="text/javascript" src="../assets/js/createUbersicht.js"></script>
+        <script type="text/javascript" src="../assets/js/navi-eventhandler.js"></script>
+        
+        <script type="text/javascript">
+	        createHighscore();
+	    </script>
+
+    </body>
+</html>
