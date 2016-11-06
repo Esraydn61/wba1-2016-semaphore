@@ -25,22 +25,17 @@ urls.startscreen = "/quiz_app/startscreen/startscreen.html";
 var jsons = {};
 jsons.quizubersicht = "/data/quizuebersicht.json";
 
-/*
-function returnResponseText() {
-    if (this.readyState == 4 && this.status == 200) {
-    // console.log(xhttp.responseText);
-    returnResponseText = xhttp.responseText;
-    }
-};
 
 //Diese Funktion läd den Text aus deiner Datei und gibt ihn zurück
 function loadTemplate ( docLocation) {
     
     var xhttp = new XMLHttpRequest();
     
-    var responseText;
-    
-	xhttp.onreadystatechange = returnResponseText();
+	xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+        // console.log(xhttp.responseText);
+            return xhttp.responseText;
+    }
 
     xhttp.open("GET", docLocation, false);
     xhttp.send();
@@ -59,4 +54,3 @@ document.onload = function (){
 
 
 console.log(loadTemplate(urls.highscore));
-*/
