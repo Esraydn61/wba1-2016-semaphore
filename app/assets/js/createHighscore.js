@@ -52,13 +52,16 @@ function createHighscore(){
                     document.getElementById("content").appendChild(item.firstChild);
                 }
 	       }
-	};
-	xhttp.open("GET", jsons.highscore, true);
-	xhttp.send();
+		};
+		
+		
+		xhttp.open("GET", jsons.highscore, true);
+		xhttp.send();
      
      return this.responseText;
     }
   };
+  console.log(urls.highscore);
   xhttp.open("GET", urls.highscore, true);
   xhttp.send();
 }
