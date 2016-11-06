@@ -14,7 +14,8 @@ Autor: Tim
 
 console.log("Das loader.js Script wird ausgeführt..")
 
-var server = "http://wba1-semaphore.christiannoss.de";
+// Welcher Server stellt die Daten bereit?
+var server = "http://wba1-semaphore.christiannoss.de/app";
 
 //Dateipfade für die jeweiligen HTML Dokumente
 var urls = {};
