@@ -1,104 +1,142 @@
-html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
-{
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    border: 0;
-}
-@font-face{
-    font-family:'OswaldRegular';
-    src: url('fonts/Oswald/Oswald-Regular.ttf');
-}
-@font-face{
-    font-family:'OswaldLight';
-    src: url('fonts/Oswald/Oswald-Light.ttf');
-}
-@font-face{
-    font-family:'NotoSans';
-    src: url('fonts/NotoSans-hinted/NotoSans-Regular.ttf');
-}
+@media only screen and (max-width: 439px){
 
-
-
-
-
-
-body{
-    max-width: 187.5pt;
-    max-height: auto;
-    background-image:url(../images/Back.jpg);
-    background-size: 187.5pt 323.5pt;
-}
-
-
-.quizbild div, #points, .quiz_ueberschrift{
-    font-family: OswaldRegular;
+    html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+    {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        border: 0;
+        
+    }
     
-}
+    @font-face { font-family: 'OswaldRegular'; 
+                src: url('../fonts/Oswald-Regular.ttf') format('truetype'); }
+    @font-face { font-family: 'OswaldLight'; 
+                src: url('../fonts/Oswald-Light.ttf') format('truetype'); }
+    @font-face { font-family: 'NotoSans'; 
+                src: url('../fonts/NotoSans-Regular.ttf') format('truetype'); }
 
-.logo{
-    height: 23.1pt;
-}
 
-.quizbild img{
-    max-width: 172.5pt;
-    margin: 7pt 7.5pt 0pt 7.5pt;
-    display: block;  
-}
 
-.quizbild div{
-    font-family: OswaldRegular; 
-    position: relative;
-    bottom: 25pt;
-    background-color: rgb(248, 245, 228);
-    width: 172.5pt;
-    height: 25pt;
+    body{
+        max-height: auto;
+        background-image:url(../images/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .heading{
+        height: 32px;
+        width: calc(100% - 21px);
+        background: rgb(248, 245, 228);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 49%;
+        display: inline-block;
+    }
     
-}
+    h1{
+        text-align: center;
+        margin-top: 4px;
+        font-family: 'OswaldRegular';
+        font-size: 16px; 
+    }
 
+    .quizbild img{
+        width: calc(100% - 21px);  
+        display: block;
+        position: inherit;
+        margin-top: 9px;
+        margin-left: 11px;
+    }
 
-#points {
-    font-size: 10pt;
-    background-color: rgb(233, 194, 12);
-    margin-top: 0;
-}
-
-
-#btn{
+    .punkte{
+        height: 25pt;
+        width: calc(100% - 21px);
+        background-color: rgb(233, 194, 12);
+        transform: translate(11px);
+        display: inline-block;
+    }
     
+    .punkte p{
+        text-align: center;
+        font-family: 'OswaldRegular';
+        font-size: 13px;
+        margin-top: 5pt;
+    }
+
+    .fussbaelle img{
+        height: 13px;
+        width: 13px;
+        padding: 2.5px;
+        transform: translate(11px);
+        margin-top: 5pt;
+    }
+        
+    .erneut, .highscore-btn{
+        background: rgb(203, 7, 39);
+        color: rgb(255, 255, 255);
+        height: 25pt;
+        width: calc(100% - 21px);
+        transform: translate(11px);
+        margin-top: 13px;
+        border: none;
+        display: inline-block;
+    }
+    
+    .erneut p, .highscore-btn p{
+        font-family: 'NotoSans';
+        font-size: 13px;
+        text-align: center;
+        text-decoration-line: none; 
+        margin-top: 8px;
+    }
+
+    .highscore, h2{
+        display:none;
+    }
+
+    .suggestions{
+        margin-top: 15.5pt;
+        transform: translate(11px);
+    }
+    
+    .sugg{
+        
+    }
+    
+    .sugg img{
+        margin-bottom: 9px;
+    }
+    
+    .sugg-infos{
+        float: right;
+        font-size: 9px;
+        
+    }
+    
+    .sugg-head{
+        font-family: 'OswaldRegular';
+        text-align: center;
+        background: rgb(248, 245, 228);
+    }
+    
+    .infos{
+        background: rgba(248, 245, 227, 0.6);
+    }
+    
+    .erstellt{
+        font-family: 'OswaldLight';
+    }
+    
+    .gespielt{
+        font-family: 'OswaldLight';
+    }
+    
+
 }
-
-
-.bild{
-    width: 56.6pt;
-    height: 35pt;
-}
-
-.quiz_ueberschrift, .erstellinfos, .gespielt{
-    font-size: 7pt;
-}
-
-.quiz_ueberschrift{
-    text-align: center;
-    background-color: rgb(248, 245, 228);
-}
-
-.erstellinfos{
-    font-family: Oswald-Light;
-    text-align: left;
-}
-
-.gespielt{
-    font-family: Oswald-Light;
-    text-align: right;
-}
-
-.erstellinfos, .gespielt{
-    background-color: rgba(80, 79, 72, 0.6);
-}
-
-
 
 
 
