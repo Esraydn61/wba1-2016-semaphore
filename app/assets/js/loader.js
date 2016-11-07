@@ -17,6 +17,10 @@ console.log("Das loader.js Script wird ausgeführt..")
 // Welcher Server stellt die Daten bereit?
 var server = "http://wba1-semaphore.christiannoss.de/app";
 
+// Zum Testen in diesem Branch
+server = "";
+
+
 //Dateipfade für die jeweiligen HTML Dokumente
 var urls = {};
 urls.highscore      = server + "/quiz_app/highscore/highscore.html";
