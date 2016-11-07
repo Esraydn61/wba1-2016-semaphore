@@ -5,11 +5,12 @@ body{
     padding: 0em;
 }
     
-   
-    
+
 .content {
-    width: 900pt; 
     margin: 0 auto;
+    margin-left: 113pt;
+    margin-right: 112pt;
+    width: calc(100% - 25px);
 }
 
 
@@ -20,6 +21,31 @@ body{
 /* Sortierliste wurde angepasst, muss aber noch bearbeitet werden */
 
 .Sortierliste{
+    background-color:rgba(233,194,12,1);
+    height: 27pt;
+    width: calc(100% - 270px);
+    margin-top: 20px;
+    margin-bottom: 13pt;  
+    font-family: Oswald; 
+}
+
+.sortiercontent{
+    width: 100%;
+    font-size: 16.1pt;
+    line-height: 24.3pt;
+    text-align: center;
+    padding: 0em;
+}
+
+.sortiercontent a{
+    text-align: center;
+    width: 25%;
+}
+
+.Sortierliste a{
+    text-decoration: none;
+    color: black;
+    float: left;
 }
 
 /* wurde größengerecht angepasst */
@@ -127,11 +153,9 @@ body{
     text-decoration: none;
     height: 25pt;
     font-size: 12pt;
-    margin-top: 10pt;
     margin-bottom: 7.5pt;
     padding-top: 3.5pt;
 }
-
 
 /********************************************************************************
 *                                                                               *
@@ -161,14 +185,24 @@ body{
         z-index: 1;
     }
     
-    #Sortierliste, .Quizkachel, .Erstellinfos{ 
+    .Sortierliste, .Quizkachel, .Erstellinfos{ 
         margin: 5px 15px;
     }
+    
+    .Sortierliste{
+        width: calc(100% - 25px);
+    }
+    
+    .sortiercontent{
+        width: 95%;
+    }
+    
+    
     
     .Quizkachel{
         height: 70px;
         display: inline-block;
-        width: 100%;
+        width: calc(100% - 25px);
         margin-top: 5px;
         margin-bottom: 5px;
         position: relative;
@@ -216,7 +250,7 @@ body{
         position: absolute;
         bottom: 0;
         right: 0;
-        margin-right: 25px;
+        margin-right: 10px;
         z-index: 1;
         text-decoration: none;
     }
