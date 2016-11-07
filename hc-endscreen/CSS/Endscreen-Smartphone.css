@@ -24,6 +24,7 @@
         background-image:url(../images/background.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     .heading{
@@ -33,7 +34,8 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        margin-top: 49%;
+        margin-top: 46%;
+        margin-bottom: 0%;
         display: inline-block;
     }
     
@@ -47,7 +49,6 @@
     .quizbild img{
         width: calc(100% - 21px);  
         display: block;
-        position: inherit;
         margin-top: 9px;
         margin-left: 11px;
     }
@@ -70,9 +71,13 @@
     .fussbaelle img{
         height: 13px;
         width: 13px;
-        padding: 2.5px;
-        transform: translate(11px);
+        margin-right: 8.1pt;
         margin-top: 5pt;
+    }
+    
+    .fussbaelle{
+        width: calc(100% - 21px);
+        transform: translate(9px);
     }
         
     .erneut, .highscore-btn{
@@ -100,21 +105,30 @@
 
     .suggestions{
         margin-top: 15.5pt;
+        width: calc(100% - 21px);
         transform: translate(11px);
+        display: inline-block;
+        
     }
     
     .sugg{
-        
+        height: 35pt;
+        display: block;
+        margin-bottom: 7pt;
     }
     
     .sugg img{
-        margin-bottom: 9px;
+        display: inline-block;
+        height: 35pt;
     }
     
     .sugg-infos{
+        height: 35pt;
+        width: calc(100% - 76px);
         float: right;
         font-size: 9px;
-        
+        display: inline-block;
+        position: relative;
     }
     
     .sugg-head{
@@ -129,10 +143,13 @@
     
     .erstellt{
         font-family: 'OswaldLight';
+        text-align: left;
+        padding-left: 5.4pt;
     }
     
     .gespielt{
         font-family: 'OswaldLight';
+        text-align: right;
     }
     
 
