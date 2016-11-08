@@ -157,14 +157,164 @@ body{
     padding-top: 3.5pt;
 }
 
+
 /********************************************************************************
 *                                                                               *
-*                               MOBILE-ANSICHT                                  *
+*                               TABLET-ANSICHT                                  *
 *                                                                               *
 *********************************************************************************/
 
-/**DIE QUIZKACHEL IST ZU BREIT! BZW DAS PADDING/MARGIN GREIFT NICHT**/
+@media screen and (max-width: 1024px){
 
+    .content Sortierliste{
+        margin: 0; 
+        padding: 0;
+    }
+    
+    .Sortierliste {
+        width: calc(172.5pt * 3 + 30px);
+    }
+    
+    body {
+    
+        background-image: url(image/8-324_fussballstadion.jpg);
+        background-color: darkgray;                 /**ENTFERNEN!!**/
+        font-size: 100%;
+        margin: 0em;
+        padding: 0em;
+    }
+
+    .Auswahl{
+        background-color: transparent;
+        padding: 0;
+        position: relative;
+        margin-top: -10pt;
+    }
+    
+    .content{
+        width: 100%;
+        margin-left: calc((100% - (172.5pt * 3) - 30px) / 2);
+        margin-right: calc((100% - (172.5pt * 3) - 30px) / 2);
+        
+    }
+    
+    .inhalt{
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1em;
+        line-height: 2.5em;
+        font-family: Helvetica;
+        font-weight: 100;
+        color: #2F2D2C;
+        margin: -0.6em;
+    }
+    
+    .Quizbild{
+        
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 107pt;
+        }
+    
+    p {
+        line-height: 0.75em;
+        font-family: Helvetica;
+        font-weight: 100;
+        color: #2F2D2C;
+    }
+    
+    
+    
+    
+    .Quizkachel{
+        float: left;
+        display:inline-block;
+        background: beige ;
+        width:  172.5pt;
+        height: 353.31px;
+        /**width: calc((100% - 120px - 30px)/3);
+        min-width: 150px;
+        min-height: 34.502%;**/
+        margin: 0;
+        margin-right: 15px;
+        position: relative;
+        text-align:center;
+        
+    }
+    .button {
+        background-color:#CB0727; 
+        border: none;
+        color: white;
+        padding: 0px 0px 10px 0px;
+        text-align: center;
+        text-decoration: none;
+        font-family: Oswald;
+        font-size: 20px;
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+    }
+    
+    .Erstellinfos{
+        
+        font-family: Oswald;
+        font-weight: 100;
+        
+        color: #2F2D2C;
+        text-align: left;
+        background:beige;
+        display: block;
+        line-height: 20px;
+        
+        height: 15px;
+        margin: 5px 10px 0 0;
+        }
+    
+    .AnzGespielt{
+        font-size: 10pt;
+        text-align: right;
+        font-weight: lighter;
+        background-color: rgba(248,245,228,1);
+        margin: 0;
+        padding: 0 5px 0 0;
+        width: calc(100%-5px);
+        height: 16pt;
+        float: right;
+    }    
+    
+    .Beschreibung{
+        text-align: left; 
+        font-weight: lighter;
+        background-color: rgba(248,245,228,1);
+        height: 30pt;
+        margin-left: 10px;
+        padding-left: 0;
+    }    
+    
+    #img{
+        background-color: burlywood;        /**ENTFERNEN!!**/
+        margin-left: -10px;
+        width: 250px;
+        height: 50px;
+        
+        }
+    }
+    
+    /********************************************************************************
+    *                                                                               *
+    *                               MOBILE-ANSICHT                                  *
+    *                                                                               *
+    *********************************************************************************/
+    
+    /**DIE QUIZKACHEL IST ZU BREIT! BZW DAS PADDING/MARGIN GREIFT NICHT**/
+    
 @media only screen and (max-width: 439px){
     
     html, body{
@@ -241,6 +391,7 @@ body{
         margin: 5px;
         margin-left: calc(113px + 10px);
         margin-top: 25px;
+        line-height: 12px;
         z-index: 1;
     }
     
@@ -251,6 +402,7 @@ body{
         bottom: 0;
         right: 0;
         margin-right: 10px;
+        margin-bottom: -40px;
         z-index: 1;
         text-decoration: none;
     }
