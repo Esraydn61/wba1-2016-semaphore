@@ -1,0 +1,129 @@
+
+
+body {
+    
+    background-image: url(image/8-324_fussballstadion.jpg);
+    background-color: darkgray;                 /**ENTFERNEN!!**/
+    font-size: 100%;
+    margin: 0em;
+    padding: 0em;
+}
+
+@media screen and (max-width: 1024px){
+
+h1 {
+    font-size: 1em;
+    line-height: 2.5em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: -0.6em;
+}
+    
+
+    h3{
+    
+    }
+    
+.Quizbild{
+      
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 150px;
+    padding: 0px 20px 0px 0px;
+        
+    }
+
+p {
+    line-height: 0.75em;
+    font-family: Helvetica;
+    font-weight: 100;
+    color: #2F2D2C;
+    margin: -0.5em;
+    padding: 1.25em;
+    text-align: justify;
+}
+
+
+
+
+.Quizkachel{
+    float: left;
+    display:inline-block;
+    padding:10px 10px 0px 10px;
+    background: beige ;
+    width:250px;
+    height: 400px;
+    margin: 40px 0 0 40px;
+    position: relative;
+    text-align:center;
+    
+}
+.button {
+    background-color:red; 
+    border: none;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+    
+.Erstellinfos{
+        
+        font-family: Oswald;
+        font-weight: 100;
+  
+        color: #2F2D2C;
+        text-align: left;
+        background:beige;
+        display: block;
+    
+        height: 15px;
+        width: 92%;
+        margin-left:-10px;
+        margin-right: 0px;  
+    }
+    
+.AnzGespielt{
+    font-size: 10pt;
+    text-align: right;
+    font-weight: lighter;
+    background-color: rgba(248,245,228,1);
+    margin: 0em;
+    height: 16pt;
+    padding-right: 4.5pt;
+}    
+    
+.Beschreibung{
+    text-align: left; 
+    font-weight: lighter;
+    background-color: rgba(248,245,228,1);
+    margin: 0em;
+    height: 30pt;
+    padding-left: 7.5pt;
+    padding-right: 7.5pt;
+    padding-bottom: 5pt;
+    padding-top: 5pt;
+}    
+    
+#img{
+        background-color: burlywood;        /**ENTFERNEN!!**/
+        margin-left: -10px;
+        width: 250px;
+        height: 50px;
+        
+    }
+}
+
+
+
+
+
+
