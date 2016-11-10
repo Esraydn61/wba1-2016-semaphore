@@ -35,8 +35,8 @@ function parseQuizes() {
                 var quiz = model.data.uebersichtjson[quizId];
 
                 temp = temp.replace(/{{quizIdx}}/, quiz.quizIdx);
-                temp = temp.replace(/{{quizname}}/, quiz.name);
-                temp = temp.replace(/{{autor}}/, quiz.author);
+                temp = temp.replace(/{{name}}/, quiz.name);
+                temp = temp.replace(/{{author}}/, quiz.author);
                 temp = temp.replace(/{{date}}/, quiz.date);
                 temp = temp.replace(/{{counter}}/, quiz.counter);
                 temp = temp.replace(/{{description}}/, quiz.description);

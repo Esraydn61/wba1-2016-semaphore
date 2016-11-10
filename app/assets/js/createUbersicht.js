@@ -27,8 +27,8 @@ function createQuizOverview(){
         var temp = snippet.outerHTML;
         var quiz = json[quizId];
 
-        temp = temp.replace(/{{quizname}}/, quiz.name);
-        temp = temp.replace(/{{autor}}/, quiz.author);
+        temp = temp.replace(/{{name}}/, quiz.name);
+        temp = temp.replace(/{{author}}/, quiz.author);
         temp = temp.replace(/{{datum}}/, quiz.date);
         temp = temp.replace(/{{anzahl}}/, quiz.counter);
         temp = temp.replace(/{{src}}/, quiz.image);
