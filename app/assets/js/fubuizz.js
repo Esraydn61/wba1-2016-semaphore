@@ -12,13 +12,13 @@ model.data = {};
 
 
 
-// Funktion parsed die JSON welche alle Basis Informationen zu allen Quizes beinhaltet 
+// Funktion anfordert und parsed die JSON welche alle Basis Informationen zu allen Quizes beinhaltet 
 // Inhalt wird benötigt für Quizübersicht, Startscreen und Ranking
 function parseQuizes() {
     
     // Speichern der Daten aus quizuebersicht.json
     var uebersichtjson;
-    
+    console.log("Parse quizzes");
     var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
