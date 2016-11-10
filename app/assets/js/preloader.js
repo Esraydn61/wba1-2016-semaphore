@@ -47,8 +47,6 @@ function get(id, callback, urlliste) {
 		if (this.readyState == 4) { callback.call(this, id); }
 	};
     
-    console.log("folgende url wird abgefragt: ");
-    console.log(urlliste[id]);
 	xhttp.open("GET", urlliste[id], true);
 	xhttp.send();
 
@@ -68,7 +66,8 @@ function getNextJson(){
         get(next_json, function(next_json){
             
             //wir speichern die Json unter der id im Objekt templates
-            jsondata[next_json] = this.responseText;
+            jsondata[next_json] = JSON.parse( this.responseText );
+
             
             //rekursiver Aufruf von getNextJson
             getNextJson();
@@ -109,10 +108,11 @@ function getNextTemplate(){
 	
 // Hier geben wir aus Spaß mal das Template eines Quizzes aus.
 function doSomething(){
-    createQuizOverview();
+    //createQuizOverview();
 	var hightscoreTemplate = templates["highscore"];   
 	loaderisready = true;
-    console.log(jsondata);
+   // console.log(jsondata);
+    sortiertest();
 }
 
 /* Main
