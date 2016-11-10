@@ -4,10 +4,10 @@ html{
 /*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
 body{
     font-family: 'Oswald', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: lighter;
     background-color: grey;
-    background-image: url("quizrundepp/img/background.jpg");
+    background-image: url("quizrundepp/img/stadion_Desktop.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
@@ -66,23 +66,26 @@ Abstände zwischen den Fragen*/
 }
 
 @media only screen and (min-width: 439px) {
+   
     .Antwort{
         margin-top:20px;
     }
     .Fragenblock{
         height: 10%;
-        Font-size:28px;
+        font-size: 24px;
     }
     .AlleAntworten{
         margin-top:-20px;
+        font-size: 24px;
     }
     }
 @media only screen and (min-width: 1024px) {
     .Antwort{
         margin-top:40px;
+        font-size:24px;
     }
     .Fragenblock{
         height:15%;
-        font-size:32px;
+        font-size: 24px;
     }
     }
