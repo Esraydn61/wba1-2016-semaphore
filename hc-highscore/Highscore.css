@@ -1,11 +1,11 @@
 @font-face { font-family: 'Oswald-Regular';
-             src: url('fonts/Oswald-Regular.ttf') format('truetype'); }
+             src: url('../../assets/fonts/Oswald/Oswald-Regular.ttf') format('truetype'); }
 @font-face { font-family: 'NotoSans-Regular';
-             src: url('fonts/NotoSans-Regular.ttf') format('truetype'); }
+             src: url('../../assets/fonts/NotoSans/NotoSans-Regular.ttf') format('truetype'); }
 /*Body und Hintergrund*/
 body{
     margin: 0;
-    background: url(img/stadion_Desktop.jpg) no-repeat center center fixed;
+    background: url(../../assets/images/stadion_Desktop.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -169,7 +169,7 @@ td{
     
     body{
         margin: 0;
-        background: url(img/hintergrund-Highscoreliste_handygroesse%20mit%20schraegem%20balken.png) no-repeat center center;
+        background: url(../../assets/images/highscore%20smartphone%20back.png) no-repeat center center;
         background-size: 100% 290px; 
     }
     
