@@ -42,9 +42,9 @@ function createQuizOverview(){
         };
         
         // Kachel in Wrap einfügen
-        document.getElementById("snippetQuizItem").appendChild(item.firstChild);
+        document.getElementById("snippetQuiz").appendChild(item.firstChild);
 	}
 	
 	// Kacheltemplate loeschen
-	document.getElementById("snippetQuizItem").removeChild(document.getElementsByClassName("Quizkachel")[0]);
+	document.getElementById("snippetQuiz").removeChild(document.getElementsByClassName("Quizkachel")[0]);
 }

@@ -21,7 +21,7 @@ var loaderisready = false;
 var urls = {};
 urls.highscore      = server + "/quiz_app/highscore/highscore.html";
 urls.quizrunde      = server + "/quiz_app/quizrunde/quizrunde.html";
-urls.quizOverview  = server + "/quiz_app/quizubersicht/quizubersicht.html";
+urls.quizOverview  = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
 urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
