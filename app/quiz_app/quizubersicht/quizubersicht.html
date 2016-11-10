@@ -1,0 +1,40 @@
+<!-----------------------------------------------------------------------------------
+Tim: Ich habe die index.html Datei umbenannt in quizubersicht.html damit sie sich klarer
+von der index.html Seite aus dem übergeordneten Ordner unterscheiden lässt
+Dazu habe ich die HTML Struktur, die ich von der HC-Quizübersicht Gruppe bekommen habe
+eingefügt.
+------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="quizuebersicht.css" type="text/css" rel="stylesheet">
+        <title>Fubuizz Quizübersicht</title>
+    </head>
+    <body>
+        <!-- NEU Klasse Content eingefügt! enthält Sotierleiste und Quizkacheln -->
+        <div class="content" id="snippetQuizItem">
+            <div class="Sortierliste">
+            </div>
+            <div class="Quizkachel">
+                <h3>{{quizname}}</h3>  
+                <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz"/>
+                <p class="Erstellinfos">
+                    von {{autor}} erstellt <br>
+                    am {{datum}}
+                </p>
+                <div class="inhalt">
+                    <p class="Beschreibung">
+                        {{beschreibung}}
+                    </p>
+                    <p class="AnzGespielt">
+                        {{anzahl}} mal gespielt
+                    </p>
+                </div>
+                <div class="button"> 
+                <a class="Auswahl" id = "{{quizIdx}}">Auswaehlen</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

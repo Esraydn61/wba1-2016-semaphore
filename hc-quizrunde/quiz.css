@@ -1,3 +1,5 @@
+/* GGf mal CSS Präprozessoren checken. */
+
 html{
 }
 
@@ -33,9 +35,6 @@ body{
   padding-top: 3px;
   padding-bottom: 3px;
 
-
-
-
 }
 
 /*Allgemeine Formatierung der Antworten,
@@ -49,8 +48,11 @@ hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
 
 /*Antworten FOrmatierunge, jede Frage bekommt einen eigenen Hintergrund,
 Abstände zwischen den Fragen*/
+
+
 .Antwort{
-  /*height: 60px;*/
+  /*height: 60px;*/ 
+  /* margin: 10px 15px; */
   margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
@@ -88,4 +90,4 @@ Abstände zwischen den Fragen*/
         height:15%;
         font-size: 24px;
     }
-    }
+}

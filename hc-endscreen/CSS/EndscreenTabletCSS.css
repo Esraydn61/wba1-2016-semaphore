@@ -39,7 +39,7 @@ body {
 
 }
 
-.Heading {
+.heading {
     font-size: 24px;
     text-align: center;
     color:black;
@@ -52,7 +52,7 @@ body {
     font-family: Oswald;
 }
 
-.Knopf {
+.erneut {
     background-color: rgba(203,7,39,1); 
     color: rgba(255,255,255,1 );
     font-size: 20px;
@@ -66,21 +66,21 @@ body {
     font-family: Noto-Sans;
 }
 
-.Knopf p{
+.erneut p{
 text-align:center;
 }
 
-.Fussbaelle img{
+.fussbaelle img{
     height: 25px;
     width: 25px;
     padding: 2.5px;
 }
 
-.Fussbaelle {
+.fussbaelle {
 width: 345px;
 }
 
-.PunkteRang {
+.punkte {
     background-color: rgba(233,194,12,1);
     color: black;
     font-size: 20px;
@@ -93,7 +93,7 @@ width: 345px;
     font-family: Oswald;
 }
 
-.Vorschlaege {
+.suggestions {
     background-color: rgba(233,194,12,1);
     color: black;
     font-size: 20px;
@@ -106,65 +106,68 @@ width: 345px;
     font-style: normal;
 }
 
-.Suggestions {
-    margin-top: 16px;
+.suggestions {
+    margin-top: 3px;
 }
 
-.Suggestions img{
+.suggestions img{
     width: 113px;
     height: 70px;
+    margin-top: 18px;
 }
 
-.Suggestions .sugg {
+.suggestions .sugg {
     float: left; 
     margin-right: 2px;
 }
 
-.Suggestions .sugg div {
+.suggestions .sugg div {
     position:relative;
-    top: -26px ;
+    top: -37px ;
     background-color: rgba(255, 255, 255, 0.5);
     width: 113px;
+    height: 20px;
+    line-height: 20px;
     font-family: Noto-Sans;
     
 }
 
-.linkeSeite {
+.linke-seite {
     float: left;
     padding: 50px;
     padding-right: 5px;
 }
 
-.rechteSeite {
+.rechte-seite {
     float: left;
     padding: 50px;
     padding-left: 5px;
 }
 
-.QuizBild img {
+.quizbild img {
     width: 345px;
     height: 214px;
     margin-top: -5px;
 }
 
 
-.Highscore table{
+.highscore table{
     width: 345px;
     margin-top: -9px;
-    border-spacing: 0px 6px;
+    border-spacing: 0px 5px;
 }
 
-.Highscore table th {
+.highscore table th {
     background-color: rgba(233,194,12,1);
     text-align: left;
     text-width: none;
     font-family: Oswald;
 }
-.Highscore table td {
+.highscore table td {
     background-color: rgba(255, 255, 255, 0.5);  
     font-family: Oswald;
 }
 
-.Highscore tr:last-child {
+.highscore tr:last-child {
     outline: solid 3px rgba(203, 7, 39, 1);
 }

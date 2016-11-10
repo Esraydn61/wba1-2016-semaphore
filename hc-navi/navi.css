@@ -74,7 +74,7 @@ p {
 }
 
 .navi {
-    margin-left: 161px;
+    margin-left: 19px;
     padding-left: 0px;
 }
 
@@ -140,6 +140,19 @@ p {
     font-size: 20px;
     position: relative;
     top: 260px;
+}
+
+.navibeenden {
+    background-color: #CB0727;
+    color: #FFFFFF;
+    border: none;
+    width: 170px;
+    height: 40px;
+    font-family: 'Noto Sans' , sans-serif;
+    font-size: 22px;
+    vertical-align: text-top; 
+    margin-top: -1px;
+    margin-right: 10px;
 }
 
 .menu {
