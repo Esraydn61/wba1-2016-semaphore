@@ -138,7 +138,7 @@ function createStart( quiz ) {
 		        snippetstart = document.getElementById("start");
 		        
 		        //Snippet der Ranking-Liste speichern
-		        snippetranking = document.getElementById("test");
+		        snippetranking = document.getElementById("tabellenranking");
 		        
 		        //Snippet des Ranking_Headers speichern
 		        listhead = document.getElementById("listhead");
