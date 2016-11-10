@@ -11,50 +11,22 @@ console.log("Das Script createStartscreen wird ausgeführt..");
 function createStartscreen(quizId){//id, name, author, date, counter, image, description){
     console.log("createStartscreeen wurde aufgerufen.");
     console.log("Übergabe: " + quizId);
-    
-        // Template injizieren
-        document.getElementById("content").innerHTML = this.responseText;
 
-        // Snippet ziehen 
-        var snippetInfo = document.getElementById("snippetInfo");
-        console.log("SnippetInfo wurde gefunden: " + snippetInfo);
-        // Item im Wrap löschen
-        snippetInfo.parentNode.removeChild(snippetInfo);
+    // Snippet ziehen 
+    var template = templates["startscreen"];
+	
+	var quiz = JSON.parse(jsondata["quizubersicht"]);;
 
-        // Hol das JSON
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var html;
+	template = template.replace(/{{quizname}}/, quiz.name);
+    template = template.replace(/{{autor}}/, quiz.author);
+    template = template.replace(/{{datum}}/, quiz.date);
+    template = template.replace(/{{anzahl}}/, quiz.counter);
+    template = template.replace(/{{src}}/, quiz.image);
+    template = template.replace(/{{beschreibung}}/, quiz.description);
 
-                // JSON Merken
-                var json = JSON.parse(this.responseText);
+	var item = document.createElement("div");
+	item.innerHTML = template;
 
-                // JSON verarbeiten
-               
-                var temp = snippetInfo.outerHTML;
-
-                var quiz = json[quizId];
-
-
-                temp = temp.replace(/{{quizname}}/, quiz.name);
-                temp = temp.replace(/{{autor}}/, quiz.author);
-                temp = temp.replace(/{{datum}}/, quiz.date);
-                temp = temp.replace(/{{anzahl}}/, quiz.counter);
-                temp = temp.replace(/{{src}}/, quiz.image);
-                temp = temp.replace(/{{beschreibung}}/, quiz.description);
-
-                var item = document.createElement("div");
-                item.innerHTML = temp;
-
-                // HTML in Wrap einfügen
-                document.getElementById("content").appendChild(item.firstChild);
-                }
-            };
-            xhttp.open("GET", jsons.quizubersicht, true);
-            xhttp.send();
-
-            return this.responseText;
-        }
-
+	// HTML in Wrap einfügen
+	document.getElementById("content").replaceChild(item.firstChild, document.getElementById("content").firstChild);
 }
