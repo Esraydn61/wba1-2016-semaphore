@@ -12,10 +12,10 @@ body{
     background-image: url("quizrundepp/img/stadion_Desktop.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-image: 
+    background-image:
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
 }
-/*Anzeige fragen-counter*/
+/*Anzeige fragen-counte r*/
 .fragen-counter {
   width: 100px;
   margin-top: 1px;
