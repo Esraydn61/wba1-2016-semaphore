@@ -28,7 +28,7 @@ function parseQuizes() {
             //parse JSON
             for (var quizId in model.data.uebersichtjson){
                 //var temp = snippetquiz.outerHTML;
-                var temp.innerHTML = templates["quizOverview"];
+                var temp = templates["quizOverview"];
                 console.log(temp);
                 var quiz = model.data.uebersichtjson[quizId];
 
