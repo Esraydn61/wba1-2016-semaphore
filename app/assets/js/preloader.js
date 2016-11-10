@@ -26,8 +26,6 @@ jsons.quizubersicht  = server + "/data/quizuebersicht.json";
 jsons.highscore      = server + "/data/ranking-1.json";
 
 
-
-
 // In diesem Objekt werdne die Templates gespeichert
 var templates = {};
 
