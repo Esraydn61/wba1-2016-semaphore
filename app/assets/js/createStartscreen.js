@@ -11,12 +11,7 @@ console.log("Das Script createStartscreen wird ausgeführt..");
 function createStartscreen(quizId){//id, name, author, date, counter, image, description){
     console.log("createStartscreeen wurde aufgerufen.");
     console.log("Übergabe: " + quizId);
-    // console.log("Übergebene Werte:" + id + " name: " + name + " author: " + " date: " + "counter: " + counter + " image: " + image + " description: " + description);
     
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function(){
-    if (this.readyState == 4 && this.status == 200) {
-             
         // Template injizieren
         document.getElementById("content").innerHTML = this.responseText;
 
@@ -61,7 +56,5 @@ function createStartscreen(quizId){//id, name, author, date, counter, image, des
 
             return this.responseText;
         }
-    };
-    xhttp.open("GET", urls.startscreen, true);
-    xhttp.send();
+
 }

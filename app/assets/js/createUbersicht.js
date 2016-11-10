@@ -27,8 +27,8 @@ function createQuizOverview(){
         var temp = snippet.outerHTML;
         var quiz = json[quizId];
 
-        temp = temp.replace(/{{quizname}}/, quiz.name);
-        temp = temp.replace(/{{autor}}/, quiz.author);
+        temp = temp.replace(/{{name}}/, quiz.name);
+        temp = temp.replace(/{{author}}/, quiz.author);
         temp = temp.replace(/{{datum}}/, quiz.date);
         temp = temp.replace(/{{anzahl}}/, quiz.counter);
         temp = temp.replace(/{{src}}/, quiz.image);
@@ -42,9 +42,9 @@ function createQuizOverview(){
         };
         
         // Kachel in Wrap einfügen
-        document.getElementById("snippetQuizItem").appendChild(item.firstChild);
+        document.getElementById("snippetQuiz").appendChild(item.firstChild);
 	}
 	
 	// Kacheltemplate loeschen
-	document.getElementById("snippetQuizItem").removeChild(document.getElementsByClassName("Quizkachel")[0]);
+	document.getElementById("snippetQuiz").removeChild(document.getElementsByClassName("Quizkachel")[0]);
 }

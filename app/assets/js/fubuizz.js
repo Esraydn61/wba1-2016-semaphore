@@ -40,7 +40,11 @@ function parseQuizes() {
 
                 temp = temp.replace(/{{quizIdx}}/, quiz.quizIdx);
                 temp = temp.replace(/{{name}}/, quiz.name);
+<<<<<<< HEAD
                 temp = temp.replace(/{{autor}}/, quiz.author);
+=======
+                temp = temp.replace(/{{author}}/, quiz.author);
+>>>>>>> 847850e79ebfa141c84b0ca2a70a2a0ed9b3a9fd
                 temp = temp.replace(/{{date}}/, quiz.date);
                 temp = temp.replace(/{{counter}}/, quiz.counter);
                 temp = temp.replace(/{{description}}/, quiz.description);
