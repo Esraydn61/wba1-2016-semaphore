@@ -184,10 +184,11 @@ function antwortPruefen(ele, answer){
   console.log("richtige Antwort: " + answer);
 
   if(answer === antwortId){
-//    $("#rof").html("Richtig");
-//    setTimeout(function() {$ele.css("background-color", "#40FF00")}, 2000);
+//  $("#rof").html("Richtig");
+//  setTimeout(function() {$ele.css("background-color", "#40FF00")}, 2000);
 //  $ele.css("background-color", "#FFFFFF");
-//$ele.addClass("richtig"); //
+// $ele.removeClass("antwort")
+ //$ele.addClass("richtig"); //
  punkte+=i*5+50;
  console.log("Punkte: "+ punkte);
  antworten[aktuelleFrage]=true;
@@ -199,8 +200,9 @@ console.log("Punkte: "+punkte);
 antworten[aktuelleFrage]=false;
 //    setTimeout(function() {$ele.css("background-color", "#FF0000")}, 2000);
 //    $ele.css("background-color", "#FFFFFF");
-//$ele.addClass("falsch"); //
 
+//$ele.removeClass("antwort")
+//$ele.addClass("falsch")
 
   }
 
