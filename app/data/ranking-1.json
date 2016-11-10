@@ -2,93 +2,93 @@
         "highscore": [
 				{
 					"rankIdx": 1,
-					"player": "Nicole Trommler",
-					"date": "2016-06-02T14:33:37+02:00",
+					"player": "Gustav Gans",
+					"date": "2016-09-15T12:45:37+02:00",
 					"points": 900
 				},
 				{
 					"rankIdx": 2,
-					"player": "Markus Boehm",
-					"date": "2016-05-25T17:58:57+02:00",
+					"player": "FuBu-Pro",
+					"date": "2016-09-25T15:58:57+02:00",
 					"points": 875
 				},	
 				{
 					"rankIdx": 3,
-					"player": "Peter Scholz",
-					"date": "2016-07-23T18:53:17+02:00",
+					"player": "Hansi Mutz",
+					"date": "2016-10-30T18:53:17+02:00",
 					"points": 700
 				},
 				{
 					"rankIdx": 4,
-					"player": "Stefanie Dresner",
-					"date": "2016-05-15T22:33:37+02:00",
+					"player": "José_Gustavo",
+					"date": "2016-11-05T12:06:44+02:00",
 					"points": 725
 				},
 				{
 					"rankIdx": 5,
 					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"date": "2016-10-17T14:22:14+02:00",
+					"points": 660
 				},
         {
 					"rankIdx": 6,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Benni G.",
+					"date": "2016-09-12T11:36:22+02:00",
+					"points": 605
 				},
         {
 					"rankIdx": 7,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Gregor Müller",
+					"date": "2016-09-28T05:47:30+02:00",
+					"points": 535
 				},
         {
 					"rankIdx": 8,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Philip Schmid",
+					"date": "2016-11-09T08:26:44+02:00",
+					"points": 510
 				},
         {
 					"rankIdx": 9,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Marie Schüller",
+					"date": "2016-11-06T15:56:16+02:00",
+					"points": 475
 				},
         {
 					"rankIdx": 10,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Klausi Brock",
+					"date": "2016-09-24T19:38:40+02:00",
+					"points": 430
 				},
 				{
 					"rankIdx": 11,
-					"player": "Ich",
-					"date": "2016-08-18T14:33:37+02:00",
-					"points": 600
+					"player": "Dennis-the Kicker",
+					"date": "2016-09-17T23:55:13+02:00",
+					"points": 390
 				},
         {
 					"rankIdx": 12,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Henriette",
+					"date": "2016-10-22T04:44:56+02:00",
+					"points": 370
 				},
         {
 					"rankIdx": 13,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Paul_Schmiedt",
+					"date": "2016-10-31T08:36:22+02:00",
+					"points": 330
 				},
         {
 					"rankIdx": 14,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Ewiger_Schalker",
+					"date": "2016-09-30T14:53:43+02:00",
+					"points": 250
 				},
         {
 					"rankIdx": 15,
-					"player": "Silke Bader",
-					"date": "2016-07-17T14:33:37+02:00",
-					"points": 725
+					"player": "Maxi_Schmidt",
+					"date": "2016-099-12T02:08:06+02:00",
+					"points": 220
 				}
         ]
 
