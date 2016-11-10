@@ -37,7 +37,7 @@
 	<script src="js/modernizr-1.5.min.js"></script>
 
 	<script>
-            
+
 	var quiz = {
 		"allQuestions":[{
 
@@ -192,7 +192,7 @@
 		}
 	},
 	{
-        
+
 			"question":{
 			"questionIdx": 10,
 			"question": "Claudio Pizarro hat in dieser Saison Marco Bode als Werders Bundesliga-Rekordtorschütze abgelöst. Gegen wen und wie erzielte er sein erstes Bundesliga-Tor?",
@@ -210,9 +210,9 @@
 	}]
 
 };
-
-
 	</script>
+
+
 </head>
 <!-- !Body -->
 <body>
@@ -233,11 +233,13 @@
 	<script src="js/plugins.js?v=1"></script>
 	<script src="js/script.js?v=1"></script>
 
+	<script src="quizlogik.js"></script>
+
     <p id="text">10</p>
     <p id="question">Frage</p>
 
-    
-	<script>
+
+	<!--<script>
 
 	function antwortPruefen(ele, answer){
 	//	var $ele = $(ele);
@@ -295,20 +297,20 @@
 
         $("#question").html(aktuelleFrage);
     }
-        
-    function buttonKlick(){   
-		$("#antworten").click(function(e){ //click-Funktion außerhalb von neueFrage schreiben, 
+
+    function buttonKlick(){
+		$("#antworten").click(function(e){ //click-Funktion außerhalb von neueFrage schreiben,
 		//	var cButton = e.target;
 			antwortPruefen(e.target, quiz.allQuestions[aktuelleFrage].question.answer);    // Antwort
 
-            
+
             aktuelleFrage++;
             console.log(aktuelleFrage);
-            
+
 
             if(aktuelleFrage<=9){
                  neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
-                
+
             }
             else{
                 //window.location="http://www.google.de";
@@ -316,18 +318,18 @@
                 clearInterval(timer);
                 $("#question").html("Quizrunde ist vorbei" + test++ );
 
-                
+
             }
 		});
 	}
-        
-        
+
+
     var test=0;
     var $ele;
 	var antwortId;
     var timer= null;
 	var i=10;
-    
+
     var data = {};
     var aktuelleFrage = 0;
     data = quiz.allQuestions[0].question;
@@ -335,6 +337,6 @@
     buttonKlick();
      neueFrage( data, aktuelleFrage );
 
-	</script>
+	</script> -->
 </body>
 </html>

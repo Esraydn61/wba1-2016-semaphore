@@ -1,24 +1,73 @@
-    <div id="quizrunde">
-                    <p class = "fragen-counter">Frage:{{fragennr}}/10</p>
-                        <!--Hier steht der Fragenblock. Diese Fragen werden später durch
-                        das Skript zufällig wiedergegeben
-                        (hier wird das Skript implementiert).-->
-                    <p class="fragenblock">{{frage}}</p>
-                    <!--TODO Fortschrittsbalken -->
-
-                    <!-- Einheitliches Konzept zu Klassennamen
-                        http://cssguidelin.es/
-                         -->
-
-                    <!-- anworten besser als Liste (ul) -->
-                    <!--Die Klasse "AlleAntworten" gruppiert alle möglichen Antworten zur Frage.-->
-                    <ul class= "alle-antworten">
-                        <!--Hier steht nacheinander aufgelistet die Klasse "Antwort". Wir
-                        haben hier die Antworten mit "button-idx" benannt, später soll hier
-                        aber das Javaskript zur Generierung von Antworten eingebunden sein.-->
-                        <li><p class="antwort  button-id1">{{optiona}}</p></li>
-                        <li><p class="antwort  button-id2">{{optionb}}</p></li>
-                        <li><p class="antwort  button-id3">{{optionc}}</p></li>
-                        <li><p class="antwort  button-id4">{{optiond}}</p></li>
+<html>
+    <head>
+      <title>Quizrunde</title>
+        <!--link href="navi.css" type="text/css" rel="stylesheet">
+        <script src="navi.js" type="text/javascript" language="JavaScript"></script-->
+      <link href="reset.css" rel="stylesheet"/>
+      <link href="quiz.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    </head>
+    <body>
+     <!-- Navigation auskommentiert!
+     <div id="move">
+                <div class="container">
+                <header>
+                       <p> <a href="/quizrundepp/img/Logo_Fubuizz.png"><img src="quizrundepp/img/Logo_Fubuizz.png" height= 40px alt="Fubuizz"/></a>
+                       <img class="burgermenu" src="quizrundepp/img/Logo_Fubuizz.png" onclick="myMove()"/>
+                    <ul class="head">
+                        <li><a href="https://www.google.de">Registrieren</a></li>
+                        <li><a href="https://www.google.de">Login</a></li>
                     </ul>
-    </div>
+                </header>
+                <nav>
+                    <ul class="navi">
+                        <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
+                        <li><a href="https://www.google.de">Highscore</a></li>
+                        <li><a href="https://www.google.de">Über Fubuizz</a></li>
+                        <li><a href="https://www.google.de">Kontakt</a></li>
+                        <li><a href="https://www.google.de">Einstellungen</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="menu">
+                    <header class="burgerheader">
+                        <p> <a href="/quizrundepp/img/Logo_Fubuizz.png"><img src="quizrundepp/img/Logo_Fubuizz.png" height= 40px alt="Fubuizz"/></a>
+                    </header>
+                    <nav class="burgernav">
+                        <ul>
+                            <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
+                            <li><a href="https://www.google.de">Highscore</a></li>
+                            <li><a href="https://www.google.de">Uber Fubuizz</a></li>
+                            <li><a href="https://www.google.de">Kontakt</a></li>
+                            <li><a href="https://www.google.de">Einstellungen</a></li>
+                        </ul>
+                        <button class="quizbeenden" type="button">Quiz beenden</button>
+                    </nav>
+                </div>
+            </div-->
+        <p class = "fragen-counter">Frage:2/10</p>
+            <!--Hier steht der Fragenblock. Diese Fragen werden später durch
+            das Skript zufällig wiedergegeben
+            (hier wird das Skript implementiert).-->
+        <p class="fragenblock">
+                Wann wurde der Verein - damals noch FV Werder Bremen - gegruendet?
+        </p>
+        <!--TODO Fortschrittsbalken -->
+
+        <!-- Einheitliches Konzept zu Klassennamen
+	        http://cssguidelin.es/
+	         -->
+
+	    <!-- anworten besser als Liste (ul) -->
+      <!--Die Klasse "AlleAntworten" gruppiert alle möglichen Antworten zur Frage.-->
+        <ul class= "alle-antworten">
+            <!--Hier steht nacheinander aufgelistet die Klasse "Antwort". Wir
+            haben hier die Antworten mit "button-idx" benannt, später soll hier
+            aber das Javaskript zur Generierung von Antworten eingebunden sein.-->
+            <li><p class="antwort  button-id1"> 01.Oktober 1893</p></li>
+            <li><p class="antwort  button-id2">  04.Februar 1899</p></li>
+            <li><p class="antwort  button-id3"> 07.Juli 1907</p></li>
+            <li><p class="antwort  button-id4"> 01.Januar 1920</p></li>
+        </ul>
+    </body>
+</html>
