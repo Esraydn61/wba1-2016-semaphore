@@ -1,0 +1,25 @@
+body{
+    background-color: #504F48;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding: 2.5em 1em;
+    
+}
+
+h1{
+    
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+h2{
+     font-size: 1.8em;
+}
+
+h3{
+    
+   
+}
+
+p{
+    padding-bottom: 0.5em;
+}
