@@ -1,51 +1,167 @@
 {
-	
-	"question1":	{
-			"questionIdx": 1,
-			"question": "Wann wurde der Verein - damals noch FV Werder Bremen - gegründet?",
-			"options": [{
-			"optionA": "01.Oktober 1893"
-			},{
-			"optionB": "04.Februar 1899"
-			},{
-			"optionC": "07.Juli 1907"
-			},{
-			"optionD": "01.Januar 1920"
-			}],
-			"answer": "1"
-			},
 
+"allQuestions":[{
 
-	"question2":	{
-	
-			"questionIdx": 2,
-			"question": "Werders Rekordtorschütze Claudio Pizarro ist ein absoluter Pferde-Narr. Mit seinem früheren Bayern-Mitspieler Thomas Müller hat er ein gemeinsames Pferd. Wie heißt es?",
-			"options": [{
-			"option": "Don Jupp"
+	"question":{
+		"questionIdx": 1,
+		"question": "Wie lautet der Spitzname der Deutschen Nationalmannschaft?",
+		"options": [{
+			"option": "Die Deutschen 11"
 			},{
-			"option": "Hoeneß"
+			"option": "Die Mannschaft"
 			},{
-			"option": "Mia san Triple"
+			"option": "DNM"
 			},{
-			"option": "Hattrick"
-			}],
-			"answer": "4"
-			},
+			"option": "Die wilden Kerle"
+		}],
+		"answer": "2"
+    }
+	},
 
+  {
+	"question":{
+		"questionIdx": 2,
+		"question": "Seit wann ist Joachim Löw Trainer der Deutschen Nationalmannschaft?",
+		"options": [{
+			"option": "2006"
+			},{
+			"option": "2010"
+			},{
+			"option": "2000"
+			},{
+			"option": "2005"
+		}],
+		"answer": "1"
+    }
+	},
+  {
 
-	"question3":	{
-			"questionIdx": 3,
-			"question": "Arnd Zeigler ist einer der größten Fußball-Nerds der Republik, regiert 'Zeiglerswunderbare Welt des Fußball' in Radio und Fernsehen und ist außerdem Stadionsprecher im Weserstadion. Wie aber heißt sein Co-Stadionsprecher?",
-			"options":[{
-			"option": "Manfred 'Wolle' Wollenhaupt"
+	"question":{
+		"questionIdx": 3,
+		"question": "Wer war von 2004 bis 2006 Bundestrainer der Deutschen Nationalmannschaft?",
+		"options": [{
+			"option": "Rudi Völler"
 			},{
-			"option": "Christian 'Stolli' Stoll"
+			"option": "Otto Nerz"
 			},{
-			"option": "Andres 'Action-Andy' Schneider"
+			"option": "Berti Vogts"
 			},{
-			"option": "Norbert 'Nobbi' Germeshausen"
-			}],
-			"answer": "3"
-			}
-		
+			"option": "Jürgen Klinsmann"
+		}],
+		"answer": "4"
+    }
+	},
+  {
+	"question":{
+		"questionIdx": 4,
+		"question": "Wer ist seit 2016 Kapitän der Deutschen Nationalmannschaft?",
+		"options": [{
+			"option": "Manuel Neuer"
+			},{
+			"option": "Sebastian Schweinsteiger"
+			},{
+			"option": "Miroslav Klose"
+			},{
+			"option": "Lothar Matthäus"
+		}],
+		"answer": "1"
+    }
+	},
+  {
+
+	"question":{
+		"questionIdx": 5,
+		"question": "Deutschland war 18 mal in der Endrunde einer Weltmeisterschaft. Wann war die erste Endrundenteilnahme?",
+		"options": [{
+			"option": "1954"
+			},{
+			"option": "1990"
+			},{
+			"option": "1934"
+			},{
+			"option": "1914"
+		}],
+		"answer": "3"
+    }
+	},
+  {
+	"question":{
+		"questionIdx": 6,
+		"question": "In welchen Jahren wurde Deutschland Weltmeister?",
+		"options": [{
+			"option": "1934, 1938, 2010, 2014"
+			},{
+			"option": "1954, 1974, 1990, 2006"
+			},{
+			"option": "958, 1970, 1990"
+			},{
+			"option": "1954, 1974, 1990, 2014"
+		}],
+		"answer": "4"
+    }
+	},
+  {
+	"question":{
+		"questionIdx": 7,
+		"question": "Wie oft wurde die Fußballnationalmannschaft zu „Deutschlands Mannschaft des Jahres“ gewählt?",
+		"options": [{
+			"option": "Fünfmal"
+			},{
+			"option": "Zweimal"
+			},{
+			"option": "Zehnmal"
+			},{
+			"option": "Achtmal"
+		}],
+		"answer": "3"
+    }
+	},
+  {
+	"question":{
+		"questionIdx": 8,
+		"question": "Wie viele Spieler spielten bisher (Stand: 31. August 2016) für die Nationalmannschaft?",
+		"options": [{
+			"option": "235 Spieler"
+			},{
+			"option": "576 Spieler"
+			},{
+			"option": "924 Spieler"
+			},{
+			"option": "1047 Spieler"
+		}],
+		"answer": "3"
+    }
+	},
+  {
+	"question":{
+		"questionIdx": 9,
+		"question": "Lothar Matthäus ist deutscher Rekordnationalspieler und nahm während seiner aktiven Karriere an fünf Weltmeisterschaften teil (1982, 1986, 1990, 1994, 1998). Wie oft hat Matthäus in dieser Zeit an Länderspielen teilgenommen?",
+		"options": [{
+			"option": "150"
+			},{
+			"option": "100"
+			},{
+			"option": "70"
+			},{
+			"option": "200"
+		}],
+		"answer": "1"
+    }
+	},
+  {
+	"question":{
+		"questionIdx": 10,
+		"question": "Bei welchem Verein war der aktuelle Nationaltorwart Manuel Neuer, bevor er 2011 zum FC Bayern München wechselte?",
+		"options": [{
+			"option": "FC Schalke 04"
+			},{
+			"option": "Er war schon immer beim FC Bayern München"
+			},{
+			"option": "1. FC Köln"
+			},{
+			"option": "Borussia Dortmund"
+		}],
+		"answer": "1"
+    }
+	}]
 }

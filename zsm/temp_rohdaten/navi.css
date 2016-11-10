@@ -323,6 +323,7 @@ body {
     width: 80%;
     margin-left: 10%;
     display:flex;
+    margin-top: 0.5em;
 }
 .quizbox {
     max-width: 439px;
@@ -338,18 +339,17 @@ body {
     background-color: #F8F5E4;
     text-align: center;
     color: black;
-    /*padding-top: 0.0001em;*/
+    padding-top: 0.0001em;
     margin-right: 1em;
-    /*margin-top: 0em;*/
+    margin-top: -4em;
     margin-left: 1em;
-    /*margin-bottom: 0.5em;*/
+    margin-bottom: 0.5em;
 }
 h2{
   text-align: center;
-  padding-left: 4.5em;
+  padding-left: 5em;
 
 }
-
 
 img {
     max-width: 100%;
@@ -400,7 +400,7 @@ img {
 .liste{
     font-family: 'Oswald', sans-serif;
     width: 100%;
-    margin-top: 0,5em;
+    margin-top: 0em;
     margin-right: 1em;
     border-spacing: 0px 10px;
 }
@@ -438,17 +438,38 @@ td{
         display:none;
     }
     .boxbox{
-      margin-top: -5em;
+      /*margin-top: -8em;*/
       width: 90%;
       margin-left: 1.5em;
       margin-right: 1.5em;
     }
     .quizbox{
-      margin-top: -31em;
+      margin-top: -36em;
     }
 
+    .titel {
+        margin-top: -3em;
     }
 }
+
+@media screen and (max-width:800px){
+  .quizbox{
+    margin-top: -32em;
+  }
+  #highscorecontent{
+    margin-top: -33em;
+  }
+
+}
+@media screen and (min-width:750px){
+  .titel{
+    margin-top: -3em;
+  }
+
+}
+
+
+
 
 /*---------------------------------------------------------------------------*/
 /*--------------------------------=!QUIZ---------------------------------------*/

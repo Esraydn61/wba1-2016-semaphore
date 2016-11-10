@@ -1,0 +1,38 @@
+/* line 64, flags/*.png */
+.sprite, .Kmedallie, .Gmedallie, .highscore, .fa-5x {
+  /* background-image: url('/images/flags-s67d6655d3d.png'); */
+ /*background-image: url('https://github.com/th-koeln/wba1-2016-semaphore/tree/master/grafiker/Grafiken');
+  background-repeat: no-repeat; */
+}
+
+
+
+/* line 84, ../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/utilities/sprites/_base.scss */
+.Kmedallie {
+    height: 16.2pt; 
+    width: 33.6pt;
+}
+
+/* line 84, ../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/utilities/sprites/_base.scss */
+.Gmedallie {
+    height: 20pt;
+    width: 50.4pt;
+}
+
+/* line 84, ../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/utilities/sprites/_base.scss */
+.highscore {
+    height: 69pt;
+    width: 69pt;
+}
+
+.fa-5x {
+    color: white;
+}
+
+.fa-3x {
+    color: white;
+}
+
+.fa-4x {
+    color: white;
+}
