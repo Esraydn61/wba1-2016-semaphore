@@ -21,7 +21,7 @@ var loaderisready = false;
 var urls = {};
 urls.highscore      = server + "/quiz_app/highscore/highscore.html";
 urls.quizrunde      = server + "/quiz_app/quizrunde/quizrunde.html";
-urls.quizOverview  = server + "/quiz_app/quizubersicht/quizubersicht.html";
+urls.quizOverview  = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
 urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
@@ -112,10 +112,9 @@ function getNextTemplate(){
 	
 // Hier geben wir aus Spaß mal das Template eines Quizzes aus.
 function doSomething(){
-    createQuizOverview();
 	var hightscoreTemplate = templates["highscore"];   
 	loaderisready = true;
-    console.log(jsondata);
+    createQuizOverview();
 }
 
 /* Main
