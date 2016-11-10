@@ -27,8 +27,14 @@ urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
 jsons.quizubersicht  = server + "/data/quizuebersicht.json";
-//jsons.highscore      = server + "/data/ranking-1.json";
 
+jsons.highscore      = server + "/data/ranking-1.json";
+jsons.highscore      = server + "/data/ranking-3.json";
+jsons.highscore      = server + "/data/ranking-5.json";
+
+jsons.highscore      = server + "/data/questions-1.json";
+jsons.highscore      = server + "/data/questions-3.json";
+jsons.highscore      = server + "/data/questions-5.json";
 
 // In diesem Objekt werdne die Templates gespeichert
 var templates = {};
@@ -96,6 +102,7 @@ function getNextTemplate(){
 				// Wir speichern das Template unter der id im Objekt "templates".
 				templates[next_template] = this.responseText;
 
+                //console.log(templates["quizOverview"]);
 				// Wir rufen die getNextQuiz-Funktion erneut auf.
 				getNextTemplate();
 			}, urls

@@ -1,0 +1,95 @@
+{
+        "highscore": [
+				{
+					"rankIdx": 1,
+					"player": "Paul_Schmiedt",
+					"date": "2016-10-22T17:08:11+02:00",
+					"points": 850
+				},
+				{
+					"rankIdx": 2,
+					"player": "Susi Sauer",
+					"date": "2016-10-18T19:26:57+02:00",
+					"points": 800
+				},	
+				{
+					"rankIdx": 3,
+					"player": "Peter Müller",
+					"date": "2016-07-23T10:42:30+02:00",
+					"points": 760
+				},
+				{
+					"rankIdx": 4,
+					"player": "Stefan Kraner",
+					"date": "2016-09-14T22:25:56+02:00",
+					"points": 725
+				},
+				{
+					"rankIdx": 5,
+					"player": "Patrick Schmid",
+					"date": "2016-09-17T09:20:20+02:00",
+					"points": 690
+				},
+        {
+					"rankIdx": 6,
+					"player": "Hansi",
+					"date": "2016-08-03T08:42:50+02:00",
+					"points": 625
+				},
+        {
+					"rankIdx": 7,
+					"player": "Antonio_Senio",
+					"date": "2016-04-19T23:43:15+02:00",
+					"points": 560
+				},
+        {
+					"rankIdx": 8,
+					"player": "Gregor Jannes",
+					"date": "2016-05-26T21:42:33+02:00",
+					"points": 555
+				},
+        {
+					"rankIdx": 9,
+					"player": "Maxi-M",
+					"date": "2016-10-02T05:48:58+02:00",
+					"points": 520
+				},
+        {
+					"rankIdx": 10,
+					"player": "Juliane Schmitter",
+					"date": "2016-08-24T13:03:53+02:00",
+					"points": 480
+				},
+				{
+					"rankIdx": 11,
+					"player": "Hans-Peter Wurst",
+					"date": "2016-08-06T11:26:40+02:00",
+					"points": 450
+				},
+        {
+					"rankIdx": 12,
+					"player": "Marika Greck",
+					"date": "2016-04-24T22:30:32+02:00",
+					"points": 405
+				},
+        {
+					"rankIdx": 13,
+					"player": "Marcus_Müller",
+					"date": "2016-09-25T14:55:32+02:00",
+					"points": 340
+				},
+        {
+					"rankIdx": 14,
+					"player": "KölnerJung",
+					"date": "2016-09-11T12:15:44+02:00",
+					"points": 310
+				},
+        {
+					"rankIdx": 15,
+					"player": "Mücke36",
+					"date": "2016-05-15T22:38:17+02:00",
+					"points": 250
+				}
+        ]
+
+}
