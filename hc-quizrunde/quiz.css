@@ -12,12 +12,14 @@ body{
     background-image: url("quizrundepp/img/stadion_Desktop.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    background-image: 
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
 }
 /*Anzeige "Frage 2/10"*/
 .fragen-counter {
+  width: 100px;
   margin-top: 1px;
-  margin-left: 15px;
+  margin-left: 7px;
   color: #FFFFFF;
 }
 
@@ -83,6 +85,9 @@ Abstände zwischen den Fragen*/
         margin-top:-20px;
         font-size: 24px;
     }
+    .fragen-counter{
+        font-size: 24px;
+    }
     }
 @media only screen and (min-width: 1024px) {
     .Antwort{
@@ -91,6 +96,9 @@ Abstände zwischen den Fragen*/
     }
     .Fragenblock{
         height:15%;
+        font-size: 24px;
+    }
+    .fragen-counter{
         font-size: 24px;
     }
 }
