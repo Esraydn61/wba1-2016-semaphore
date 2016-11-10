@@ -1,11 +1,7 @@
 html, body{
     margin: 0px;
-	font-family: 'Oswald-Light' , sans-serif;
+	font-family: 'Oswald' , sans-serif;
     color: #FFFFFF;
-}
-@font-face {
-    font-family: "Oswald-Light";
-    src: url("fonts/Oswald-Light.ttf") format("truetype");
 }
 
 header {
@@ -20,16 +16,16 @@ nav {
     font-size: 25px;
 }
 
-a {
+.navia {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-a:hover {
+.navia:hover {
     color: #E9C20C;
 }
 
-a:active {
+.navia:active {
     color: #E9C20C;
 }
 
@@ -42,11 +38,11 @@ li {
 }
 
 .container {
-    position: fixed;
+    position:
     width: 100%;
 }
 
-p {
+.navip {
     position: relative;
     width: 115px;
     text-align: right;
@@ -74,7 +70,7 @@ p {
 }
 
 .navi {
-    margin-left: 19px;
+    margin-left: 161px;
     padding-left: 0px;
 }
 
@@ -115,7 +111,7 @@ p {
 
 .burgernav {
     width: 170px;
-    height: 550;
+    height: 550px;
 }
 
 .burgernav > ul {
@@ -142,28 +138,11 @@ p {
     top: 260px;
 }
 
-.navibeenden {
-    background-color: #CB0727;
-    color: #FFFFFF;
-    border: none;
-    width: 170px;
-    height: 40px;
-    font-family: 'Noto Sans' , sans-serif;
-    font-size: 22px;
-    vertical-align: text-top; 
-    margin-top: -1px;
-    margin-right: 10px;
-}
-
 .menu {
     width: 170px;
     position: relative;
     float: right;
     left: 170px;
-}
-
-.gesamtcontainer {
-    position: relative;
 }
 
 #move {

@@ -1,0 +1,307 @@
+body {
+    background-image: url("img/stadion_Desktop.jpg");
+    margin: 0px;
+}
+@font-face {
+    font-family: "Oswald-Light";
+    src: url("fonts/Oswald-Light.ttf") format("truetype");
+}
+
+.logincontainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: 420px;
+    height: 380px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.registrierencontainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: 420px;
+    height: 450px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.profilcontainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: 380px;
+    height: 390px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.impressumcontainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: 800px;
+    height: 970px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.kontaktcontainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.einstellungencontainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: 400px;
+    height: 430px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.profilavatar {
+    margin-top: 20px;
+    width: 140px;
+}
+
+.inputuser {
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 5px;
+    font-family: Oswald-Light;
+    font-size: 20px;
+    background: #FFFFFF;
+    padding: 5px 10px 5px 10px;
+    border: solid #cb0727 2px;
+    text-decoration: none;
+    outline: 0;
+}
+
+.inputkontakt {
+    margin: 0px;
+    margin-top: 10px;
+    width: 500px;
+    border-radius: 5px;
+    font-family: Oswald-Light;
+    font-size: 20px;
+    background: #FFFFFF;
+    padding: 5px 10px 5px 10px;
+    border: solid #cb0727 2px;
+    text-decoration: none;
+    outline: 0;
+}
+
+.submitbutton {
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 5px;
+    font-family: Oswald-Light;
+    color: #ffffff;
+    font-size: 20px;
+    background: #cb0727;
+    padding: 5px 10px 5px 10px;
+    border: solid #cb0727 1px;
+    text-decoration: none;
+}
+
+.versendenbutton {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    border-radius: 5px;
+    font-family: Oswald-Light;
+    color: #ffffff;
+    font-size: 20px;
+    background: #cb0727;
+    padding: 5px 10px 5px 10px;
+    border: solid #cb0727 1px;
+    text-decoration: none;
+    float: left;
+}
+
+.registration {
+    position: relative;
+    float: left;
+    left: 60px;
+    color: #000000;
+}
+
+.profilparagraph {
+    text-align: left;
+    width: 260px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 1px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.impressumheadline {
+    width: 700px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: left;
+    color: #000000;
+}
+
+.impressumparagraph {
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 700px;
+    color: #000000;
+}
+
+.kontaktheadline {
+    width: 500px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: left;
+    color: #000000;
+}
+
+.einstellungenheadline {
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: left;
+    color: #000000;
+}
+
+.newsletter {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+
+/*
+.erfolgreichversendet {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    height: 20px;
+    width: 265px;
+    float: right;
+    font-size: 20;
+    color: green;
+    //visibility: hidden;
+}*/
+
+@media only screen and (max-width: 1024px) {
+    .logincontainer {
+        position: absolute;
+        margin-top: 50px;
+    }
+    
+    .registrierencontainer {
+        position: absolute;
+        margin-top: 50px;
+    }
+    
+    .profilcontainer {
+        position: absolute;
+        margin-top: 50px;
+    }
+    
+    .impressumcontainer {
+        position: absolute;
+        margin-top: 50px;
+    }
+    
+    .kontaktcontainer {
+        position: absolute;
+        margin-top: 50px;
+    }
+    
+    .einstellungencontainer {
+        position: absolute;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logincontainer {
+        position: absolute;
+        margin-top: 47px;
+    }
+    
+    .registrierencontainer {
+        position: absolute;
+        margin-top: 47px;
+    }
+    
+    .profilcontainer {
+        position: absolute;
+        margin-top: 47px;
+    }
+    
+    .impressumcontainer {
+        position: absolute;
+        margin-top: 47px;
+    }
+    
+    .kontaktcontainer {
+        position: absolute;
+        margin-top: 47px;
+    }
+    
+    .einstellungencontainer {
+        position: absolute;
+        margin-top: 47px;
+    }
+}

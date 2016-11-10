@@ -1,10 +1,9 @@
-<!DOCTYPE>
 <html>
     <head>
-        <link href="navi.css" type="text/css" rel="stylesheet">
+        <link href="zusatz.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+        <link href="navi.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div id="move">
@@ -20,7 +19,7 @@
                 <nav>
                     
                     <ul class="navi">
-                        <button class="navibeenden" type="button">Quiz beenden</button>
+                        <!--<button class="navibeenden" type="button">Quiz beenden</button>-->
                         <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
                         <li><a href="https://www.google.de">Highscore</a></li>
                         <li><a href="https://www.google.de">Über Fubuizz</a></li>
@@ -45,7 +44,21 @@
                         <button class="quizbeenden" type="button">Quiz beenden</button>
                     </nav>
                 </div>
+        
+            <script src="navi.js" type="text/javascript" language="JavaScript"></script>
+
+            <div class="kontaktcontainer">
+                <h2 class="kontaktheadline">
+                    Deine Nachricht an uns
+                </h2>
+                <input class="inputkontakt" type="text" name="user" placeholder="Name">
+            <input class="inputkontakt" type="password" name="password" placeholder="E-Mail">
+            <textarea class="inputkontakt" rows="5" placeholder="Nachricht"></textarea>
+            <form action="index.html" method="get">
+                <button class="versendenbutton" type="submit">Senden</button>
+            </form>
+                <!--<p class="erfolgreichversendet">Nachricht erfolgreich versendet.</p>-->
             </div>
+        </div>
     </body>
-    <script src="navi.js" type="text/javascript" language="JavaScript"></script>
 </html>
