@@ -11,6 +11,10 @@ console.log("Das preloader.js Script wird ausgeführt..")
 // Welcher Server stellt die Daten bereit?
 var server = "";//"http://wba1-semaphore.christiannoss.de/app";
 
+if(location.href.match(/wba1-semaphore.christiannoss.de/)){
+	server = "http://wba1-semaphore.christiannoss.de/app";
+}
+
 
 // Basispfad fur die Jsons
 var jsonbasis = server + "/data";
