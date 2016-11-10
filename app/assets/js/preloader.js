@@ -5,6 +5,7 @@ Die die Url namen werden doppelt benutzt und die Namne
 müssen angeglichen werden.
 ****************************************************/
 
+
 console.log("Das preloader.js Script wird ausgeführt..")
 
 // Welcher Server stellt die Daten bereit?
@@ -15,7 +16,7 @@ var server = "http://wba1-semaphore.christiannoss.de/app";
 var jsonbasis = server + "/data";
 
 // Zum Testen in diesem Branch
-server = "";
+//server = "";
 
 var loaderisready = false;
 
@@ -23,7 +24,7 @@ var loaderisready = false;
 
 //Dateipfade für die jeweiligen HTML Dokumente
 var urls = {};
-urls.highscore      = server + "/quiz_app/highscore/highscore.html";
+urls.highscore      = server + "/quiz_app/highscore/Highscore.html";
 urls.quizrunde      = server + "/quiz_app/quizrunde/quiz.html";
 urls.quizOverview  = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
 urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";

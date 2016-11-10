@@ -317,9 +317,11 @@ body{
     
 @media only screen and (max-width: 439px){
     
+    
     html, body{
-        padding: 0;
-        margin: 0;
+        padding: initial;
+        margin: initial;
+        background-image: url(img/Background_Desktop.jpg);
     }
     
     .content {
@@ -328,6 +330,130 @@ body{
         width:100%;
     }
     
+    
+    .Quizkachel{
+        width: initial;
+        height: initial;
+        float: initial;
+        position: relative;
+        padding:0;
+        background-color: lightgrey;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+
+    }
+    
+    .Quizbild{
+        margin: initial;
+        padding: initial;
+        width: initial;
+        height: auto;
+        float:left;
+        margin-right: 10px;
+    }
+    
+    .Quizkachel h3{
+        margin-left: 113px;
+        margin-bottom: -29px;
+    }
+    
+    .inhalt{
+        padding: initial;
+        margin: initial;
+        width: initial;
+        height: initial;
+        float: left;
+        position: relative;
+        bottom: initial;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .Erstellinfos{
+        padding: 2px 0 0 0;
+        margin: 0 10px 0 0;
+        width: initial;
+        height: initial;
+        background-color: initial;
+        text-decoration: none;
+        float: left;
+        margin-top: 29px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    
+    .button{
+        display: none;
+    }
+    
+    .AnzGespielt{
+        padding: initial;
+        margin: initial;
+        width: initial;
+        height: initial;
+        text-align:right;
+        background-color:initial;
+        font-size: 8px;
+    }
+    
+    .Beschreibung{
+        width: initial;
+        height: initial;
+        padding: 0;
+        margin: 10px;
+        background-color: initial;
+        line-height: 15px;
+        font-family: Oswald;
+        color: #2F2D2C;
+        
+    }
+    
+    .basicInfos{
+        position: relative;
+    }
+    
+    .datum, .AnzGespielt{
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .datum{
+        left: 0;
+        padding: 2px 0 0 0;
+        margin: 0 10px 0 0;
+        width: initial;
+        height: initial;
+        background-color: initial;
+        text-decoration: none;
+        float: left;
+        margin-top: 29px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    
+    .AnzGespielt{
+        right: 0;
+    }
+    
+    .desktop, .tablet{
+        display: none;
+    }
+    
+    .hidden {
+        display:none;
+    }
+
+    .visible {
+        height: 200px;
+        display: block;
+        z-index: 1;
+    }
+    
+    /**ALTE VERSION **/
+    
+    /**
     .Quizbild{
         width: 113px;
         height: 70px;
@@ -350,7 +476,7 @@ body{
     
     
     .Quizkachel{
-        height: 70px;
+     height: auto;
         display: inline-block;
         width: calc(100% - 25px);
         margin-top: 5px;
@@ -361,8 +487,6 @@ body{
     
     .inhalt{
         width: calc(100% - 113px);
-        height: 70px;
-        float: left;
         position: relative;
         align-content: center;
         font-family: Oswald, sans-serif;
@@ -408,11 +532,22 @@ body{
     }
     
     .Beschreibung{
-        display: none;
     }
     
     .button{
         display: none;
     }
+
+.hidden {
+    display:none;
+}
+
+.Quizkachel visible>div {
+    height: 200px;
+    display: block;
+    position: absolute;
+    background-color: aqua;
+    z-index: 1;
+}**/
     
 }

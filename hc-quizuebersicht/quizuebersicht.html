@@ -2,9 +2,11 @@
 <html>
     <head>
         <link href="quizuebersicht.css" type="text/css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>Fubuizz Quiz&uuml;bersicht</title>
     </head>
     <body>
+
         <!-- NEU Klasse Content eingefügt! enthält Sotierleiste und Quizkacheln -->
         <div class="content">
             <div class="Sortierliste">
@@ -16,64 +18,90 @@
             </ul> 
             </div>
             <div class="Quizkachel">
-                <h3>~QUIZNAME~</h3>  
-                <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz"/>
-                <p class="Erstellinfos">
-                    von ~AUTOR~ erstellt <br>
-                    am ~DATUM~
-                </p>
-                <div class="inhalt">
-                    <p class="Beschreibung">
-                        ~BESCHREIBUNG~
+                <div class="basicInfos">
+                    <h3>~QUIZNAME~</h3>  
+                    <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz"/>
+                    <p class="Erstellinfos">
+                        von ~AUTOR~ erstellt <br>
                     </p>
-                    <p class="AnzGespielt">
+                    <p class="datum">
+                        am ~DATUM~
+                    </p>
+                    <p class="AnzGespielt mobile">
                         ~ANZAHL~ mal gespielt
                     </p>
                 </div>
+                    <div class="inhalt">
+                        <p class="Beschreibung">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam  blandit, eros id adipiscing congue, lorem ante sagittis elit, id    malesuada nibh est sed orci
+                        </p>
+                        <p class="AnzGespielt desktop tablet">
+                            ~ANZAHL~ mal gespielt
+                        </p>
+                    </div>
                 <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
-                </div>
-            </div>
-            <div class="Quizkachel">
-                <h3>~QUIZNAME~</h3>  
-                <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz"/>
-                <p class="Erstellinfos">
-                    von ~AUTOR~ erstellt <br>
-                    am ~DATUM~
-                </p>
-                <div class="inhalt">
-                    <p class="Beschreibung">
-                        ~BESCHREIBUNG~
-                    </p>
-                    <p class="AnzGespielt">
-                        ~ANZAHL~ mal gespielt
-                    </p>
-                </div>
-                <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
-                </div>
-            </div>
-            <div class="Quizkachel">
-                <h3>~QUIZNAME~</h3>  
-                <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz"/>
-                <p class="Erstellinfos">
-                    von ~AUTOR~ erstellt <br>
-                    am ~DATUM~
-                </p>
-                <div class="inhalt">
-                    <p class="Beschreibung">
-                        ~BESCHREIBUNG~
-                    </p>
-                    <p class="AnzGespielt">
-                        ~ANZAHL~ mal gespielt
-                    </p>
-                </div>
-                <div class="button"> 
-                <a class="Auswahl" href="">Auswaehlen</a>
+                    <a class="Auswahl" href="">Auswaehlen</a>
                 </div>
             </div>
             
+            <div class="Quizkachel">
+                
+                <h3>~QUIZNAME~</h3>  
+                <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz"/>
+                <p class="Erstellinfos">
+                    von ~AUTOR~ erstellt <br>
+                    am ~DATUM~
+                </p>
+                <div class="inhalt">
+                    <p class="Beschreibung">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit, eros id adipiscing congue, lorem ante sagittis elit, id malesuada nibh est sed orci
+                    </p>
+                    <p class="AnzGespielt">
+                        ~ANZAHL~ mal gespielt
+                    </p>
+                    </div>
+                
+                <div class="button"> 
+                <a class="Auswahl" href="">Auswaehlen</a>
+                </div>
+
+            </div><div class="Quizkachel">
+                
+                <h3>~QUIZNAME~</h3>  
+                <img class="Quizbild" src="img/Platzhalter_Bild.png" alt="Fubuizz"/>
+                <p class="Erstellinfos">
+                    von ~AUTOR~ erstellt <br>
+                    am ~DATUM~
+                </p>
+                <div class="inhalt">
+                    <p class="Beschreibung">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit, eros id adipiscing congue, lorem ante sagittis elit, id malesuada nibh est sed orci
+                    </p>
+                    <p class="AnzGespielt">
+                        ~ANZAHL~ mal gespielt
+                    </p>
+                    </div>
+                
+                <div class="button"> 
+                <a class="Auswahl" href="">Auswaehlen</a>
+                </div>
+
+            </div>
         </div>
-        
     </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+       $('.Quizkachel .Beschreibung').addClass("hidden");
+
+        $('.Quizkachel').click(function() {
+            var $this = $(this);
+
+            var $beschreibung = $this.find(".Beschreibung");
+            
+            console.log($beschreibung);
+            $beschreibung.toggleClass("hidden");
+            
+        });
+    });
+</script>
 </html>

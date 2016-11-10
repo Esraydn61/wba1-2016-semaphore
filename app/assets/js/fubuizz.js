@@ -30,12 +30,17 @@ function parseQuizes() {
             //parse JSON
             for (var quizId in model.data.uebersichtjson){
                 //var temp = snippetquiz.outerHTML;
+
+                //var temp = templates["quizOverview"];
+                //console.log(temp);
                 //var temp.innerHTML = templates["quizOverview"];
                 var temp = snippet;
+
                 var quiz = model.data.uebersichtjson[quizId];
 
                 temp = temp.replace(/{{quizIdx}}/, quiz.quizIdx);
                 temp = temp.replace(/{{name}}/, quiz.name);
+                temp = temp.replace(/{{autor}}/, quiz.author);
                 temp = temp.replace(/{{author}}/, quiz.author);
                 temp = temp.replace(/{{date}}/, quiz.date);
                 temp = temp.replace(/{{counter}}/, quiz.counter);
@@ -48,11 +53,11 @@ function parseQuizes() {
                 
         
                 item.firstChild.onclick = function() {createStart(this);};
-                document.getElementById("snippetQuizItem").appendChild(item.firstChild);
+                document.getElementById("snippetQuiz").appendChild(item.firstChild);
                 
             }
             
-            document.getElementById("snippetQuizItem").removeChild(document.getElementsByClassName("Quizkachel")[0]);
+            document.getElementById("snippetQuiz").removeChild(document.getElementsByClassName("Quizkachel")[0]);
 		
 		}
 	};
