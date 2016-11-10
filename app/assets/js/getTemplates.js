@@ -3,7 +3,7 @@ Dieses Script zieht sich alle notwendigen Templates
 
 ****************************************************/
 
-// In diesem Objekt werdne die Templates gespeichert
+// In diesem Objekt werden die Templates gespeichert
 var templates = {};
 
 /* Functions
