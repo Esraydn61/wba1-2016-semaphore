@@ -58,9 +58,7 @@ function parseQuizes() {
 	};
 	xhttp.open("GET", jsons.quizOverview , true);
 	xhttp.send();
-    
-
-        
+     
 }
 
 
