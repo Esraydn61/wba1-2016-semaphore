@@ -1,29 +1,33 @@
 * {
     padding: 0px;
     margin: 0px;
+    outline: none;
+    border: none;
 }
 
 
 
 body{
-    background-color: gainsboro;
     background-image: url(https://static.haga-welt.de/IMAGES/WOHNIDEEN/FOTOTAPETEN/KOMAR/8_Teile/8-324_fussballstadion.jpg);
 }
+
 
 
 h1{
     text-align: center;
     background-color: #F8F5E4;
-    margin-left: 15px;
-    margin-right: 15px;
+    font-family: Oswald;
+    margin-bottom: 15px;
 }
 
 h2{
-    font-size: 20px
+    font-size: 20px;
+    font-family: Oswald;
 }
 
 #main {
-    padding: 15px;
+    max-width: 1200px;
+    margin: 0px auto;
 }
 
 
@@ -31,7 +35,8 @@ h2{
 .linkeSeite{
     float: left;
     width: 50%;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    padding-right: 10px;
 }
 
 .linkeSeite h2{
@@ -40,7 +45,18 @@ h2{
 }
 
 .hauptbild{
-    height: 314px;
+    height: 370px;
+}
+
+.fussbaelle {
+    width: 589px;
+    height: 50px;
+}
+
+.fuessbaelle img {
+    height: 15px;
+    width: 10px;
+    padding: 15px;
 }
 
 .playbutton {
@@ -57,23 +73,27 @@ h2{
 .rechteSeite{
     float: right;
     width: 50%;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    padding-left: 10px;
     
 }
 
 .highscoretable{
-    margin: 0;
+    margin: 0px auto;
     width: 100%;
     height: 300px;  
     border-spacing: 0 10px;
+    margin-top: -10px;
+    font-family: Oswald;
 }
 
-.highscoretable tr{
+.highscoretable th{
     background-color: #E9C20C;
 }
 
 .highscoretable td {
-    background-color: #F8F5E4;
+    background-color: rgba(248, 245, 228, 0.7);
+    text-align: center;
 }
 
 .suggestions{
@@ -83,4 +103,32 @@ h2{
 
 .suggestions h2{
     background-color: #E9C20C;
+}
+
+.image-box-container {
+  margin: 0px -10px;
+  font-size: 0px;
+}
+.image-box {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;  
+  padding: 0px 10px;
+  box-sizing: border-box;
+ 
+  height: 200px;
+  width: 33%; /* bei mehr Boxen anpassen */
+}
+.image-box > img {
+  width: 100%;
+}
+.image-box-caption {
+  position: absolute;
+  bottom: 0px;
+  left: 10px; /* = padding von .image-box */
+  right: 10px;
+  
+  font-size: 16px;  
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5px;
 }
