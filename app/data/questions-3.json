@@ -1,164 +1,172 @@
 {
+	"allQuestions":[{
 
-	"question1": {
+	"question":{
 		"questionIdx": 1,
-		"question": "Wer brachte Bayer Leverkusen in der Saison 2016/ ins Achtelfinal??",
+		"question": "Wer brachte Bayer Leverkusen in der Saison 2016/ ins Achtelfinal?",
 		"options": [{
-			"optionA": "Kevin Kampel"
-		}, {
-			"optionB": "Joel Pohjanpalo"
-		}, {
-			"optionC": "Mario Götze"
-		}, {
-			"optionD": "Stefan Kießling"
+			"option": "Kevin Kampel"
+			},{
+			"option": "Joel Pohjanpalo"
+			},{
+			"option": "Mario Götze"
+			},{
+			"option": "Stefan Kießling"
 		}],
 		"answer": "1"
-	},
+	}
+},
+{
 
-
-	"question2": {
-
+	"question":{
 		"questionIdx": 2,
-		"question": "Mit welchem Trainer blieb der BVB zum ersten Mal in vier Bundesliga-Spielen hintereinander ohne Sieg??",
+		"question": "Mit welchem Trainer blieb der BVB zum ersten Mal in vier Bundesliga-Spielen hintereinander ohne Sieg?",
 		"options": [{
 			"option": "Ottmar Hitzfeld"
-		}, {
+			},{
 			"option": "Udo Lattek"
-		}, {
+			},{
 			"option": "Thomas Tuchel"
-		}, {
+			},{
 			"option": "Jürgen Klopp"
 		}],
 		"answer": "3"
-	},
+	}
+},
+{
 
-
-	"question3": {
+	"question":{
 		"questionIdx": 3,
-		"question": "Wer war in der Saison 2016/17 Kapitän beim 1. FC Köln?",
+		"question": "Wer war in der Saison 2016/17 Kapitän beim 1. FC Köln??",
 		"options": [{
 			"option": "Jonas Hector"
-		}, {
+			},{
 			"option": "Matthias Lehmann"
-		}, {
+			},{
 			"option": "Timo Horn"
-		}, {
+			},{
 			"option": "Mergim Mavraj"
 		}],
 		"answer": "2"
-	},
+	}
+},
+{
 
-	"question4": {
+	"question":{
 		"questionIdx": 4,
 		"question": "Gegen wen spielte der SC Freiburg am 10. Spieltag in der Saison 2016/2017?",
 		"options": [{
 			"option": "Mainz 05"
-		}, {
+			},{
 			"option": "VFL Wolfsburg"
-		}, {
+			},{
 			"option": "Schalke 04"
-		}, {
+			},{
 			"option": "Hertha BSC"
 		}],
 		"answer": "2"
-	},
+	}
+},
+{
 
-	"question5": {
+	"question":{
 		"questionIdx": 5,
 		"question": "Wie endete das Derby zwischen Borussia Dortmund und Schalke 04 in der Saison 2016/17?",
 		"options": [{
 			"option": "0:0"
-		}, {
+			},{
 			"option": "1:0"
-		}, {
+			},{
 			"option": "3:1"
-		}, {
+			},{
 			"option": "1:1"
 		}],
 		"answer": "1"
-	},
+	}
+},
+{
 
-
-	"question6": {
+	"question":{
 		"questionIdx": 6,
 		"question": "Wer ist der einzig nominierte Bundesliga-Spieler für den Ballon d'Or, der nicht beim FC Bayern spielt?",
 		"options": [{
 			"option": "Manuel Neuer"
-		}, {
+			},{
 			"option": "Thomas Müller"
-		}, {
+			},{
 			"option": "Robert Lewandowski"
-		}, {
+			},{
 			"option": "Pierre-Emerick Aubameyang"
 		}],
 		"answer": "4"
-	},
-
-
-
-	"question7": {
+	}
+},
+{
+	"question":{
 		"questionIdx": 7,
 		"question": "Wer wurde in der Bundesliga-Saison 2015/16 Meister?",
 		"options": [{
 			"option": "Bayer Leverkusen"
-		}, {
+			},{
 			"option": "Borussia Mönchengladbach"
-		}, {
+			},{
 			"option": "FC Bayern München"
-		}, {
+			},{
 			"option": "Hannover 96"
 		}],
 		"answer": "3"
-	},
+	}
+},
+{
 
-
-
-	"question8": {
+		"question":{
 		"questionIdx": 8,
 		"question": "Wie viele Tore fielen in der Saison 2015/16 insgesamt?",
 		"options": [{
 			"option": "866"
-		}, {
+			},{
 			"option": "700"
-		}, {
+			},{
 			"option": "215"
-		}, {
+			},{
 			"option": "543"
 		}],
 		"answer": "1"
-	},
+	}
+},
+{
+	"question":{
 
-
-
-	"question9": {
 		"questionIdx": 9,
 		"question": "Wer war in der Saison 2015/16 Torschützenkönig?",
 		"options": [{
 			"option": "Thomas Müller"
-		}, {
+			},{
 			"option": "Sandro Wagner"
-		}, {
+			},{
 			"option": "Robert Lewandowski"
-		}, {
+			},{
 			"option": "Karim Bellarabi"
 		}],
 		"answer": "3"
-	},
+	}
+},
+{
+		"question":{
 
-
-	"question10": {
 		"questionIdx": 10,
 		"question": "Wer war in der Saison 2014/15 Pokalsieger?",
 		"options": [{
 			"option": "Vfl Wolfsburg"
-		}, {
+			},{
 			"option": "Hamburger SV"
-		}, {
+			},{
 			"option": "Eintracht Frankfurt"
-		}, {
+			},{
 			"option": "Borussia Dortmund"
 		}],
 		"answer": "1"
 	}
+}]
 
 }
