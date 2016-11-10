@@ -1,6 +1,4 @@
-var urls = {};
-urls.quizOverview = "/quiz_app/quizuebersicht/quizuebersicht.html";
-urls.quizStart = "/quiz_app/startscreen/startscreen.html";
+
 
 var jsons = {};
 jsons.quizOverview = "http://wba1-semaphore.christiannoss.de/app/data/quizuebersicht.json";
