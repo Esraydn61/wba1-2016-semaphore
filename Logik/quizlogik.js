@@ -241,6 +241,9 @@ function neueFrage( data, aktuelleFrage ){
   $("#antwort3").html(" ");
   $("#antwort4").html(" ");
   setTimeout(function() {
+
+//  console.log(document.getElementbyId("antwort1"));
+//  tausch($("#antwort1"), $("#antwort2"));
   $("#antwort1").html(data.options[0].option);    // ändert per Id den Inhalt
   $("#antwort2").html(data.options[1].option);    //$ signalisiert das jQuery Objekt, # ersetzt getElementbyId, .html signalisiert html Objekt(Inhalt)
   $("#antwort3").html(data.options[2].option);
@@ -286,6 +289,18 @@ function neueFrage( data, aktuelleFrage ){
     }
   });
 }
+/*
+function tausch(obj1, obj2){
+
+  var temp = document.createElement("p");
+  obj1.parentNode.insertBefore(temp, obj1);
+
+  obj2.parentNode.insertBefore(obj1, obj2);
+
+  temp.parentNode.insertBefore(obj2, temp);
+
+  temp.parentNode.removeChild(temp);
+}
 
 function ballfüllen(){
   for(j=1;j<11; j++){
@@ -293,9 +308,9 @@ function ballfüllen(){
       $("#ball"+j).addclass("ballFalsch");
 
 
-  }
+  } */
 
-}
+//}
 
   var delayQ=0; // bestimmt die Verzögerung zwischen den Fragen. 1000=1sek
   var delayA=0; //bestimmt die Länge der Verzögerung der Antworten, nachdem die Frage eingeblendet worden ist.
@@ -303,6 +318,8 @@ function ballfüllen(){
   var punkte=0;  //aktuelle Punktzahl
 
   var antworten= Array(10);
+//  var random= math.random();
+
 
   var $ele;
   var antwortId;
