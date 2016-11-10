@@ -15,7 +15,7 @@ body{
     background-image: 
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
 }
-/*Anzeige "Frage 2/10"*/
+/*Anzeige fragen-counter*/
 .fragen-counter {
   width: 100px;
   margin-top: 1px;
@@ -56,45 +56,40 @@ Abstände zwischen den Fragen*/
 
 
 .antwort{
-  /*height: 60px;*/
   margin: 10px 15px;
-  /*margin-top: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 10px;*/
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding:3px 20px;
+  cursor: pointer;
   background-color:rgba(248,245,228,0.7);
 }
-.Antwort:hover{
+.antwort:hover{
   background-color:rgba(248,245,228,1);
 }
 
 @media only screen and (min-width: 439px) {
 
-    .Antwort{
+    .antwort{
         margin-top:20px;
     }
-    .Fragenblock{
+    .fragenblock{
         height: 10%;
         font-size: 24px;
     }
-    .AlleAntworten{
+    .alle-antworten{
         margin-top:-20px;
         font-size: 24px;
     }
+
     .fragen-counter{
         font-size: 24px;
     }
     }
+
 @media only screen and (min-width: 1024px) {
-    .Antwort{
+    .antwort{
         margin-top:40px;
         font-size:24px;
     }
-    .Fragenblock{
+    .fragenblock{
         height:15%;
         font-size: 24px;
     }
