@@ -5,6 +5,8 @@ Quizelemente
 
 ****************************************************/
 
+console.log("Das Script createUbersichtscreen wird ausgeführt..");
+
 function createUbersicht(){
 
     console.log("createUbersicht wurde aufgerufen.")
@@ -33,11 +35,8 @@ function createUbersicht(){
                     // JSON verarbeiten
                     for(var quizId in json){
                         var temp = snippetQuizItem.outerHTML;
-                        
                         var quiz = json[quizId];
-                        console.log(json);
 
-                        temp = temp.replace(/{{quizId}}/, quizId)
                         temp = temp.replace(/{{quizname}}/, quiz.name);
                         temp = temp.replace(/{{autor}}/, quiz.author);
                         temp = temp.replace(/{{datum}}/, quiz.date);
@@ -47,8 +46,11 @@ function createUbersicht(){
 			
                         var item = document.createElement("div");
                         item.innerHTML = temp;
-                        item.firstChild.onclick = function(){ alert("asas"); };
-			 			 
+                        item.firstChild.id = quizId;
+                        item.firstChild.onclick = function() {
+	                        createStartscreen(this.id);
+                        };
+                        
                         // HTML in Wrap einfügen
                         document.getElementById("content").appendChild(item.firstChild);
                     }
