@@ -185,14 +185,14 @@ function antwortPruefen(ele, answer){
 //    $("#rof").html("Richtig");
 //    setTimeout(function() {$ele.css("background-color", "#40FF00")}, 2000);
 //  $ele.css("background-color", "#FFFFFF");
-$ele.addClass("richtig"); //
+//$ele.addClass("richtig"); //
 
   } else {
 //    $("#rof").html("falsch");
 
 //    setTimeout(function() {$ele.css("background-color", "#FF0000")}, 2000);
 //    $ele.css("background-color", "#FFFFFF");
-$ele.addClass("falsch"); //
+//$ele.addClass("falsch"); //
 
 
   }
@@ -206,11 +206,10 @@ function count(){
     //  document.getElementById("text").innerHTML = i;
   console.log(i);
   if(i===5){
-
-    aktuelleFrage++;
+          aktuelleFrage++;
           clearInterval(timer);
           if(aktuelleFrage<=9){
-         neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
+              neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
           }
           else{
               clearInterval(timer);
@@ -223,10 +222,10 @@ function count(){
 function neueFrage( data, aktuelleFrage ){
 
 
-  $("#antwort1").removeClass("richtig", "falsch");
-  $("#antwort2").removeClass("richtig", "falsch");
-  $("#antwort3").removeClass("richtig", "falsch");
-  $("#antwort4").removeClass("richtig", "falsch");
+//  $("#antwort1").removeClass("richtig", "falsch");
+//  $("#antwort2").removeClass("richtig", "falsch");
+//  $("#antwort3").removeClass("richtig", "falsch");
+//  $("#antwort4").removeClass("richtig", "falsch");
 
   $("#frage").html(data.question);
   $("#antwort1").html(data.options[0].option);    // ändert per Id den Inhalt
@@ -244,24 +243,18 @@ function neueFrage( data, aktuelleFrage ){
   function buttonKlick(){
   $("#antworten").click(function(e){ //click-Funktion außerhalb von neueFrage schreiben,
   //	var cButton = e.target;
-    antwortPruefen(e.target, quiz.allQuestions[aktuelleFrage].question.answer);    // Antwort
-
-
+  antwortPruefen(e.target, quiz.allQuestions[aktuelleFrage].question.answer);    // Antwort
           aktuelleFrage++;
           console.log(aktuelleFrage);
 
-
           if(aktuelleFrage<=9){
-               neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
-
+              neueFrage( quiz.allQuestions[aktuelleFrage].question, aktuelleFrage );
           }
           else{
               //window.location="http://www.google.de";
               //document.getElementById("text").innerHTML = "Jetzt auf Endscreen leiten";
               clearInterval(timer);
               $("#question").html("Quizrunde ist vorbei" + test++ );
-
-
           }
   });
 }
@@ -269,13 +262,13 @@ function neueFrage( data, aktuelleFrage ){
 
   var test=0;
   var $ele;
-var antwortId;
+  var antwortId;
   var timer= null;
-var i=10;
+  var i=10;
 
   var data = {};
   var aktuelleFrage = 0;
   data = quiz.allQuestions[0].question;
 
   buttonKlick();
-   neueFrage( data, aktuelleFrage );
+  neueFrage( data, aktuelleFrage );

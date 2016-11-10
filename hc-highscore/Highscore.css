@@ -4,10 +4,8 @@
              src: url('fonts/NotoSans-Regular.ttf') format('truetype'); }
 body{
     margin: 0;
-    background-image: url(img/stadion_Desktop.jpg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    
+    background: url(img/stadion_Desktop.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 #teaserimage {
@@ -138,6 +136,13 @@ body{
     width: 10%;
     text-align: right;
 }
+/*.liste tr:last-child{
+   outline: solid 3px rgba(203, 7, 39, 1);**/
+}
+
+.liste tr td:first-child{
+    
+}
 
 th, td{
     padding: 4px;
@@ -154,7 +159,7 @@ td{
 
 /*Tablet-Anischt*/
 @media only screen and (max-width: 1024px) {
-    
+       
     .headline{    
         margin-top: 50px;
     }
@@ -173,9 +178,9 @@ td{
 @media only screen and (max-width: 439px) {
     
     body{
-        background-image: url(img/hintergrund-Highscoreliste_handygroesse%20mit%20schraegem%20balken.png);
-        background-size: 100% 290px;
-        background-repeat: no-repeat;    
+        margin: 0;
+        background: url(img/hintergrund-Highscoreliste_handygroesse%20mit%20schraegem%20balken.png) no-repeat center center;
+        background-size: 100% 290px; 
     }
     
     .liste{

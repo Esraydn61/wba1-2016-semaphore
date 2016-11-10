@@ -1,9 +1,8 @@
-
-
 var jsons = {};
 jsons.quizOverview = "http://wba1-semaphore.christiannoss.de/app/data/quizuebersicht.json";
 jsons.quizStart = jsons.quizOverview;
 jsons.quizRanking = "http://wba1-semaphore.christiannoss.de/app/data/ranking-";
+jsons.quizQuestions = "http://wba1-semaphore.christiannoss.de/app/data/questions-";
 
 var model = {};
 model.data = {};
@@ -85,6 +84,30 @@ function parseRanking( quizIdx, callback) {
 	xhttp.send();
         
 }
+
+
+function parseQuestions( quizIdx, callback) {
+    
+    
+    
+    var rankingjson;
+    console.log("parseQuestions");
+        
+    var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function () {
+		if (this.readyState == 4 && this.status == 200) {
+            model.data.rankingjson = JSON.parse(this.responseText);
+			callback.call(this, quizIdx);
+            //return this.responseText;
+        }
+	};
+    
+    
+    xhttp.open("GET", jsons.quizQuestions + quizIdx + ".json", true);
+	xhttp.send();
+}
+    
+
 
 function createQuizOverview() {
     
