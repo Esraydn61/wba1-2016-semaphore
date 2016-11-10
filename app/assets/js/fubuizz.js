@@ -28,8 +28,9 @@ function parseQuizes() {
                         
             //parse JSON
             for (var quizId in model.data.uebersichtjson){
-                var temp = snippetquiz.outerHTML;
-            
+                //var temp = snippetquiz.outerHTML;
+                var temp.innerHTML = templates["quizOverview"];
+                console.log(temp);
                 var quiz = model.data.uebersichtjson[quizId];
 
                 temp = temp.replace(/{{quizIdx}}/, quiz.quizIdx);
@@ -96,9 +97,15 @@ function createQuizOverview() {
         document.getElementById("content").innerHTML = this.responseText;
         
         //Zu bearbeitenden Abschnitt holen
-        snippetquiz = document.getElementById("snippetQuiz");
-        
+        //snippetquiz = templates["quizOverview"];
+       /* snippetquiz = document.getElementById("snippetQuiz");
+        console.log(snippetquiz);
+
         snippetquiz.parentNode.removeChild(snippetquiz);
+        
+        console.log(snippetquiz);
+        
+        */
         
         //JSON holen/speichern
         parseQuizes();
@@ -139,8 +146,7 @@ function createStart( quiz ) {
 		        
 		        //Snippet der Ranking-Liste speichern
 		        snippetranking = document.getElementById("tabellenranking");
-		                        console.log(snippetranking);
-		        //Snippet des Ranking_Headers speichern
+                //Snippet des Ranking_Headers speichern
 		        listhead = document.getElementById("listhead");
 		
 		        //eventuelle "Eltern" löschen

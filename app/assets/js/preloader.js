@@ -60,7 +60,7 @@ function getNextTemplate(){
 	// Wir suchen den nächsten Key(QuizId)
 	var next_template = screenurls.shift();
     
-	
+	//console.log(next_template);
 	// Falls es eine QuizID gibt, holen wir das Template dazu
 	if(next_template){
 		
@@ -74,6 +74,7 @@ function getNextTemplate(){
 				// Wir speichern das Template unter der QuizId im Objekt "templates".
 				templates[next_template] = this.responseText;
 
+                //console.log(templates["quizOverview"]);
 				// Wir rufen die getNextQuiz-Funktion erneut auf.
 				getNextTemplate();
 			}
