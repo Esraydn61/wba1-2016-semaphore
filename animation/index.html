@@ -29,6 +29,14 @@
 			max-width: 0;
 		}
 		
+		#timer-js{
+			height: 20px;
+			max-width: 100%;
+			background-color: blue;
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 10s;
+		}
+		
 		#antworten{
 			opacity: 0;
 			transition: opacity 1s;
@@ -44,6 +52,8 @@
 
  <div class="wrap">
 	 <div id="timer"></div>
+	 
+	 <div id="timer-js"></div>
 	 
 	 <div id="quizfrage">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
@@ -65,17 +75,26 @@
 			
 	}*/
 	
+	var zeit = 100;
+	
 	function showAnswers(){
 		document.getElementById("antworten").className = "show";
-		
-        document.getElementById("timer").className = "start";
+		document.getElementById("timer").className = "start";
+        
+        var timer = setInterval(updateTimer, 10 );
+        function updateTimer(){
+	        zeit--;
+	        document.getElementById("timer-js").style.width = zeit + "%";
+	        if(zeit <= 0){ clearInterval(timer); }
+	        
+	        console.log(zeit);
+        }
+
 	}
 	
 	window.onload = function () {
 
-        
-        
-        setTimeout(showAnswers, 3000);
+        setTimeout(showAnswers, 1000);
         
     }
 

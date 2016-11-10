@@ -1,5 +1,6 @@
 <html>
     <head>
+      <meta charset="utf-8">  <!-- erlaubt das Benutzen von deutschen Umlauten-->
       <title>Quizrunde</title>
         <!--link href="navi.css" type="text/css" rel="stylesheet">
         <script src="navi.js" type="text/javascript" language="JavaScript"></script-->
@@ -45,29 +46,32 @@
                     </nav>
                 </div>
             </div-->
-        <p class = "fragen-counter">Frage:2/10</p>
-            <!--Hier steht der Fragenblock. Diese Fragen werden später durch
-            das Skript zufällig wiedergegeben
-            (hier wird das Skript implementiert).-->
-        <p class="fragenblock">
-                Wann wurde der Verein - damals noch FV Werder Bremen - gegruendet?
-        </p>
-        <!--TODO Fortschrittsbalken -->
 
+        <p class = "fragen-counter" id="question" ></p>
+        <!--- <p id="text"></p> -->
+            <!--Hier steht der Fragenblock. Diese Fragen werden später durch das Skript zufällig wiedergegeben (hier wird das Skript implementiert).-->
+        <p class="fragenblock" id="frage"></p>
+        <!-- Fortschrittsbalken -->
         <!-- Einheitliches Konzept zu Klassennamen
 	        http://cssguidelin.es/
 	         -->
 
 	    <!-- anworten besser als Liste (ul) -->
-      <!--Die Klasse "AlleAntworten" gruppiert alle möglichen Antworten zur Frage.-->
-        <ul class= "alle-antworten">
-            <!--Hier steht nacheinander aufgelistet die Klasse "Antwort". Wir
-            haben hier die Antworten mit "button-idx" benannt, später soll hier
-            aber das Javaskript zur Generierung von Antworten eingebunden sein.-->
-            <li><p class="antwort  button-id1"> 01.Oktober 1893</p></li>
-            <li><p class="antwort  button-id2">  04.Februar 1899</p></li>
-            <li><p class="antwort  button-id3"> 07.Juli 1907</p></li>
-            <li><p class="antwort  button-id4"> 01.Januar 1920</p></li>
-        </ul>
+
+        <ul class= "alle-antworten" id="antworten">
+            <!--Die Klasse "AlleAntworten" gruppiert alle möglichen Antworten zur Frage.-->
+              <!--Hier steht nacheinander aufgelistet die Klasse "Antwort". Vorerst haben wir hier die Antworten A - D benannt, später soll hier aber das Javaskript zur Generierung von Antworten eingebunden sein.-->
+            <li><p class="antwort  button-id1" id="antwort1" data-antwortId="1"></p></li>
+            <li><p class="antwort  button-id2" id="antwort2" data-antwortId="2"></p></li>
+            <li><p class="antwort  button-id3" id="antwort3" data-antwortId="3"></p></li>
+            <li><p class="antwort  button-id4" id="antwort4" data-antwortId="4"></p></li>
+        </div>
+
+        <!-- JavaScripte laden  -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js?v=1"></script>
+        <script src="js/script.js?v=1"></script>
+        <script src="../Logik/quizlogik.js"></script>
     </body>
 </html>
