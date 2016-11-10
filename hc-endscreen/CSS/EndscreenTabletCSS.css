@@ -71,9 +71,9 @@ text-align:center;
 }
 
 .fussbaelle img{
-    height: 25px;
-    width: 25px;
-    padding: 2.5px;
+    height: 15px;
+    width: 15px;
+    padding: 8px;
 }
 
 .fussbaelle {
@@ -113,7 +113,7 @@ width: 345px;
 .suggestions img{
     width: 113px;
     height: 70px;
-    margin-top: 18px;
+    margin-top: 21px;
 }
 
 .suggestions .sugg {
@@ -150,6 +150,11 @@ width: 345px;
     margin-top: -5px;
 }
 
+.rank img {
+    height: 15px;
+    width: 20px;
+}
+
 
 .highscore table{
     width: 345px;
@@ -170,4 +175,8 @@ width: 345px;
 
 .highscore tr:last-child {
     outline: solid 3px rgba(203, 7, 39, 1);
+}
+
+.highscore-btn, .infos {
+    display:none;
 }
