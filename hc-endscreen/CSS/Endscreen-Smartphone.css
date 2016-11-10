@@ -1,6 +1,4 @@
-@media only screen and (max-width: 439px){
-
-    html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
     {
         margin: 0;
         padding: 0;
@@ -18,6 +16,13 @@
                 src: url('../fonts/NotoSans-Regular.ttf') format('truetype'); }
 
 
+.ball-falsch{
+    
+}
+
+
+@media only screen and (max-width: 439px){
+
 
     body{
         max-height: auto;
@@ -28,33 +33,32 @@
     }
 
     .heading{
-        height: 32px;
+        height: 2em;
         width: calc(100% - 21px);
         background: rgb(248, 245, 228);
         position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: 46%;
+        transform: translate(11px);
+        margin-top: 6em;
         margin-bottom: 0%;
         display: inline-block;
     }
     
     h1{
         text-align: center;
-        margin-top: 4px;
+        margin-top: 0.25em;
         font-family: 'OswaldRegular';
-        font-size: 16px; 
+        font-size: 1em;
     }
 
     .quizbild img{
         width: calc(100% - 21px);  
         display: block;
-        margin-top: 9px;
+        margin-top: 0.56em;
         margin-left: 11px;
     }
 
     .punkte{
-        height: 25pt;
+        height: 2.1em;
         width: calc(100% - 21px);
         background-color: rgb(233, 194, 12);
         transform: translate(11px);
@@ -64,39 +68,39 @@
     .punkte p{
         text-align: center;
         font-family: 'OswaldRegular';
-        font-size: 13px;
-        margin-top: 5pt;
+        font-size: 0.8em;
+        margin-top: 0.55em;
     }
 
     .fussbaelle img{
-        height: 13px;
-        width: 13px;
-        margin-right: 8.1pt;
+        height: 0.75em;
+        width: 0.75em;
+        margin-right: 0.2em;
         margin-top: 5pt;
     }
     
     .fussbaelle{
         width: calc(100% - 21px);
-        transform: translate(9px);
+        transform: translate(0.7em);
     }
         
     .erneut, .highscore-btn{
         background: rgb(203, 7, 39);
         color: rgb(255, 255, 255);
-        height: 25pt;
+        height: 2.1em;
         width: calc(100% - 21px);
         transform: translate(11px);
-        margin-top: 13px;
+        margin-top: 0.8em;
         border: none;
         display: inline-block;
     }
     
     .erneut p, .highscore-btn p{
         font-family: 'NotoSans';
-        font-size: 13px;
+        font-size: 0.8em;
         text-align: center;
         text-decoration-line: none; 
-        margin-top: 8px;
+        margin-top: 0.5em;
     }
 
     .highscore, h2{
@@ -104,7 +108,7 @@
     }
 
     .suggestions{
-        margin-top: 15.5pt;
+        margin-top: 1em;
         width: calc(100% - 21px);
         transform: translate(11px);
         display: inline-block;
@@ -112,21 +116,21 @@
     }
     
     .sugg{
-        height: 35pt;
+        height: 2.9em;
         display: block;
         margin-bottom: 7pt;
     }
     
     .sugg img{
         display: inline-block;
-        height: 35pt;
+        height: 2.9em;
     }
     
     .sugg-infos{
-        height: 35pt;
+        height: 2.9em;
         width: calc(100% - 76px);
         float: right;
-        font-size: 9px;
+        font-size: 0.55em;
         display: inline-block;
         position: relative;
     }
@@ -144,7 +148,7 @@
     .erstellt{
         font-family: 'OswaldLight';
         text-align: left;
-        padding-left: 5.4pt;
+        padding-left: 0.5em;
     }
     
     .gespielt{

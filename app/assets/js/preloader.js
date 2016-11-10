@@ -10,6 +10,10 @@ console.log("Das preloader.js Script wird ausgeführt..")
 // Welcher Server stellt die Daten bereit?
 var server = "http://wba1-semaphore.christiannoss.de/app";
 
+
+// Basispfad fur die Jsons
+var jsonbasis = server + "/data";
+
 // Zum Testen in diesem Branch
 server = "";
 
@@ -20,21 +24,15 @@ var loaderisready = false;
 //Dateipfade für die jeweiligen HTML Dokumente
 var urls = {};
 urls.highscore      = server + "/quiz_app/highscore/highscore.html";
-urls.quizrunde      = server + "/quiz_app/quizrunde/quizrunde.html";
-urls.quizOverview  = server + "/quiz_app/quizubersicht/quizubersicht.html";
+urls.quizrunde      = server + "/quiz_app/quizrunde/quiz.html";
+urls.quizOverview  = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
 urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
-jsons.quizubersicht  = server + "/data/quizuebersicht.json";
+jsons.quizubersicht  = jsonbasis + "/quizuebersicht.json";
+//jsons.highscore      = server + "/data/ranking-1.json";
 
-jsons.highscore      = server + "/data/ranking-1.json";
-jsons.highscore      = server + "/data/ranking-3.json";
-jsons.highscore      = server + "/data/ranking-5.json";
-
-jsons.highscore      = server + "/data/questions-1.json";
-jsons.highscore      = server + "/data/questions-3.json";
-jsons.highscore      = server + "/data/questions-5.json";
 
 // In diesem Objekt werdne die Templates gespeichert
 var templates = {};
@@ -53,10 +51,13 @@ function get(id, callback, urlliste) {
 		if (this.readyState == 4) { callback.call(this, id); }
 	};
     
-    console.log("folgende url wird abgefragt: ");
-    console.log(urlliste[id]);
-	xhttp.open("GET", urlliste[id], true);
-	xhttp.send();
+	if(urlliste[id]){
+	    console.log("folgende url wird abgefragt: ");
+
+		xhttp.open("GET", urlliste[id], true);
+		xhttp.send();		
+	}
+
 
 }
 
@@ -102,7 +103,6 @@ function getNextTemplate(){
 				// Wir speichern das Template unter der id im Objekt "templates".
 				templates[next_template] = this.responseText;
 
-                //console.log(templates["quizOverview"]);
 				// Wir rufen die getNextQuiz-Funktion erneut auf.
 				getNextTemplate();
 			}, urls
@@ -116,10 +116,9 @@ function getNextTemplate(){
 	
 // Hier geben wir aus Spaß mal das Template eines Quizzes aus.
 function doSomething(){
-    createQuizOverview();
 	var hightscoreTemplate = templates["highscore"];   
 	loaderisready = true;
-    console.log(jsondata);
+    createQuizOverview();
 }
 
 /* Main
