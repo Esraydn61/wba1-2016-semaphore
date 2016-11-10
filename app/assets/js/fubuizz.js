@@ -16,8 +16,8 @@ model.data = {};
 // Inhalt wird benötigt für Quizübersicht, Startscreen und Ranking
 function parseQuizes() {
     
+    // Speichern der Daten aus quizuebersicht.json
     var uebersichtjson;
-
     
     var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
@@ -33,9 +33,6 @@ function parseQuizes() {
                 var temp = snippetquiz.outerHTML;
             
                 var quiz = model.data.uebersichtjson[quizId];
-                
-                //console.log(model.data.uebersichtjson);
-
 
                 temp = temp.replace(/{{quizIdx}}/, quiz.quizIdx);
                 temp = temp.replace(/{{name}}/, quiz.name);
@@ -46,7 +43,7 @@ function parseQuizes() {
                 temp = temp.replace(/{{image}}/, quiz.image);
                 
 
-                
+                //Einzelne Quizze mit einem Div umschliessen
                 var item = document.createElement("div");
                 item.innerHTML = temp;
                 item.firstChild.onclick = function() {createStart(this);};
@@ -67,44 +64,20 @@ function parseQuizes() {
 
 // Funktion parsed eine von mehreren Ranking JSONS. Mit quizIdx wird angegeben von welchem Quiz genau man das Ranking braucht.
 // Inhalt wird benötigt beim Startscreen und beim Highscorescreen
-function parseRanking(quizIdx, quizscreen) {
+function parseRanking( quizIdx, callback) {
 
-    var rankingjson
+    //Speichern der Daten aus ranking-X.json
+    var rankingjson;
+    console.log("parseRanking");
         
     var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
-
-            // JSON Merken
-            model.data.rankingjson = JSON.parse(this.responseText);
-		
-              for (var rankIdx in model.data.rankingjson["highscore"]){
-                var temp = quizscreen;
-
-                  var highscore = model.data.rankingjson.highscore[rankIdx];
-
-               // console.log(model.data.rankingjson["rankIdx"]);
-                 // console.log("counter" + " " + rankIdx);
-
-                //console.log("object" + "  " + model.data.uebersichtjson);
-
-                temp = temp.replace(/{{rankIdx}}/, highscore.rankIdx);
-                temp = temp.replace(/{{player}}/, highscore.player);
-                temp = temp.replace(/{{points}}/, highscore.points);
-                temp = temp.replace(/{{date}}/, highscore.date);
-
-                //console.log(temp);
-                  var item = document.createElement("th");
-                item.innerHTML = temp;
-
-                //  console.log(temp);
-
-                document.getElementById("content").appendChild(item.firstChild);
-
-
-		}
+			callback.call(this, quizIdx);
+            //return this.responseText;
         }
 	};
+    
 // Bisher sind noch nicht alle quizspezifischen Ranking JSONS verfügbar. Nur die für Deutschland welches die Idx 1 hat. Dieses eine ist erreichbar unter folgender URL:
 // http://wba1-semaphore.christiannoss.de/app/data/ranking-1.json
     
@@ -123,10 +96,12 @@ function createQuizOverview() {
         // init template
         document.getElementById("content").innerHTML = this.responseText;
         
+        //Zu bearbeitenden Abschnitt holen
         snippetquiz = document.getElementById("snippetQuiz");
         
         snippetquiz.parentNode.removeChild(snippetquiz);
         
+        //JSON holen/speichern
         parseQuizes();
         
        // return this.responseText;
@@ -142,39 +117,75 @@ function createStart( quiz ) {
     // ID des zu startenden Quizzes heruasfinden
     var start = quiz.getElementsByTagName("div");
     
+    //Daten des Quizzes holen, welches im Startscreen angezeigt werden soll
     var data = model.data.uebersichtjson["quiz" + start[0].id];
     
-    //console.log(quiz.getElementsByTagName("div"));
-  
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        
-        var template = this.responseText;
-        
-        console.log(this.responseText);
-        
-       // console.log(template);
+    // Rankings aus der JSON holen/speichern
+    parseRanking(start[0].id, init);
+    
+    function init(){
+	    
+	    // JSON Merken
+        model.data.rankingjson = JSON.parse(this.responseText);
 
-       // console.log(quiz);
+		var xhttp = new XMLHttpRequest();
+	    xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		        
+		         document.getElementById("content").innerHTML = this.responseText;
+		        
+		        //Snippet des gesamten Startscreens speichern
+		        snippetstart = document.getElementById("start");
+		        
+		        //Snippet der Ranking-Liste speichern
+		        snippetranking = document.getElementById("test");
+		        
+		        //Snippet des Ranking_Headers speichern
+		        listhead = document.getElementById("listhead");
+		
+		        //eventuelle "Eltern" löschen
+		        snippetstart.parentNode.removeChild(snippetstart);
+		        snippetranking.parentNode.removeChild(snippetranking);
+		        listhead.parentNode.removeChild(listhead);
+		  
+		        //"reinen" Text in der Variable speichern
+		        var template = snippetstart.outerHTML;
+		        
+		
+		        template = template.replace(/{{name}}/, data.name);
+		        template = template.replace(/{{date}}/, data.date);
+		        template = template.replace(/{{image}}/, data.image);
+		        template = template.replace(/{{description}}/, data.description);
+		        template = template.replace(/{{description}}/, data.description);
+		        
+		        //"reinen" Text des Listen Headers speichern
+		        var htmlRankings = listhead.outerHTML;
+		        
+		        //Schleife iteriert durch alle Highscoreeintr#ge des gewählten Quizzes
+		        for (var i= 0; i < model.data.rankingjson.highscore.length; i++){
+		
+		        //"reinen" Text des Rankings speichern
+		        var temp = snippetranking.outerHTML;
+		             
+		        temp = temp.replace(/{{rankIdx}}/, model.data.rankingjson.highscore[i].rankIdx);
+		        temp = temp.replace(/{{player}}/, model.data.rankingjson.highscore[i].player);
+		        temp = temp.replace(/{{points}}/, model.data.rankingjson.highscore[i].points);
+		        temp = temp.replace(/{{date}}/, model.data.rankingjson.highscore[i].date);
+		             
+		        var item = document.createElement("tr");
+		        item.innerHTML = temp;
+		             
+		        htmlRankings += temp;
+		    }
+	
+			document.getElementById("content").innerHTML = template;
+			document.getElementById("ranking").innerHTML = htmlRankings;
+	           // return this.responseText;
 
-        template = template.replace(/{{name}}/, data.name);
-        template = template.replace(/{{date}}/, data.date);
-        template = template.replace(/{{image}}/, data.image);
-        template = template.replace(/{{description}}/, data.description);
-
-
-        parseRanking(start[0].id, template);
-        
-        document.getElementById("content").innerHTML = template;
-        
-        
-       // return this.responseText;
-
-    }
+    	}
     };
     
     xhttp.open("GET", urls.quizStart, true);
     xhttp.send();
-        
+    }        
 }
