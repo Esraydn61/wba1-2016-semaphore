@@ -15,7 +15,7 @@ function parseQuizes() {
     
     // Speichern der Daten aus quizuebersicht.json
     var uebersichtjson;
-    console.log("Parse quizzes");
+
     var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
@@ -24,31 +24,35 @@ function parseQuizes() {
             model.data.uebersichtjson = JSON.parse(this.responseText);
             
             //console.log(model.data.uebersichtjson);
-                        
+            document.getElementById("content").innerHTML = templates["quizOverview"];
+            var snippet = document.getElementsByClassName("Quizkachel")[0].outerHTML;
+             
             //parse JSON
             for (var quizId in model.data.uebersichtjson){
                 //var temp = snippetquiz.outerHTML;
-                var temp.innerHTML = templates["quizOverview"];
-                console.log(temp);
+                //var temp.innerHTML = templates["quizOverview"];
+                var temp = snippet;
                 var quiz = model.data.uebersichtjson[quizId];
 
                 temp = temp.replace(/{{quizIdx}}/, quiz.quizIdx);
-                temp = temp.replace(/{{name}}/, quiz.name);
-                temp = temp.replace(/{{author}}/, quiz.author);
+                temp = temp.replace(/{{quizname}}/, quiz.name);
+                temp = temp.replace(/{{autor}}/, quiz.author);
                 temp = temp.replace(/{{date}}/, quiz.date);
                 temp = temp.replace(/{{counter}}/, quiz.counter);
                 temp = temp.replace(/{{description}}/, quiz.description);
                 temp = temp.replace(/{{image}}/, quiz.image);
                 
-
                 //Einzelne Quizze mit einem Div umschliessen
                 var item = document.createElement("div");
                 item.innerHTML = temp;
-                item.firstChild.onclick = function() {createStart(this);};
                 
-                document.getElementById("content").appendChild(item.firstChild);
+        
+                item.firstChild.onclick = function() {createStart(this);};
+                document.getElementById("snippetQuizItem").appendChild(item.firstChild);
                 
             }
+            
+            document.getElementById("snippetQuizItem").removeChild(document.getElementsByClassName("Quizkachel")[0]);
 		
 		}
 	};
