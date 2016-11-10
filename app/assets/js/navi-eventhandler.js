@@ -39,27 +39,39 @@ if (beenden !== undefined &&
 
 //Schaltfächen mit Eventlistenern ausstatten
 beenden.addEventListener('click', function (event) {
-    console.log("Die Beenden Schaltfäche wurde ausgelost.");
+    if(loaderisready){
+            console.log("Die Beenden Schaltfäche wurde ausgelost.");
+        }
 });
 
 quizze.addEventListener('click', function (event) {
-    console.log("Die Quizze Schaltfäche wurde ausgelost.");
-    createUbersicht();
+    if(loaderisready){
+        console.log("Die Quizze Schaltfäche wurde ausgelost.");
+        createUbersicht();
+    }
 });
 
 highscore.addEventListener('click', function (event) {
-    console.log("Die Highscore Schaltfäche wurde ausgelost.");
-    createHighscore();
+    if(loaderisready){
+        console.log("Die Highscore Schaltfäche wurde ausgelost.");
+        createHighscore();
+     }
 });
 
 uber.addEventListener('click',function (event) {
+    if(loaderisready){
     console.log("Die Uber Schaltfäche wurde ausgelost.");
+    }
 });
 
 kontakt.addEventListener('click', function (event) {
+    if(loaderisready){
     console.log("Die Kontak Schaltfäche wurde ausgelost.");
+    }
 });
 
 einstellungen.addEventListener('click', function (event) {
+    if(loaderisready){
     console.log("Die Einstellungen Schaltfäche wurde ausgelost.");
+    }
 });
