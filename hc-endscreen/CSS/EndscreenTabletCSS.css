@@ -4,7 +4,7 @@
     
     }
     
-    @font-face { 
+ @font-face { 
     font-family: 'Oswald';
     src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
 }
@@ -20,17 +20,13 @@ html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h
 }
 
 body {
-    background-image: url('../images/Back.jpg');
+    background-image: url('../images/background.jpg');
 }
 
 .header {
     background-color: rgba (80, 79, 72,1);
     text-align: center;
     
-}
-
-#logo {
-    height: 80px;
 }
 
 .header {
@@ -67,7 +63,7 @@ body {
 }
 
 .erneut p{
-text-align:center;
+    text-align:center;
 }
 
 .fussbaelle img{
@@ -76,8 +72,13 @@ text-align:center;
     padding: 8px;
 }
 
+.ballFalsch img{
+    opacity: 30%;
+}
+
 .fussbaelle {
-width: 345px;
+    //width: 345px;
+    width: (100%-15px);
 }
 
 .punkte {
@@ -123,19 +124,19 @@ width: 345px;
 
 .suggestions .sugg div {
     position:relative;
-    top: -37px ;
+    top: -36px;
     background-color: rgba(255, 255, 255, 0.5);
     width: 113px;
     height: 20px;
     line-height: 20px;
-    font-family: Noto-Sans;
+    font-family: 'Noto-Sans';
     
 }
 
 .linke-seite {
     float: left;
     padding: 50px;
-    padding-right: 5px;
+    padding-right: 50px;
 }
 
 .rechte-seite {
@@ -157,7 +158,8 @@ width: 345px;
 
 
 .highscore table{
-    width: 345px;
+    //width: 345px;
+    width: 100%;
     margin-top: -9px;
     border-spacing: 0px 5px;
 }
@@ -178,5 +180,5 @@ width: 345px;
 }
 
 .highscore-btn, .infos {
-    display:none;
+    display: none;
 }

@@ -347,7 +347,7 @@ body {
 }
 h2{
   text-align: center;
-  padding-left: 5em;
+  /*padding-left: 5em;*/
 
 }
 
@@ -449,6 +449,7 @@ td{
 
     .titel {
         margin-top: -3em;
+        padding-left:5em;
     }
 }
 
@@ -464,9 +465,28 @@ td{
 @media screen and (min-width:750px){
   .titel{
     margin-top: -3em;
+    padding-left: 5em;
   }
 
 }
+@media screen and (max-width:320px){
+  .titel{
+    height: 50px;
+    text-align: center;
+
+  }
+}
+@media screen and (min-width:1024){
+  .titel{
+    height: 50px;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 0.0005em;
+
+  }
+}
+
+
 
 
 

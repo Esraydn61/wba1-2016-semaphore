@@ -10,6 +10,10 @@ console.log("Das preloader.js Script wird ausgeführt..")
 // Welcher Server stellt die Daten bereit?
 var server = "http://wba1-semaphore.christiannoss.de/app";
 
+
+// Basispfad fur die Jsons
+var jsonbasis = server + "/data";
+
 // Zum Testen in diesem Branch
 server = "";
 
@@ -20,13 +24,13 @@ var loaderisready = false;
 //Dateipfade für die jeweiligen HTML Dokumente
 var urls = {};
 urls.highscore      = server + "/quiz_app/highscore/highscore.html";
-urls.quizrunde      = server + "/quiz_app/quizrunde/quizrunde.html";
-urls.quizOverview  = server + "/quiz_app/quizubersicht/quizubersicht.html";
+urls.quizrunde      = server + "/quiz_app/quizrunde/quiz.html";
+urls.quizOverview  = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
 urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
-jsons.quizubersicht  = server + "/data/quizuebersicht.json";
+jsons.quizubersicht  = jsonbasis + "/quizuebersicht.json";
 //jsons.highscore      = server + "/data/ranking-1.json";
 
 
@@ -112,10 +116,9 @@ function getNextTemplate(){
 	
 // Hier geben wir aus Spaß mal das Template eines Quizzes aus.
 function doSomething(){
-    createQuizOverview();
 	var hightscoreTemplate = templates["highscore"];   
 	loaderisready = true;
-    console.log(jsondata);
+    createQuizOverview();
 }
 
 /* Main
