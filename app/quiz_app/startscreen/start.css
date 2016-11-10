@@ -3,10 +3,7 @@
     font-family: Oswald;
     src: url('Oswald-Regular.tff') format('truetype');
 }
-body {
-    background-image: url(http://www.spanien-newsletter.de/fileadmin/user_upload/ausgabe-2013-oktober/barcelona-camp-nou_0801823.jpg);
-    background-size:cover;
-}
+
 
 .boxbox{
     width: 80%;

@@ -1,34 +1,10 @@
 <div id="start">
-    <div class="titel"><!--Titel oberste Zeile-->
+	<div class="titel">
         <h2>{{name}}</h2>
     </div>
-    <div class="boxbox"><!--Box, die alle anderen Boxen umschließt. Außer den Titel.-->
-        <div class="quizbox">
-            <div class="teaserbild">
-                <img src={{image}}/>
-            </div>
-        <div class="author">
-            <p>{{date}}</p>
-        </div>
-    <div class="teasertext">
-        <p>{{description}}</p> 
-    <div class="toggleBox">      
-    <input name="toggleContent" id="toggleContent" type="checkbox">
-    <label for="toggleContent" class="open">aufklappen</label>
-    <div >
-        <p class="teasertext2">{{description}}</p> 
-    </div>
-          <label for="toggleContent" class="close">zuklappen</label>
-</div>        
-    </div>
-    <div class="buttons"> 
-        <button class="btn" id="playButton">Spielen</button>
-        <button class="btn1" id="highscoreButton">Highscore</button>
-    </div>
-        </div>
-    <div id="highscorecontent"> <!--Highscoreliste-->
-        <table class="liste" id="ranking"> 
-            <tr id="listhead"> 
+    <div id="highscorecontent">
+		<table class="liste" id="ranking"> 
+			<tr id="listhead"> 
                 <th>Rang</th> 
                 <th>Spieler</th> 
                 <th>Zeit</th> 
@@ -42,5 +18,32 @@
             </tr> 
         </table>     
     </div>
-    </div>
+    
+    <div class="boxbox"><!--Box, die alle anderen Boxen umschließt. Außer den Titel.-->
+        <div class="quizbox">
+            <div class="teaserbild">
+                <img src="{{image}}">
+            </div>
+			<div class="author">
+            	<p>{{date}}</p>
+			</div>
+			<div class="teasertext">
+        		<p>{{description}}</p> 
+				<div class="toggleBox">      
+					<input name="toggleContent" id="toggleContent" type="checkbox">
+					<label for="toggleContent" class="open">aufklappen</label>
+					<div>
+						<p class="teasertext2">{{description}}</p> 
+					</div>
+          
+					<label for="toggleContent" class="close">zuklappen</label>
+				</div>        
+			</div>
+			<div class="buttons"> 
+				<button class="btn" id="playButton">Spielen</button>
+				<button class="btn1" id="highscoreButton">Highscore</button>
+			</div>
+        </div>
+	</div>
 </div>
+

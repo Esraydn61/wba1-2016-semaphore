@@ -4,7 +4,7 @@ html{
 }
 
 /*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
-body{
+/*body{
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: lighter;
@@ -13,8 +13,8 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-image:
-/*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
-}
+
+}*/
 /*Anzeige fragen-counte r*/
 .fragen-counter {
   width: 100px;
