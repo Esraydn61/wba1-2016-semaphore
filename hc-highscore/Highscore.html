@@ -3,7 +3,8 @@
     <head>
         <title>Fubuizz Highscore</title>
         <link href="Highscore.css" rel="stylesheet">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script type="text/javascript" src="Highscore.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="content">
@@ -41,12 +42,15 @@
     
         <div class="container-table">
             <table class="liste"> 
+                <thead>
                 <tr> 
                     <th><img id="medaillen" src="img/05_medallie_tablet%20mit%20gelben%20hintergrund.png"/></th> 
                     <th>Spieler</th> 
                     <th>Zeit</th> 
-                    <th>Punkte</th>
-                </tr>               
+                    <th class="sortiert">Punkte</th>
+                </tr>  
+                </thead>
+                <tbody>
                 <tr> 
                     <td>1.</td> 
                     <td>Name</td> 
@@ -57,7 +61,7 @@
                     <td>2.</td> 
                     <td>Name</td> 
                     <td>02.06.2016</td> 
-                    <td>900</td>
+                    <td>200</td>
                 </tr> 
                  <tr> 
                     <td>3.</td> 
@@ -81,7 +85,7 @@
                     <td>6.</td> 
                     <td>Name</td> 
                     <td>02.06.2016</td> 
-                    <td>900</td>
+                    <td>500</td>
                 </tr> 
                  <tr> 
                     <td>7.</td> 
@@ -111,8 +115,9 @@
                     <td>11.</td> 
                     <td>Name</td> 
                     <td>02.06.2016</td> 
-                    <td>900</td>
+                    <td>100</td>
                 </tr> 
+                </tbody>
             </table>
         </div>        
         </div>
