@@ -1,5 +1,7 @@
 function initQuiz(quizIdx){
 	
+
+
 	function getQuizJson( jsonurl, callback ){
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
@@ -14,20 +16,26 @@ function initQuiz(quizIdx){
 	}
 
 	var jsonurl = jsonbasis + "/questions-" + quizIdx + ".json";
-	getQuizJson(jsonurl, function(){  console.log(this); startQuiz(quizIdx, this.responseText); });
+	getQuizJson(jsonurl, function(){  startQuiz(quizIdx, this.responseText); });
 	
 }
 
 
 function startQuiz( quizIdx, json ){
+	
+//		data = quiz.allQuestions[0].question;
+//buttonKlick();
+//	neueFrage( data, aktuelleFrage );
+	
     console.log("createStartscreeen wurde aufgerufen.");
     //console.log("Übergabe: " + quizIdx);
 
     // Snippet ziehen 
     var template = templates["quizrunde"];
 	
-	var quiz = JSON.parse(json);
+	quizLogik.quiz = JSON.parse(json);
 	
+	quizLogik.data = quizLogik.quiz.allQuestions[0].question
 
 	/*template = template.replace(/{{quizname}}/, quiz.name);
     template = template.replace(/{{autor}}/, quiz.author);
@@ -36,14 +44,17 @@ function startQuiz( quizIdx, json ){
     template = template.replace(/{{src}}/, quiz.image);
     template = template.replace(/{{beschreibung}}/, quiz.description);*/
 
-	var item = document.createElement("div");
+	/*var item = document.createElement("div");
 	item.innerHTML = template;
-	item.firstChild.id = quizIdx;
+	item.firstChild.id = quizIdx;*/
 
-console.log(template);
+
 	
 	
 	document.getElementById("content").innerHTML = template;
+	buttonKlick();
+	neueFrage( quizLogik.data, aktuelleFrage );
+
 	// HTML in Wrap einfügen
 	//document.getElementById("content").replaceChild(item.firstChild, document.getElementById("content").firstChild);
 

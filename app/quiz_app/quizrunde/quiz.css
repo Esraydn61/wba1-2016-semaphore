@@ -12,10 +12,10 @@ body{
     background-image: url("quizrundepp/img/stadion_Desktop.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-image: 
+    background-image:
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
 }
-/*Anzeige fragen-counter*/
+/*Anzeige fragen-counte r*/
 .fragen-counter {
   width: 100px;
   margin-top: 1px;
@@ -38,6 +38,40 @@ body{
   padding-bottom: 3px;
 
 }
+#timer{
+			height: 20px; 
+            margin-top: 83;
+            margin-left: 15px;
+            margin-right: 15px;
+			max-width: 100%;
+            background: red; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left, yellow , lightyellow); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, yellow, lightyellow); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, yellow, lightyellow); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, yellow , lightyellow); /* Standard syntax */
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 5s;
+		}
+
+
+#timer-js{
+			height: 20px; 
+           
+            margin-left: 15px;
+            margin-right: 15px;
+			max-width: 100%;
+            background: red; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left, yellow , lightyellow); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, yellow, lightyellow); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, yellow, lightyellow); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, yellow , lightyellow); /* Standard syntax */
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 30s;
+		}
+		
+		#timer.start{
+			max-width: 0;
+		}
 
 /*Allgemeine Formatierung der Antworten,
 hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/

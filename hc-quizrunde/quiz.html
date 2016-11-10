@@ -34,6 +34,33 @@
 	 <div id="timer-js"></div>
  </div>	
 	
+
+        
+        
+        
+        <!-- Einheitliches Konzept zu Klassennamen
+	        http://cssguidelin.es/
+	         -->
+
+	    <!-- anworten besser als Liste (ul) -->
+
+        <ul class= "alle-antworten" id="antworten">
+            <!--Die Klasse "AlleAntworten" gruppiert alle möglichen Antworten zur Frage.-->
+              <!--Hier steht nacheinander aufgelistet die Klasse "Antwort". Vorerst haben wir hier die Antworten A - D benannt, später soll hier aber das Javaskript zur Generierung von Antworten eingebunden sein.-->
+            <li><p class="antwort  button-id1" id="antwort1" data-antwortId="1"></p></li>
+            <li><p class="antwort  button-id2" id="antwort2" data-antwortId="2"></p></li>
+            <li><p class="antwort  button-id3" id="antwort3" data-antwortId="3"></p></li>
+            <li><p class="antwort  button-id4" id="antwort4" data-antwortId="4"></p></li>
+        </div>
+
+        <!-- JavaScripte laden  -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js?v=1"></script>
+        <script src="js/script.js?v=1"></script>
+        <script src="../Logik/quizlogik.js"></script>
+        <script src="../app/assets/js/fubuizz.js"></script>
+        <script type="text/javascript"></script>
 <script type="text/javascript">
 	/*
 	setTimeout(startTimer, 1000);
@@ -65,31 +92,6 @@
 
 	
 </script>
-        
-        
-        
-        <!-- Einheitliches Konzept zu Klassennamen
-	        http://cssguidelin.es/
-	         -->
 
-	    <!-- anworten besser als Liste (ul) -->
-
-        <ul class= "alle-antworten" id="antworten">
-            <!--Die Klasse "AlleAntworten" gruppiert alle möglichen Antworten zur Frage.-->
-              <!--Hier steht nacheinander aufgelistet die Klasse "Antwort". Vorerst haben wir hier die Antworten A - D benannt, später soll hier aber das Javaskript zur Generierung von Antworten eingebunden sein.-->
-            <li><p class="antwort  button-id1" id="antwort1" data-antwortId="1"></p></li>
-            <li><p class="antwort  button-id2" id="antwort2" data-antwortId="2"></p></li>
-            <li><p class="antwort  button-id3" id="antwort3" data-antwortId="3"></p></li>
-            <li><p class="antwort  button-id4" id="antwort4" data-antwortId="4"></p></li>
-        </div>
-
-        <!-- JavaScripte laden  -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-        <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js?v=1"></script>
-        <script src="js/script.js?v=1"></script>
-        <script src="../Logik/quizlogik.js"></script>
-        <script src="../app/assets/js/fubuizz.js"></script>
-        <script type="text/javascript"></script>
     </body>
 </html>

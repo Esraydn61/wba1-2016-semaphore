@@ -9,7 +9,7 @@ müssen angeglichen werden.
 console.log("Das preloader.js Script wird ausgeführt..")
 
 // Welcher Server stellt die Daten bereit?
-var server = "http://wba1-semaphore.christiannoss.de/app";
+var server = "";//"http://wba1-semaphore.christiannoss.de/app";
 
 
 // Basispfad fur die Jsons
@@ -26,7 +26,7 @@ var loaderisready = false;
 var urls = {};
 urls.highscore      = server + "/quiz_app/highscore/Highscore.html";
 urls.quizrunde      = server + "/quiz_app/quizrunde/quiz.html";
-urls.quizOverview  = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
+urls.quizOverview   = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
 urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
