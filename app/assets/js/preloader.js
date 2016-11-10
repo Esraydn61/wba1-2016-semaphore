@@ -28,8 +28,14 @@ urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
 jsons.quizubersicht  = server + "/data/quizuebersicht.json";
-//jsons.highscore      = server + "/data/ranking-1.json";
 
+jsons.highscore      = server + "/data/ranking-1.json";
+jsons.highscore      = server + "/data/ranking-3.json";
+jsons.highscore      = server + "/data/ranking-5.json";
+
+jsons.highscore      = server + "/data/questions-1.json";
+jsons.highscore      = server + "/data/questions-3.json";
+jsons.highscore      = server + "/data/questions-5.json";
 
 // In diesem Objekt werdne die Templates gespeichert
 var templates = {};

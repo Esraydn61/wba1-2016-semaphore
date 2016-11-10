@@ -3,33 +3,78 @@
 
 "highscore": [{
 		"rankIdx": 1,
-		"player": "Nicole Trommler",
-		"date": "2016-06-02T14:33:37+02:00",
-		"points": 900
+		"player": "Antonio_Senio",
+		"date": "2016-11-02T23:12:25+02:00",
+		"points": 895
 		},{
 		"rankIdx": 2,
-		"player": "Markus Boehm",
-		"date": "2016-05-25T17:58:57+02:00",
-		"points": 875
+		"player": "Paul_Schmiedt",
+		"date": "2016-10-25T12:58:57+02:00",
+		"points": 870
 		},{
 		"rankIdx": 3,
-		"player": "Peter Scholz",
+		"player": "Marcus_Müller",
 		"date": "2016-07-23T18:53:17+02:00",
-		"points": 700
+		"points": 840
 		},{
 		"rankIdx": 4,
-		"player": "Stefanie Dresner",
+		"player": "KölnerJung",
 		"date": "2016-05-15T22:33:37+02:00",
-		"points": 725
+		"points": 675
 		},{
 		"rankIdx": 5,
+		"player": "Maxi_Schmidt",
+		"date": "2016-03-25T22:45:08+02:00",
+		"points": 615
+		},{ 
+        "rankIdx": 6,
 		"player": "Silke Bader",
-		"date": "2016-07-17T14:33:37+02:00",
-		"points": 725
+		"date": "2016-07-10T17:39:17+02:00",
+		"points": 555
+		},{    
+        "rankIdx": 7,
+		"player": "Mücke36",
+		"date": "2016-08-22T23:40:06+02:00",
+		"points": 530
+		},{    
+        "rankIdx": 8,
+		"player": "Manuel Schmitt",
+		"date": "2016-10-06T05:34:16+02:00",
+		"points": 480
+		},{    
+        "rankIdx": 9,
+		"player": "MichiMich",
+		"date": "2016-10-30T18:07:56+02:00",
+		"points": 465
+		},{   
+        "rankIdx": 10,
+		"player": "Der Profi-Kicker",
+		"date": "2016-11-19T02:24:35+02:00",
+		"points": 460
 		},{
+        "rankIdx": 11,
+		"player": "Hansi Brockler",
+		"date": "2016-09-20T13:46:20+02:00",
+		"points": 405
+		},{
+        "rankIdx": 12,
+		"player": "Manu92",
+		"date": "2016-11-20T08:09:34+02:00",
+		"points": 310
+		},{
+        "rankIdx": 13,
+		"player": "kicker23",
+		"date": "2016-08-04T21:56:07+02:00",
+		"points": 220
+		},{
+        "rankIdx": 14,
+		"player": "Daniel Müller",
+		"date": "2016-11-06T10:24:13+02:00",
+		"points": 190
+		},{ 
 		"rankIdx": 15,
-		"player": "Ich",
-		"date": "2016-08-18T14:33:37+02:00",
-		"points": 600
+		"player": "Biggi76",
+		"date": "2016-10-18T09:16:02+02:00",
+		"points": 100
 		}]
 }
