@@ -71,6 +71,7 @@ function parseRanking( quizIdx, callback) {
     var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
+            model.data.rankingjson = JSON.parse(this.responseText);
 			callback.call(this, quizIdx);
             //return this.responseText;
         }
@@ -134,10 +135,11 @@ function createStart( quiz ) {
 		        
 		        //Snippet des gesamten Startscreens speichern
 		        snippetstart = document.getElementById("start");
+
 		        
 		        //Snippet der Ranking-Liste speichern
 		        snippetranking = document.getElementById("tabellenranking");
-		        
+		                        console.log(snippetranking);
 		        //Snippet des Ranking_Headers speichern
 		        listhead = document.getElementById("listhead");
 		
@@ -183,7 +185,7 @@ function createStart( quiz ) {
     	}
     };
     
-    xhttp.open("GET", urls.quizStart, true);
+    xhttp.open("GET", urls.startscreen, true);
     xhttp.send();
     }        
 }
