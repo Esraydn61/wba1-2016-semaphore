@@ -1,7 +1,6 @@
 /************************************************************************
-Jetzt sind die wichtigsten Sachen für die Navigation vorhanden.
-Allerdings ist der Content noch nicht eingebunden.
-Dazu muss zu erst das HTML Template für die jeweilige Seite geladen werden.
+Dieses Script speichert momentan nur die URLS.
+Es soll später die server requests managen.
 
 TODO:
 Laden und schreiben lässt sich nicht entkoppeln.
