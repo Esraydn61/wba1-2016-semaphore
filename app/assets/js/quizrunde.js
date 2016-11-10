@@ -21,7 +21,7 @@ function initQuiz(quizIdx){
 
 function startQuiz( quizIdx, json ){
     console.log("createStartscreeen wurde aufgerufen.");
-    console.log("Übergabe: " + quizIdx);
+    //console.log("Übergabe: " + quizIdx);
 
     // Snippet ziehen 
     var template = templates["quizrunde"];
