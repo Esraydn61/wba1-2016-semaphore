@@ -15,14 +15,14 @@ body{
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
 }
 /*Anzeige "Frage 2/10"*/
-.beiwelcherfragesindwir {
+.fragen-counter {
   margin-top: 1px;
   margin-left: 15px;
   color: #FFFFFF;
 }
 
 /*Formatierung Frage und Hintergrund der Frage*/
-.Fragenblock{
+.fragenblock{
   position:absolute;
   left: 0;
   right: 0;
@@ -39,19 +39,22 @@ body{
 
 /*Allgemeine Formatierung der Antworten,
 hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
-.AlleAntworten{
+.alle-antworten{
   position:absolute;
   left: 0;
   right: 0;
   bottom: 0;
+  list-style:none;
+  padding: 0;
+  margin: 0;
 }
 
-/*Antworten FOrmatierunge, jede Frage bekommt einen eigenen Hintergrund,
+/*Antworten Formatierung, jede Frage bekommt einen eigenen Hintergrund,
 Abstände zwischen den Fragen*/
 
 
-.Antwort{
-  /*height: 60px;*/ 
+.antwort{
+  /*height: 60px;*/
   /* margin: 10px 15px; */
   margin-top: 10px;
   margin-left: 15px;
