@@ -2,8 +2,8 @@ html, body{
     margin: 0px;
 	font-family: 'Oswald' , sans-serif;
     color: #FFFFFF;
-    background-image: url(../images/fubuizz-bg-gross.jpg);
-    background-size:cover;
+    background: url(../images/fubuizz-bg-gross.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 header.fubuizz-header {

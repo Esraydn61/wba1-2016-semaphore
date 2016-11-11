@@ -4,19 +4,16 @@ html{
 }
 
 /*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
-/*body{
+.quizrunde *{
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: lighter;
-    background-color: grey;
-    background-image: url("quizrundepp/img/stadion_Desktop.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-image:
+    color: #000;
 /*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
-}*/
+}
+
 /*Anzeige fragen-counte r*/
-.fragen-counter {
+.quizrunde .fragen-counter {
   width: 100px;
   margin-top: 1px;
   margin-left: 7px;
@@ -24,7 +21,7 @@ html{
 }
 
 /*Formatierung Frage und Hintergrund der Frage*/
-.fragenblock{
+.quizrunde .fragenblock{
   position:absolute;
   left: 0;
   right: 0;
@@ -38,7 +35,8 @@ html{
   padding-bottom: 3px;
 
 }
-#timer{
+
+.quizrunde #timer{
 			height: 20px; 
             margin-top: 83;
             margin-left: 15px;
@@ -54,7 +52,7 @@ html{
 		}
 
 
-#timer-js{
+.quizrunde #timer-js{
 			height: 20px; 
            
             margin-left: 15px;
@@ -69,13 +67,13 @@ html{
 			transition: max-width 30s;
 		}
 		
-		#timer.start{
+.quizrunde #timer.start{
 			max-width: 0;
 		}
 
 /*Allgemeine Formatierung der Antworten,
 hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
-.alle-antworten{
+.quizrunde .alle-antworten{
   position:absolute;
   left: 0;
   right: 0;
@@ -89,45 +87,46 @@ hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
 Abstände zwischen den Fragen*/
 
 
-.antwort{
+.quizrunde .antwort{
+	font-weight: lighter;
   margin: 10px 15px;
   padding:3px 20px;
   cursor: pointer;
   background-color:rgba(248,245,228,0.7);
 }
-.antwort:hover{
+.quizrunde .antwort:hover{
   background-color:rgba(248,245,228,1);
 }
 
 @media only screen and (min-width: 439px) {
 
-    .antwort{
+    .quizrunde .antwort{
         margin-top:20px;
     }
-    .fragenblock{
+    .quizrunde .fragenblock{
         height: 10%;
         font-size: 24px;
     }
-    .alle-antworten{
+    .quizrunde .alle-antworten{
         margin-top:-20px;
         font-size: 24px;
     }
 
-    .fragen-counter{
+    .quizrunde .fragen-counter{
         font-size: 24px;
     }
-    }
+}
 
 @media only screen and (min-width: 1024px) {
-    .antwort{
+    .quizrunde .antwort{
         margin-top:40px;
         font-size:24px;
     }
-    .fragenblock{
+    .quizrunde .fragenblock{
         height:15%;
         font-size: 24px;
     }
-    .fragen-counter{
+    .quizrunde .fragen-counter{
         font-size: 24px;
     }
 }
