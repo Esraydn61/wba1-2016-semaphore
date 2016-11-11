@@ -9,6 +9,12 @@ console.log("Das createHighscore Scrip wird ausgeführt..");
 
 function createHighscore(){
     console.log("createHighscore wurde aufgerufen.");
+    
+    // Stylesheet austauschen
+	var sheeturl = urls["highscore"].replace(/\.html/, ".css");
+	document.getElementById('css-for-view').setAttribute('href', sheeturl);
+	
+	
     // Hole das Snippet
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {

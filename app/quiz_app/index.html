@@ -2,12 +2,20 @@
 <html>
 <head>
     <title>Fubuizz</title>
-    <link rel="stylesheet" href="../assets/css/navi.css" type="text/css"/>
-    <link rel="stylesheet" href="quizuebersicht/quizuebersicht.css" type="text/css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+    
+    <link rel="stylesheet/less" type="text/css" href="../assets/base.less" />
+    <link rel="stylesheet/less" href="../assets/css/navi.less" type="text/css"/>
+    
+    <link rel="stylesheet" href="../assets/css/navi.css" type="text/css">
+    <link rel="stylesheet" href="quizuebersicht/quizuebersicht.css" type="text/css" id="css-for-view">
+    
+    <!-- cn: statische css aufrufe dürch dynamische ersetzt -->
+    <!--link rel="stylesheet" href="quizuebersicht/quizuebersicht.css" type="text/css"/>
     <link rel="stylesheet" href="startscreen/start.css" type="text/css"/>
     <link rel="stylesheet" href="highscore/highscore.css" type="text/css"/>
     <link rel="stylesheet" href="quizrunde/quiz.css" type="text/css"/>
-    <link rel="stylesheet" href="schlussscreen/schlussscreen.css" type="text/css"/>
+    <link rel="stylesheet" href="schlussscreen/schlussscreen.css" type="text/css"/-->
     
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> <!--Schiftart Oswald-->
     <meta charset="utf-8">
@@ -15,7 +23,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="fubuizz-header">
     <div id="move">
         <div class="menu">
                     <header class="burgerheader">
@@ -64,7 +72,7 @@
         <script src="../assets/js/quizlogik.js" type="text/javascript"></script>
 	   	<script src="../assets/js/createUbersicht.js" type="text/javascript" language="JavaScript"></script>
 	   	<script src="../assets/js/createStartscreen.js" type="text/javascript" language="JavaScript"></script>
-	   	<script src="../assets/js/quizrunde.js" type="text/javascript" language="JavaScript"></script>
+	   	<script src="../assets/js/createQuizrunde.js" type="text/javascript" language="JavaScript"></script>
 	   	<script src="../assets/js/preloader.js" type="text/javascript" language="JavaScript"></script>
 	   	<!--script src="../assets/js/createUbersicht.js" type="text/javascript" language="JavaScript"></script-->	
 	   	<!--script src="../assets/js/fubuizz.js" type="text/javascript" language="JavaScript"></script-->

@@ -12,6 +12,10 @@ function createStartscreen(quizId){//id, name, author, date, counter, image, des
     console.log("createStartscreeen wurde aufgerufen.");
     console.log("Übergabe: " + quizId);
 
+	// Stylesheet austauschen
+	var sheeturl = urls["startscreen"].replace(/\.html/, ".css");
+	document.getElementById('css-for-view').setAttribute('href', sheeturl);
+	
     // Snippet ziehen 
     var template = templates["startscreen"];
 	

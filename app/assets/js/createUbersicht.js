@@ -11,6 +11,10 @@ function createQuizOverview(){
 
     console.log("createUbersicht wurde aufgerufen.")
 	
+	// Stylesheet austauschen
+	var sheeturl = urls["quizOverview"].replace(/\.html/, ".css");
+	document.getElementById('css-for-view').setAttribute('href', sheeturl);
+	
     // JSON Merken
     var json = JSON.parse(jsondata["quizubersicht"]);
 	

@@ -30,6 +30,10 @@ function startQuiz( quizIdx, json ){
     console.log("createStartscreeen wurde aufgerufen.");
     //console.log("Übergabe: " + quizIdx);
 
+	// Stylesheet austauschen
+	var sheeturl = urls["quizrunde"].replace(/\.html/, ".css");
+	document.getElementById('css-for-view').setAttribute('href', sheeturl);
+	
     // Snippet ziehen 
     var template = templates["quizrunde"];
 	
