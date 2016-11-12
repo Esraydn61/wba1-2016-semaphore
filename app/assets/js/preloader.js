@@ -74,7 +74,6 @@ function get(id, callback, urlliste) {
 	xhttp.send();
     
 	if(urlliste[id]){
-	    console.log("folgende url wird abgefragt: ");
 
 		xhttp.open("GET", urlliste[id], true);
 		xhttp.send();		
