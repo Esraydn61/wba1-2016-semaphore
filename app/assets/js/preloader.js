@@ -5,13 +5,22 @@ Die die Url namen werden doppelt benutzt und die Namne
 müssen angeglichen werden.
 ****************************************************/
 
+
 console.log("Das preloader.js Script wird ausgeführt..")
 
 // Welcher Server stellt die Daten bereit?
-var server = "http://wba1-semaphore.christiannoss.de/app";
+var server = "";//"http://wba1-semaphore.christiannoss.de/app";
+
+if(location.href.match(/wba1-semaphore.christiannoss.de/)){
+	server = "http://wba1-semaphore.christiannoss.de/app";
+}
+
+
+// Basispfad fur die Jsons
+var jsonbasis = server + "/data";
 
 // Zum Testen in diesem Branch
-server = "";
+//server = "";
 
 var loaderisready = false;
 
@@ -21,12 +30,12 @@ var loaderisready = false;
 var urls = {};
 urls.highscore      = server + "/quiz_app/highscore/highscore.html";
 urls.quizrunde      = server + "/quiz_app/quizrunde/quizrunde.html";
-urls.quizOverview  = server + "/quiz_app/quizubersicht/quizubersicht.html";
+urls.quizOverview   = server + "/quiz_app/quizuebersicht/quizuebersicht.html";
 urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
-jsons.quizubersicht  = server + "/data/quizuebersicht.json";
+jsons.quizubersicht  = jsonbasis + "/quizuebersicht.json";
 //jsons.highscore      = server + "/data/ranking-1.json";
 
 
@@ -47,8 +56,18 @@ function get(id, callback, urlliste) {
 		if (this.readyState == 4) { callback.call(this, id); }
 	};
     
+<<<<<<< HEAD
 	xhttp.open("GET", urlliste[id], true);
 	xhttp.send();
+=======
+	if(urlliste[id]){
+	    console.log("folgende url wird abgefragt: ");
+
+		xhttp.open("GET", urlliste[id], true);
+		xhttp.send();		
+	}
+
+>>>>>>> 42b533b94bf2c26d5c4da4e4903ce4eae6b27ba2
 
 }
 
@@ -108,11 +127,17 @@ function getNextTemplate(){
 	
 // Hier geben wir aus Spaß mal das Template eines Quizzes aus.
 function doSomething(){
+<<<<<<< HEAD
     //createQuizOverview();
 	var hightscoreTemplate = templates["highscore"];   
 	loaderisready = true;
    // console.log(jsondata);
     sortiertest();
+=======
+	var hightscoreTemplate = templates["highscore"];   
+	loaderisready = true;
+    createQuizOverview();
+>>>>>>> 42b533b94bf2c26d5c4da4e4903ce4eae6b27ba2
 }
 
 /* Main

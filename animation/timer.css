@@ -1,0 +1,7 @@
+#timer-js{
+			height: 20px;
+			max-width: 100%;
+			background-color: blue;
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 10s;
+		} 

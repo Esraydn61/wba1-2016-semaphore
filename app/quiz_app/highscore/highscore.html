@@ -1,11 +1,123 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-    <body>
-        <div id="spielerScoreSnippet">
-            <p>{{name}}</p>
-            <p>{{date}}</p>
-            <p>{{points}}</p>
-            #####################################
+    <head>
+        <title>Fubuizz Highscore</title>
+        <link href="Highscore.css" rel="stylesheet">
+        <script type="text/javascript" src="Highscore.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>       
+        <!--Überschrift-->
+        <div class="headline">
+            <h1 id="headlinetext">Highscore</h1>
         </div>
+        
+        <!--Gesamte linke Seite -->
+        <div class="teaser">
+            <!--Dropdown-Menü für Quizauswahl-->
+            <select id="auswahl">
+                    <option>Quiztitel 1</option>
+                    <option>Quiztitel 2</option>
+                    <option>Quiztitel 3</option>
+                    <option>Quiztitel 4</option>
+                    <option>Quiztitel 5</option>
+            </select>
+            
+            <!--Quizbild-->
+            <img id="teaserimage" src="../../assets/images/Platzhalter.jpg"/>
+            
+            <!--Autor und Erstellungsdatum-->
+            <span id="author">von Platzhalter erstellt am Platzhalter</span>
+            
+            <!--Quizbeschreibung/Teasertext-->
+            <p id="teasertext">Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter</p>
+        </div>
+        
+        <!--Gesamte rechte Seite-->
+        <div class="container-table">
+            <!--Highscoreliste/Tabelle-->
+            <table class="liste"> 
+                <!--Tabellenkopf-->
+                <thead>
+                <tr> 
+                    <th><img id="medaillen" src="../../assets/images/medaillen%20highscore.png"/></th> 
+                    <th>Spieler</th> 
+                    <th>Zeit</th> 
+                    <th class="sortiert">Punkte</th>
+                </tr>  
+                </thead>
+                
+                <!--Tabellenkörper-->
+                <tbody>
+                <tr> 
+                    <td>1.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                <tr> 
+                    <td>2.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>200</td>
+                </tr> 
+                 <tr> 
+                    <td>3.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                 <tr> 
+                    <td>4.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                 <tr> 
+                    <td>5.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                 <tr> 
+                    <td>6.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>500</td>
+                </tr> 
+                 <tr> 
+                    <td>7.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                 <tr> 
+                    <td>8.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                 <tr> 
+                    <td>9.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                 <tr> 
+                    <td>10.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>900</td>
+                </tr> 
+                 <tr id="lastentry"> 
+                    <td>11.</td> 
+                    <td>Name</td> 
+                    <td>02.06.2016</td> 
+                    <td>100</td>
+                </tr> 
+                </tbody>
+            </table>
+        </div>        
+        
     </body>
 </html>

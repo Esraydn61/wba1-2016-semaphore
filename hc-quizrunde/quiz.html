@@ -1,57 +1,43 @@
 <html>
     <head>
+
+
+  	
+
+
       <meta charset="utf-8">  <!-- erlaubt das Benutzen von deutschen Umlauten-->
       <title>Quizrunde</title>
         <!--link href="navi.css" type="text/css" rel="stylesheet">
         <script src="navi.js" type="text/javascript" language="JavaScript"></script-->
-      <link href="reset.css" rel="stylesheet"/>
+
       <link href="quiz.css" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+        
+        
     </head>
     <body>
-     <!-- Navigation auskommentiert!
-     <div id="move">
-                <div class="container">
-                <header>
-                       <p> <a href="/quizrundepp/img/Logo_Fubuizz.png"><img src="quizrundepp/img/Logo_Fubuizz.png" height= 40px alt="Fubuizz"/></a>
-                       <img class="burgermenu" src="quizrundepp/img/Logo_Fubuizz.png" onclick="myMove()"/>
-                    <ul class="head">
-                        <li><a href="https://www.google.de">Registrieren</a></li>
-                        <li><a href="https://www.google.de">Login</a></li>
-                    </ul>
-                </header>
-                <nav>
-                    <ul class="navi">
-                        <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
-                        <li><a href="https://www.google.de">Highscore</a></li>
-                        <li><a href="https://www.google.de">Über Fubuizz</a></li>
-                        <li><a href="https://www.google.de">Kontakt</a></li>
-                        <li><a href="https://www.google.de">Einstellungen</a></li>
-                    </ul>
-                </nav>
-                </div>
-                <div class="menu">
-                    <header class="burgerheader">
-                        <p> <a href="/quizrundepp/img/Logo_Fubuizz.png"><img src="quizrundepp/img/Logo_Fubuizz.png" height= 40px alt="Fubuizz"/></a>
-                    </header>
-                    <nav class="burgernav">
-                        <ul>
-                            <li><a href="https://www.google.de">Aktuelle Quizze</a></li>
-                            <li><a href="https://www.google.de">Highscore</a></li>
-                            <li><a href="https://www.google.de">Uber Fubuizz</a></li>
-                            <li><a href="https://www.google.de">Kontakt</a></li>
-                            <li><a href="https://www.google.de">Einstellungen</a></li>
-                        </ul>
-                        <button class="quizbeenden" type="button">Quiz beenden</button>
-                    </nav>
-                </div>
-            </div-->
+
 
         <p class = "fragen-counter" id="question" ></p>
         <!--- <p id="text"></p> -->
             <!--Hier steht der Fragenblock. Diese Fragen werden später durch das Skript zufällig wiedergegeben (hier wird das Skript implementiert).-->
         <p class="fragenblock" id="frage"></p>
         <!-- Fortschrittsbalken -->
+        
+        
+        
+ <div class="wrap">
+	   <div id="timer"></div>
+	 
+	 <div id="timer-js"></div>
+ </div>	
+	
+
+        
+        
+        
         <!-- Einheitliches Konzept zu Klassennamen
 	        http://cssguidelin.es/
 	         -->
@@ -73,5 +59,39 @@
         <script src="js/plugins.js?v=1"></script>
         <script src="js/script.js?v=1"></script>
         <script src="../Logik/quizlogik.js"></script>
+        <script src="../app/assets/js/fubuizz.js"></script>
+        <script type="text/javascript"></script>
+<script type="text/javascript">
+	/*
+	setTimeout(startTimer, 1000);
+	function startTimer(){
+			
+	}*/
+	
+	var zeit = 100;
+	
+	function showAnswers(){
+		/*document.getElementById("timer").className = "start";*/
+        
+        var timer = setInterval(updateTimer, 10 );
+        function updateTimer(){
+	        zeit--;
+	        document.getElementById("timer-js").style.width = zeit + "%";
+	        if(zeit <= 0){ clearInterval(timer); }
+	        
+	        console.log(zeit);
+        }
+
+	}
+	
+	window.onload = function () {
+
+        setTimeout(showAnswers, 1000);
+        
+    }
+
+	
+</script>
+
     </body>
 </html>

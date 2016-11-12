@@ -3,25 +3,18 @@
     <head>
         <title>Fubuizz Highscore</title>
         <link href="Highscore.css" rel="stylesheet">
-       <script type="text/javascript" src="Highscore.js"></script>
+        <script type="text/javascript" src="Highscore.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div class="content">
-
+    <body>       
+        <!--Überschrift-->
         <div class="headline">
             <h1 id="headlinetext">Highscore</h1>
         </div>
-            
-        <div>
-             <img id="treppe" src="img/06_highscore-treppe-handy.png">
-        </div>    
-            
         
+        <!--Gesamte linke Seite -->
         <div class="teaser">
-          
-        
-            
+            <!--Dropdown-Menü für Quizauswahl-->
             <select id="auswahl">
                     <option>Quiztitel 1</option>
                     <option>Quiztitel 2</option>
@@ -30,26 +23,31 @@
                     <option>Quiztitel 5</option>
             </select>
             
-                
-                
-            <img id="teaserimage" src="img/Platzhalter.jpg"/>
+            <!--Quizbild-->
+            <img id="teaserimage" src="../../assets/images/Platzhalter.jpg"/>
             
-            <span id="author">von PeterFCB erstellt am 12.09.2016</span>
+            <!--Autor und Erstellungsdatum-->
+            <span id="author">von Platzhalter erstellt am Platzhalter</span>
             
-            <p id="teasertext">Alles rund um Sieg und Niederlage der Nationalelf.
-            Dieses Quiz ist eine Herausforderung für alle Fußballkenner.</p>
+            <!--Quizbeschreibung/Teasertext-->
+            <p id="teasertext">Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter</p>
         </div>
-    
+        
+        <!--Gesamte rechte Seite-->
         <div class="container-table">
+            <!--Highscoreliste/Tabelle-->
             <table class="liste"> 
+                <!--Tabellenkopf-->
                 <thead>
                 <tr> 
-                    <th><img id="medaillen" src="img/05_medallie_tablet%20mit%20gelben%20hintergrund.png"/></th> 
+                    <th><img id="medaillen" src="../../assets/images/medaillen%20highscore.png"/></th> 
                     <th>Spieler</th> 
                     <th>Zeit</th> 
                     <th class="sortiert">Punkte</th>
                 </tr>  
                 </thead>
+                
+                <!--Tabellenkörper-->
                 <tbody>
                 <tr> 
                     <td>1.</td> 
@@ -120,6 +118,6 @@
                 </tbody>
             </table>
         </div>        
-        </div>
+        
     </body>
 </html>

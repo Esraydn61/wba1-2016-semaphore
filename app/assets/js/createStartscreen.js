@@ -11,57 +11,32 @@ console.log("Das Script createStartscreen wird ausgeführt..");
 function createStartscreen(quizId){//id, name, author, date, counter, image, description){
     console.log("createStartscreeen wurde aufgerufen.");
     console.log("Übergabe: " + quizId);
-    // console.log("Übergebene Werte:" + id + " name: " + name + " author: " + " date: " + "counter: " + counter + " image: " + image + " description: " + description);
-    
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function(){
-    if (this.readyState == 4 && this.status == 200) {
-             
-        // Template injizieren
-        document.getElementById("content").innerHTML = this.responseText;
 
-        // Snippet ziehen 
-        var snippetInfo = document.getElementById("snippetInfo");
-        console.log("SnippetInfo wurde gefunden: " + snippetInfo);
-        // Item im Wrap löschen
-        snippetInfo.parentNode.removeChild(snippetInfo);
+	// Stylesheet austauschen
+	var sheeturl = urls["startscreen"].replace(/\.html/, ".css");
+	document.getElementById('css-for-view').setAttribute('href', sheeturl);
+	
+    // Snippet ziehen 
+    var template = templates["startscreen"];
+	
+	var quizze = JSON.parse(jsondata["quizubersicht"]);
+	var quiz = quizze[quizId];
 
-        // Hol das JSON
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var html;
+	template = template.replace(/{{quizname}}/, quiz.name);
+    template = template.replace(/{{autor}}/, quiz.author);
+    template = template.replace(/{{date}}/, quiz.date);
+    template = template.replace(/{{anzahl}}/, quiz.counter);
+    template = template.replace(/{{src}}/, quiz.image);
+    template = template.replace(/{{beschreibung}}/, quiz.description);
 
-                // JSON Merken
-                var json = JSON.parse(this.responseText);
+	var item = document.createElement("div");
+	item.innerHTML = template;
+	item.firstChild.id = quizId;
 
-                // JSON verarbeiten
-               
-                var temp = snippetInfo.outerHTML;
-
-                var quiz = json[quizId];
-
-
-                temp = temp.replace(/{{quizname}}/, quiz.name);
-                temp = temp.replace(/{{autor}}/, quiz.author);
-                temp = temp.replace(/{{datum}}/, quiz.date);
-                temp = temp.replace(/{{anzahl}}/, quiz.counter);
-                temp = temp.replace(/{{src}}/, quiz.image);
-                temp = temp.replace(/{{beschreibung}}/, quiz.description);
-
-                var item = document.createElement("div");
-                item.innerHTML = temp;
-
-                // HTML in Wrap einfügen
-                document.getElementById("content").appendChild(item.firstChild);
-                }
-            };
-            xhttp.open("GET", jsons.quizubersicht, true);
-            xhttp.send();
-
-            return this.responseText;
-        }
-    };
-    xhttp.open("GET", urls.startscreen, true);
-    xhttp.send();
+	// HTML in Wrap einfügen
+	document.getElementById("content").replaceChild(item.firstChild, document.getElementById("content").firstChild);
+	
+		document.getElementById("playButton").onclick = function(){
+		initQuiz(quiz.quizIdx);
+	}
 }

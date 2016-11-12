@@ -2,16 +2,25 @@
 <html>
 <head>
     <title>Fubuizz</title>
-    <link rel="stylesheet" href="../../assets/css/navi.css" type="text/css"/>
-    <link rel="stylesheet" href="../quiz_app/quizuebersicht/quizuebersicht.css" type="text/css"/>
-    <link rel="stylesheet" href="../quiz_app/startscreen/start.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="../assets/css/navi.css" type="text/css">
+    <link rel="stylesheet" href="quizuebersicht/quizuebersicht.css" type="text/css" id="css-for-view">
+    
+    <!-- cn: statische css aufrufe dürch dynamische ersetzt -->
+    <!--link rel="stylesheet" href="quizuebersicht/quizuebersicht.css" type="text/css"/>
+    <link rel="stylesheet" href="startscreen/start.css" type="text/css"/>
+    <link rel="stylesheet" href="highscore/highscore.css" type="text/css"/>
+    <link rel="stylesheet" href="quizrunde/quiz.css" type="text/css"/>
+    <link rel="stylesheet" href="schlussscreen/schlussscreen.css" type="text/css"/-->
+    
+     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> <!--Schiftart Oswald-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-    <header>
+<body>
+    <header class="fubuizz-header">
     <div id="move">
         <div class="menu">
                     <header class="burgerheader">
@@ -20,7 +29,11 @@
                     </header>
                     <nav class="burgernav">
                         <ul>
+<<<<<<< HEAD
                             <li><a class="navia" id="quizze"> Aktuelle Quizze</a></li>
+=======
+                            <li><a class="navia" id="quizze" href="Index.html">Aktuelle Quizze</a></li>
+>>>>>>> 42b533b94bf2c26d5c4da4e4903ce4eae6b27ba2
                             <li><a class="navia" id="highscore" href="Highscore.html">Highscore</a></li>
                             <li><a class="navia" id="uber" href="EndscreenTablet.html">Über Fubuizz</a></li>
                             <li><a class="navia" id="kontakt" href="https://www.google.de">Kontakt</a></li>
@@ -40,7 +53,7 @@
                 </header>
                 <nav>
                     <ul class="navi">
-                        <li><a class="navia" href="Index.html">Aktuelle Quizze</a></li>
+                        <li><a class="navia" id="quizze" href="Index.html">Aktuelle Quizze</a></li>
                         <li><a class="navia" id="highscore" href="Highscore.html" >Highscore</a></li>
                         <li><a class="navia" id="uber" href="EndscreenTablet.html">Über Fubuizz</a></li>
                         <li><a class="navia" id="kontakt" href="https://www.google.de">Kontakt</a></li>
@@ -48,10 +61,10 @@
                     </ul>
                 </nav>
                 </div>
-            </div>
+        </div>
     </header>
-    <body>
 
+<<<<<<< HEAD
         <section id="content"></section>
         <script type="text/javascript" src="../assets/js/sortierfunktion.js" language="JavaScript"></script>
         <script type="text/javascript" src="../assets/js/preloader.js" language="JavaScript"></script>
@@ -60,5 +73,29 @@
         <script type="text/javascript" src="../assets/js/createStartscreen.js" language="JavaScript"></script>
         <script type="text/javascript" src="../assets/js/createHighscore.js" language="JavaScript"></script>
         <script type="text/javascript" src="../assets/js/createUbersicht.js" language="JavaScript"></script>
+=======
+    <section id="content"></section>
+
+       <!--script src="../assets/js/navi.js" type="text/javascript" language="JavaScript"></script-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+
+        <script src="../assets/js/quizlogik.js" type="text/javascript"></script>
+	   	<script src="../assets/js/createUbersicht.js" type="text/javascript" language="JavaScript"></script>
+	   	<script src="../assets/js/createStartscreen.js" type="text/javascript" language="JavaScript"></script>
+	   	<script src="../assets/js/createQuizrunde.js" type="text/javascript" language="JavaScript"></script>
+	   	<script src="../assets/js/preloader.js" type="text/javascript" language="JavaScript"></script>
+	   	<script src="../assets/js/cn-dev-helper.js" type="text/javascript" language="JavaScript"></script>
+	   	<!--script src="../assets/js/createUbersicht.js" type="text/javascript" language="JavaScript"></script-->	
+	   	<!--script src="../assets/js/fubuizz.js" type="text/javascript" language="JavaScript"></script-->
+
+	   	
+        <!--script type="text/javascript" src="../assets/js/navi-eventhandler.js"></script-->
+        <!--script type="text/javascript" src="../assets/js/loader.js"></script>
+        <script type="text/javascript" src="../assets/js/getTemplates.js"></script>
+        <script type="text/javascript" src="../assets/js/createStartscreen.js"></script>
+        <script type="text/javascript" src="../assets/js/createHighscore.js"></script>
+        <script type="text/javascript" src="../assets/js/createUbersicht.js"></script-->
+>>>>>>> 42b533b94bf2c26d5c4da4e4903ce4eae6b27ba2
     </body>
 </html>

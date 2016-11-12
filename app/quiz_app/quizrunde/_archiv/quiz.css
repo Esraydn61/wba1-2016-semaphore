@@ -1,0 +1,133 @@
+/* GGf mal CSS Präprozessoren checken. */
+
+html{
+}
+
+/*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
+/*body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    background-color: grey;
+    background-image: url("quizrundepp/img/stadion_Desktop.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image:
+
+}*/
+/*Anzeige fragen-counte r*/
+.fragen-counter {
+  width: 100px;
+  margin-top: 1px;
+  margin-left: 7px;
+  color: #FFFFFF;
+}
+
+/*Formatierung Frage und Hintergrund der Frage*/
+.fragenblock{
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 20;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color:rgba(248,245,228,0.6);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
+#timer{
+			height: 20px; 
+            margin-top: 83;
+            margin-left: 15px;
+            margin-right: 15px;
+			max-width: 100%;
+            background: red; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left, yellow , lightyellow); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, yellow, lightyellow); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, yellow, lightyellow); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, yellow , lightyellow); /* Standard syntax */
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 5s;
+		}
+
+
+#timer-js{
+			height: 20px; 
+           
+            margin-left: 15px;
+            margin-right: 15px;
+			max-width: 100%;
+            background: red; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left, yellow , lightyellow); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, yellow, lightyellow); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, yellow, lightyellow); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, yellow , lightyellow); /* Standard syntax */
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 30s;
+		}
+		
+		#timer.start{
+			max-width: 0;
+		}
+
+/*Allgemeine Formatierung der Antworten,
+hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
+.alle-antworten{
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Antworten Formatierung, jede Frage bekommt einen eigenen Hintergrund,
+Abstände zwischen den Fragen*/
+
+
+.antwort{
+  margin: 10px 15px;
+  padding:3px 20px;
+  cursor: pointer;
+  background-color:rgba(248,245,228,0.7);
+}
+.antwort:hover{
+  background-color:rgba(248,245,228,1);
+}
+
+@media only screen and (min-width: 439px) {
+
+    .antwort{
+        margin-top:20px;
+    }
+    .fragenblock{
+        height: 10%;
+        font-size: 24px;
+    }
+    .alle-antworten{
+        margin-top:-20px;
+        font-size: 24px;
+    }
+
+    .fragen-counter{
+        font-size: 24px;
+    }
+    }
+
+@media only screen and (min-width: 1024px) {
+    .antwort{
+        margin-top:40px;
+        font-size:24px;
+    }
+    .fragenblock{
+        height:15%;
+        font-size: 24px;
+    }
+    .fragen-counter{
+        font-size: 24px;
+    }
+}

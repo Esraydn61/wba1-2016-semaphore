@@ -2,47 +2,49 @@ html, body{
     margin: 0px;
 	font-family: 'Oswald' , sans-serif;
     color: #FFFFFF;
+    background: url(../images/fubuizz-bg-gross.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
-header {
+header.fubuizz-header {
     background-color: #504F48;
     height: 53px;
     font-size: 20px;
 }
 
-nav {
+.fubuizz-header nav {
     background-color: #000000;
     height: 53px;
     font-size: 25px;
 }
 
-.navia {
+.fubuizz-header .navia {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.navia:hover {
+.fubuizz-header .navia:hover {
     color: #E9C20C;
 }
 
-.navia:active {
+.fubuizz-header .navia:active {
     color: #E9C20C;
 }
 
-ul {
+.fubuizz-header ul {
     margin: 0px;
 }
 
-li {
+.fubuizz-header li {
     display: inline-block;
 }
 
-.container {
+.fubuizz-header .container {
     position:
     width: 100%;
 }
 
-.navip {
+.fubuizz-header .navip {
     position: relative;
     width: 115px;
     text-align: right;
@@ -52,40 +54,40 @@ li {
     font-size: 15px;
 }
 
-.head {
+.fubuizz-header .head {
     float: right;
     z-index: 1;
 }
 
-.head > li {
+.fubuizz-header .head > li {
     padding: 0.5em 0em;
     padding-right: 33px;
 }
 
-.logo {
+.fubuizz-header .logo {
     position: absolute;
     margin-top: 4px;
     height: 43px;
     left: 33px;
 }
 
-.navi {
+.fubuizz-header .navi {
     margin-left: 161px;
     padding-left: 0px;
 }
 
-.navi > li {
+.fubuizz-header .navi > li {
     width: 161px;
     padding: 0.3em 0em;
     text-align: center;
     border-left: 1px solid #504F48;
 }
 
-.navi > li:last-child {
+.fubuizz-header .navi > li:last-child {
     border-right: 1px solid #504F48;
 }
 
-.burgermenu {
+.fubuizz-header .burgermenu {
     position: absolute;
     right: 15px;
     width: 40px;
@@ -94,7 +96,7 @@ li {
     visibility: hidden;
 }
 
-.avatar {
+.fubuizz-header .avatar {
     float: left;
     left: 10px;
     width: 32px;
@@ -104,29 +106,29 @@ li {
     z-index: 2;
 }
 
-.burgerheader {
+.fubuizz-header .burgerheader {
     width: 170px;
     height: 37px;
 }
 
-.burgernav {
+.fubuizz-header .burgernav {
     width: 170px;
     height: 550px;
 }
 
-.burgernav > ul {
+.fubuizz-header .burgernav > ul {
     margin-left: 0px;
     padding: 0px;
 }
 
-.burgernav > ul > li {
+.fubuizz-header .burgernav > ul > li {
     display: block;  
     padding: 10px 20px;
     font-size: 17px;
     border-bottom: 1px solid #504F48;
 }
 
-.quizbeenden {
+.fubuizz-header .quizbeenden {
     background-color: #CB0727;
     color: #FFFFFF;
     border: none;
@@ -138,7 +140,7 @@ li {
     top: 260px;
 }
 
-.menu {
+.fubuizz-header .menu {
     width: 170px;
     position: relative;
     float: right;
@@ -150,37 +152,37 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
-    body {
+	body {
         background-color: #FFFFFF;
     }
-    .head {
+    .fubuizz-header .head {
         visibility: hidden;
     }
-    header {
+    .fubuizz-header header {
         height: 40px;
     }
     
-    .burgerheader {
+    .fubuizz-header .burgerheader {
         height: 40px;
     }
     
-    nav {
+    .fubuizz-header nav {
         visibility: hidden;
     }
     
-    .burgernav {
+    .fubuizz-header .burgernav {
         visibility: visible;
         
     }
     
-    .logo {
+    .fubuizz-header .logo {
         left: 20px;
         height: 38px;
         margin: 0px;
         top: 2px;
     }
     
-    .burgermenu {
+    .fubuizz-header .burgermenu {
         visibility: visible;
     }
 }
@@ -191,44 +193,63 @@ li {
         background-color: #FFFFFF;
     }
     
-    p {
+    .fubuizz-header p {
         font-size: 13px;
     }
     
-    .head {
+    .fubuizz-header .head {
         visibility: hidden;
     }
     
-    header {
+    .fubuizz-header header {
         height: 37px;
     }
     
-    .avatar {
+    .fubuizz-header .avatar {
         width: 28px;
         height: 28px;
         padding-top: 6px;
         padding-left: 5px;
     }
     
-    .burgerheader {
+    .fubuizz-header .burgerheader {
         height: 37px;
     }
     
-    .burgermenu {
+    .fubuizz-header .burgermenu {
         visibility: visible;
         height: 37px;
         width: 37px;
         right: 10px;
     }
     
-    nav {
+    .fubuizz-header nav {
         visibility: hidden;
     }
     
-    .logo {
+    .fubuizz-header .logo {
         left: 10px;
         height: 31px;
         margin: 0px;
         top: 3px;
     }
+}
+
+.devnavi{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background-color: fuchsia;
+	padding: 0;
+}
+
+.devnavi li{
+	display: block;
+	font-size: 12px;
+	font-weight: 100;
+	padding: 5px;
+}
+
+.devnavi li:hover{
+	cursor: pointer;
 }
