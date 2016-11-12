@@ -28,7 +28,12 @@ devnavi.appendChild(item);
 // Quizende
 var item = document.createElement("li");
 item.innerHTML = "Quizende";
-item.onclick = function(){ alert("Noch nicht implementiert"); }
+var dev_antworten = Array(10);
+for(var i=0; i<dev_antworten.length;i++){
+    dev_antworten[i] = false;
+}
+
+item.onclick = function(){ createEndscreen(100, dev_antworten); }
 devnavi.appendChild(item);
 
 document.body.appendChild(devnavi)

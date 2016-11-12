@@ -18,7 +18,7 @@ function createStartscreen(quizId){
     // Snippet ziehen 
     var template = templates["startscreen"];
 
-	var quizze = jsondata["quizubersicht"]
+	var quizze = jsondata["quizubersicht"];
 	var quiz = quizze[quizId];
 
 	template = template.replace(/{{name}}/, quiz.name);
@@ -35,9 +35,9 @@ function createStartscreen(quizId){
 	// HTML in Wrap einfügen
 	document.getElementById("content").replaceChild(item.firstChild, document.getElementById("content").firstChild);
 	
-		document.getElementById("playButton").onclick = function(){
+	/*	document.getElementById("playButton").onclick = function(){
 		initQuiz(quiz.quizIdx);
-	}
+	}  */
 
     console.log("Übergabe: ");
     console.log(quizId);
@@ -102,6 +102,10 @@ function createStartscreen(quizId){
     document.getElementById("content").innerHTML = template;
     document.getElementById("ranking").innerHTML = htmlRankings;
 	  // return this.responseText;
+
+    		document.getElementById("playButton").onclick = function(){
+		initQuiz(quiz.quizIdx);
+	}
 }
 
 
