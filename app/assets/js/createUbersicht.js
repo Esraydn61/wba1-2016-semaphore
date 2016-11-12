@@ -16,7 +16,7 @@ function createQuizOverview(){
 	document.getElementById('css-for-view').setAttribute('href', sheeturl);
 	
     // JSON Merken
-    var json = JSON.parse(jsondata["quizubersicht"]);
+    var json = jsondata["quizubersicht"];
 	
 	// Template einbauen
 	var target = document.getElementById("content");
