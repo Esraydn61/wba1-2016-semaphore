@@ -27,15 +27,25 @@ var kontakt = document.getElementById('kontakt');
 var einstellungen = document.getElementById('einstellungen');
 
 //Teste ob alle Elemente gefunden wurden:
-if (beenden !== undefined && 
+if (
+    (beenden !== undefined && 
     quizze !== undefined && 
     highscore !== undefined && 
     uber !== undefined && 
     kontakt !== undefined && 
-    einstellungen !== undefined)
+    einstellungen !== undefined) 
+        &&
+    (beenden != null && 
+    quizze != null && 
+    highscore != null && 
+    uber != null && 
+    kontakt != null && 
+    einstellungen != null)
+                                )
         console.log("Schaltfächen wurden gefunden. ");
     else   
-        console.log("Nicht alle Schaltflächen wurden gefunden!");
+        console.log("FEHLER!!!!!!!!! Nicht alle Schaltflächen wurden gefunden!");
+
 
 //Schaltfächen mit Eventlistenern ausstatten
 beenden.addEventListener('click', function (event) {
