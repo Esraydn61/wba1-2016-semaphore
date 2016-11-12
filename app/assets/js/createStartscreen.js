@@ -22,12 +22,12 @@ function createStartscreen(quizId){//id, name, author, date, counter, image, des
 	var quizze = JSON.parse(jsondata["quizubersicht"]);
 	var quiz = quizze[quizId];
 
-	template = template.replace(/{{quizname}}/, quiz.name);
-    template = template.replace(/{{autor}}/, quiz.author);
+	template = template.replace(/{{name}}/, quiz.name);
+    template = template.replace(/{{author}}/, quiz.author);
     template = template.replace(/{{date}}/, quiz.date);
-    template = template.replace(/{{anzahl}}/, quiz.counter);
+    template = template.replace(/{{counter}}/, quiz.counter);
     template = template.replace(/{{src}}/, quiz.image);
-    template = template.replace(/{{beschreibung}}/, quiz.description);
+    template = template.replace(/{{description}}/, quiz.description);
 
 	var item = document.createElement("div");
 	item.innerHTML = template;
