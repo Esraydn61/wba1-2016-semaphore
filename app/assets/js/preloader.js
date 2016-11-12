@@ -138,7 +138,6 @@ function getNextTemplate(){
 	
 // Hier geben wir aus Spaß mal das Template eines Quizzes aus.
 function doSomething(){
-    //createQuizOverview();
 	var hightscoreTemplate = templates["highscore"];   
 	loaderisready = true;
     createQuizOverview();

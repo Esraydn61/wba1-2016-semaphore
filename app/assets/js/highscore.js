@@ -1,7 +1,7 @@
 /*************************************
 Dieses Script soll das Auswahlfeld mit Funktionalität belegen.
 Bei dem wechseln der Auswahl soll das entsprechende Json geladen werden um
-das den entsprechenden Highscore zu laden
+das den dazugehörigen Highscore zu laden
 
 Das Problem ist noch, dass beim Laden der Highscore Seite dieses Script
 nicht ausgeführt wird, es muss ordentlich in den DOM baum geschrieben werden.
