@@ -33,10 +33,10 @@ function createQuizOverview(){
 
         temp = temp.replace(/{{name}}/, quiz.name);
         temp = temp.replace(/{{author}}/, quiz.author);
-        temp = temp.replace(/{{datum}}/, quiz.date);
+        temp = temp.replace(/{{date}}/, quiz.date);
         temp = temp.replace(/{{anzahl}}/, quiz.counter);
         temp = temp.replace(/{{src}}/, quiz.image);
-        temp = temp.replace(/{{beschreibung}}/, quiz.description);
+        temp = temp.replace(/{{description}}/, quiz.description);
 
         var item = document.createElement("div");
         item.innerHTML = temp;
