@@ -52,9 +52,15 @@ urls.schlussscreen  = server + "/quiz_app/schlussscreen/schlussscreen.html";
 urls.startscreen    = server + "/quiz_app/startscreen/startscreen.html";
 
 var jsons = {};
-jsons.quizubersicht  = jsonbasis + "/quizuebersicht.json";
+jsons.quizubersicht    = jsonbasis + "/quizuebersicht.json";
+jsons.rankingquiz1      = jsonbasis + "/ranking-1.json";
+jsons.rankingquiz2      = jsonbasis + "/ranking-3.json";
+jsons.rankingquiz3      = jsonbasis + "/ranking-5.json";
 //jsons.highscore      = server + "/data/ranking-1.json";
 
+jsons.question1      = jsonbasis + "/questions-1.json";
+jsons.question2      = jsonbasis + "/questions-3.json";
+jsons.question3      = jsonbasis + "/questions-5.json";
 
 
 /* Functions
@@ -132,6 +138,7 @@ function getNextTemplate(){
 		
 	// Falls es keine Quiz-Id mehr gibt, machen wir irgend etwas anderes. Erst dann stehen die Templates zur Verfügung.
 	}else{
+        console.log("breadcrump")
 		doSomething();
 	}
 }
