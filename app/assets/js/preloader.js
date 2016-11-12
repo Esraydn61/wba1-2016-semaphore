@@ -1,9 +1,26 @@
 
 /***************************************************
-Dieses Script zieht sich alle notwendigen Templates
-Die die Url namen werden doppelt benutzt und die Namne
-müssen angeglichen werden.
+Damit das Laden der HTML Templates und der Json Dateien
+Zeitlich mit dem verarbeiten dieser Daten getrennt 
+werden kann übernimmt der Preloader einmalig diese Aufgabe.
+
+Es werden zuerst alle HTML Templates als String 
+in der dem Array Templates gespeichert.
+Anschließend werden die Json dateien geladen und
+verarbeitet (JSON.parese()). 
+Die verarbeiteten Json Daten werden in jsondata gespeichert. 
+
+
+Wenn alles geladen wurde wird ein Callback ausgelöst,
+der die Startseite läd.
 ****************************************************/
+
+
+// In diesem Objekt werdne die Templates gespeichert
+var templates = {};
+
+// Hier werden die geparsten jsons gespeichert
+var jsondata = {};
 
 
 console.log("Das preloader.js Script wird ausgeführt..")
@@ -39,9 +56,6 @@ jsons.quizubersicht  = jsonbasis + "/quizuebersicht.json";
 //jsons.highscore      = server + "/data/ranking-1.json";
 
 
-// In diesem Objekt werdne die Templates gespeichert
-var templates = {};
-var jsondata = {};
 
 /* Functions
 ############################################# */
@@ -56,10 +70,9 @@ function get(id, callback, urlliste) {
 		if (this.readyState == 4) { callback.call(this, id); }
 	};
     
-<<<<<<< HEAD
 	xhttp.open("GET", urlliste[id], true);
 	xhttp.send();
-=======
+    
 	if(urlliste[id]){
 	    console.log("folgende url wird abgefragt: ");
 
@@ -67,7 +80,6 @@ function get(id, callback, urlliste) {
 		xhttp.send();		
 	}
 
->>>>>>> 42b533b94bf2c26d5c4da4e4903ce4eae6b27ba2
 
 }
 
@@ -127,17 +139,10 @@ function getNextTemplate(){
 	
 // Hier geben wir aus Spaß mal das Template eines Quizzes aus.
 function doSomething(){
-<<<<<<< HEAD
     //createQuizOverview();
 	var hightscoreTemplate = templates["highscore"];   
 	loaderisready = true;
-   // console.log(jsondata);
-    sortiertest();
-=======
-	var hightscoreTemplate = templates["highscore"];   
-	loaderisready = true;
     createQuizOverview();
->>>>>>> 42b533b94bf2c26d5c4da4e4903ce4eae6b27ba2
 }
 
 /* Main
