@@ -27,20 +27,32 @@ var kontakt = document.getElementById('kontakt');
 var einstellungen = document.getElementById('einstellungen');
 
 //Teste ob alle Elemente gefunden wurden:
-if (beenden !== undefined && 
+if (
+    (beenden !== undefined && 
     quizze !== undefined && 
     highscore !== undefined && 
     uber !== undefined && 
     kontakt !== undefined && 
-    einstellungen !== undefined)
+    einstellungen !== undefined) 
+        &&
+    (beenden != null && 
+    quizze != null && 
+    highscore != null && 
+    uber != null && 
+    kontakt != null && 
+    einstellungen != null)
+                                )
         console.log("Schaltfächen wurden gefunden. ");
     else   
-        console.log("Nicht alle Schaltflächen wurden gefunden!");
+        console.log("FEHLER!!!!!!!!! Nicht alle Schaltflächen wurden gefunden!");
+
 
 //Schaltfächen mit Eventlistenern ausstatten
 beenden.addEventListener('click', function (event) {
     if(loaderisready){
             console.log("Die Beenden Schaltfäche wurde ausgelost.");
+        } else {
+            console.log("Preloader war noch nicht fertig!!!")
         }
 });
 
@@ -48,6 +60,8 @@ quizze.addEventListener('click', function (event) {
     if(loaderisready){
         console.log("Die Quizze Schaltfäche wurde ausgelost.");
         createUbersicht();
+    } else {
+            console.log("Preloader war noch nicht fertig!!!")
     }
 });
 
@@ -55,23 +69,31 @@ highscore.addEventListener('click', function (event) {
     if(loaderisready){
         console.log("Die Highscore Schaltfäche wurde ausgelost.");
         createHighscore();
-     }
+     } else {
+            console.log("Preloader war noch nicht fertig!!!")
+    }
 });
 
 uber.addEventListener('click',function (event) {
     if(loaderisready){
     console.log("Die Uber Schaltfäche wurde ausgelost.");
+    } else {
+            console.log("Preloader war noch nicht fertig!!!")
     }
 });
 
 kontakt.addEventListener('click', function (event) {
     if(loaderisready){
     console.log("Die Kontak Schaltfäche wurde ausgelost.");
+    } else {
+            console.log("Preloader war noch nicht fertig!!!")
     }
 });
 
 einstellungen.addEventListener('click', function (event) {
     if(loaderisready){
     console.log("Die Einstellungen Schaltfäche wurde ausgelost.");
+    } else {
+            console.log("Preloader war noch nicht fertig!!!")
     }
 });

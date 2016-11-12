@@ -1,7 +1,7 @@
 /***************************************************
-Dieses Script liest die Übersicht.html Seite, 
-ersetzt die Platzhalter und erstellt dynamisch die
-Quizelemente
+Hier wird der HTML Code dynamisch erzeugt und mit 
+den Json Daten befüllt. Dieser Code wird dann
+in das Dokument geschrieben.
 
 ****************************************************/
 
@@ -16,7 +16,7 @@ function createQuizOverview(){
 	document.getElementById('css-for-view').setAttribute('href', sheeturl);
 	
     // JSON Merken
-    var json = JSON.parse(jsondata["quizubersicht"]);
+    var json = jsondata["quizubersicht"];
 	
 	// Template einbauen
 	var target = document.getElementById("content");
@@ -33,10 +33,10 @@ function createQuizOverview(){
 
         temp = temp.replace(/{{name}}/, quiz.name);
         temp = temp.replace(/{{author}}/, quiz.author);
-        temp = temp.replace(/{{datum}}/, quiz.date);
-        temp = temp.replace(/{{anzahl}}/, quiz.counter);
+        temp = temp.replace(/{{date}}/, quiz.date);
+        temp = temp.replace(/{{counter}}/, quiz.counter);
         temp = temp.replace(/{{src}}/, quiz.image);
-        temp = temp.replace(/{{beschreibung}}/, quiz.description);
+        temp = temp.replace(/{{description}}/, quiz.description);
 
         var item = document.createElement("div");
         item.innerHTML = temp;
