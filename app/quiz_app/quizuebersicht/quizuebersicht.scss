@@ -1,0 +1,230 @@
+@import "../../assets/css/base";
+
+   
+.uebersicht {
+    width: 900pt; 
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+
+.Sortierliste, .Quizkachel{
+    
+}
+
+/* Sortierliste wurde angepasst, muss aber noch bearbeitet werden */
+
+.Sortierliste{
+}
+
+/* wurde größengerecht angepasst */
+
+.Quizkachel {
+    display: table;
+    float: left;
+    padding: 0;
+    margin-right: 15pt;
+    margin-bottom: 29.5pt;
+    background-color: $bg-opak;
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    width: 172.5pt;
+    height: 232pt;
+}
+
+/* NEU Klasse "Quizbild" wurde eingefügt und größengerecht angepasst */
+
+.Quizbild{
+    display: block;
+    margin: auto;
+    width: 172.5pt;
+    height: 107pt;
+}
+
+.Quizkachel h3{
+    color: black;
+    font-family: Oswald;
+    margin: auto;
+    font-size: 12pt;
+    line-height: 100%;
+    background-color: rgba(248,245,228,1);
+    text-align: center;
+    height: 18pt;
+    padding-top: 5px;
+    padding-left: 4.5pt;
+    padding-right: 6.7pt;
+}
+
+/* wurde an Desktopversion angepasst und ist in einer Reihe, anstatt in 2 Reihen*/
+
+.Erstellinfos{
+    font-family: Oswald;
+    font-weight: 100;
+    color: #2F2D2C;
+    text-align: left;
+    padding-top: 1pt;
+    padding-bottom: 2pt;
+    padding-left: 7.5pt;
+    padding-right: 5pt;
+    background-color: rgba(248,245,228,1);   
+    margin: auto;
+}
+
+/* NEU Klasse "Beschreibung" wurde eingefügt: 3 Zeilen pro Beschreibung */
+
+.Inhalt{
+    height: 64pt;
+    font-family: Oswald;
+    font-size: 10pt;
+    color: #2F2D2C;
+    background-color: rgba(248,245,228,0.7); 
+
+}
+
+.Beschreibung{
+    font-size: 10px;
+    color:  black;
+    text-align: left; 
+    font-weight: lighter;
+    background-color: rgba(248,245,228,1);
+    margin: 0em;
+    height: 48pt;
+    padding-left: 7.5pt;
+    padding-right: 7.5pt;
+    padding-bottom: 5pt;
+    padding-top: 5pt;
+}
+
+/* Schriftgröße wurde verändert */
+
+.AnzGespielt{
+    font-size: 10pt;
+    text-align: right;
+    font-weight: lighter;
+    background-color: rgba(248,245,228,1);
+    margin: 0em;
+    height: 16pt;
+    padding-right: 7.5pt;
+}
+
+/* NEU Button "Auswahl" wurde eingefügt, farblich gemacht und angepasst */
+
+/*.button{
+    padding-bottom: 8pt;
+    margin: 0em;
+    height: 25pt;
+}*/
+
+.Auswahl{
+    background-color: #CB0727 ;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-family: Noto Sans; 
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    height: 25pt;
+    font-size: 12pt;
+    margin-top: 10pt;
+    margin-bottom: 7.5pt;
+    padding-top: 3.5pt;
+}
+
+
+/********************************************************************************
+*                                                                               *
+*                               MOBILE-ANSICHT                                  *
+*                                                                               *
+*********************************************************************************/
+
+/**DIE QUIZKACHEL IST ZU BREIT! BZW DAS PADDING/MARGIN GREIFT NICHT**/
+
+@media only screen and (max-width: 439px){
+    
+    html, body{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .uebersicht {
+        padding: 0;
+        margin: 0;
+        width:100%;
+    }
+    
+    .Quizbild{
+        width: 113px;
+        height: 70px;
+        float: left;
+        z-index: 1;
+    }
+    
+    #Sortierliste, .Quizkachel, .Erstellinfos{ 
+        margin: 5px 15px;
+    }
+    
+    .Quizkachel{
+        height: 70px;
+        display: inline-block;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        padding: 0;
+    }
+    
+    .inhalt{
+        width: calc(100% - 113px);
+        height: 70px;
+        float: left;
+        position: relative;
+        align-content: center;
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        padding: 0;
+    }
+    
+    .Quizkachel h3{
+        padding: 0;
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+        position: absolute;
+        margin-left:113px;
+        z-index: 1;
+        width: calc(100% - 113px);
+        background-color: white;
+    }
+    
+    .Erstellinfos{
+        padding: 0;
+        font-size: 10px;
+        font-style: normal;
+        position: absolute;
+        margin: 5px;
+        margin-left: calc(113px + 10px);
+        margin-top: 25px;
+        z-index: 1;
+    }
+    
+    .AnzGespielt{
+        padding: 0;
+        font-size: 8px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 25px;
+        z-index: 1;
+        text-decoration: none;
+    }
+    
+    .Beschreibung{
+        display: none;
+    }
+    
+    .button{
+        display: none;
+    }
+    
+}

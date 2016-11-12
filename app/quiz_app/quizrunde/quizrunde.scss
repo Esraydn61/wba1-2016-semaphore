@@ -1,0 +1,122 @@
+@import "../../assets/css/base";
+
+
+/*Allgemeine Formatierung, Schriftart, Font Groesse, Hintegrund*/
+.quizrunde *{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000;
+/*background-color, Vorläufig, wird angezeigt wenn Bild nicht geladen werden kann*/
+}
+
+/*Anzeige fragen-counte r*/
+.quizrunde .fragen-counter {
+  width: 100px;
+  margin-top: 1px;
+  margin-left: 7px;
+  color: #FFFFFF;
+}
+
+/*Formatierung Frage und Hintergrund der Frage*/
+.quizrunde .fragenblock{
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 20;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color:rgba(248,245,228,0.6);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
+
+.quizrunde #timer{
+			height: 20px; 
+            margin-top: 83;
+            margin-left: 15px;
+            margin-right: 15px;
+			max-width: 100%;
+            background: red; /* For browsers that do not support gradients */
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 5s;
+		}
+
+
+.quizrunde #timer-js{
+			height: 20px; 
+           
+            margin-left: 15px;
+            margin-right: 15px;
+			max-width: 100%;
+            background: red; /* For browsers that do not support gradients */
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 30s;
+		}
+		
+.quizrunde #timer.start{
+			max-width: 0;
+		}
+
+/*Allgemeine Formatierung der Antworten,
+hauptsächliche Aufgabe: alle Fragen an den unteren Fensterrand setzen*/
+.quizrunde .alle-antworten{
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Antworten Formatierung, jede Frage bekommt einen eigenen Hintergrund,
+Abstände zwischen den Fragen*/
+
+
+.quizrunde .antwort{
+	font-weight: lighter;
+  margin: 10px 15px;
+  padding:3px 20px;
+  cursor: pointer;
+  background-color:rgba(248,245,228,0.7);
+}
+.quizrunde .antwort:hover{
+  background-color:rgba(248,245,228,1);
+}
+
+@media only screen and (min-width: 439px) {
+
+    .quizrunde .antwort{
+        margin-top:20px;
+    }
+    .quizrunde .fragenblock{
+        height: 10%;
+        font-size: 24px;
+    }
+    .quizrunde .alle-antworten{
+        margin-top:-20px;
+        font-size: 24px;
+    }
+
+    .quizrunde .fragen-counter{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .quizrunde .antwort{
+        margin-top:40px;
+        font-size:24px;
+    }
+    .quizrunde .fragenblock{
+        height:15%;
+        font-size: 24px;
+    }
+    .quizrunde .fragen-counter{
+        font-size: 24px;
+    }
+}
