@@ -18,15 +18,15 @@ function createStartscreen(quizId){//id, name, author, date, counter, image, des
 	
     // Snippet ziehen 
     var template = templates["startscreen"];
-	
-	var quizze = JSON.parse(jsondata["quizubersicht"]);
+
+	var quizze = jsondata["quizubersicht"]
 	var quiz = quizze[quizId];
 
 	template = template.replace(/{{name}}/, quiz.name);
     template = template.replace(/{{author}}/, quiz.author);
     template = template.replace(/{{date}}/, quiz.date);
     template = template.replace(/{{counter}}/, quiz.counter);
-    template = template.replace(/{{src}}/, quiz.image);
+    template = template.replace(/{{image}}/, quiz.image);
     template = template.replace(/{{description}}/, quiz.description);
 
 	var item = document.createElement("div");

@@ -2,23 +2,7 @@
 	<div class="titel">
         <h2>{{name}}</h2>
     </div>
-    <div id="highscorecontent">
-		<table class="liste" id="ranking"> 
-			<tr id="listhead"> 
-                <th>Rang</th> 
-                <th>Spieler</th> 
-                <th>Zeit</th> 
-                <th>Punkte</th>
-            </tr>               
-            <tr id="tabellenranking"> 
-                <td>{{rankIdx}}.</td>
-                <td>{{player}}</td>
-                <td>{{date}}</td>
-                <td>{{points}}</td>
-            </tr> 
-        </table>     
-    </div>
-    
+
     <div class="boxbox"><!--Box, die alle anderen Boxen umschließt. Außer den Titel.-->
         <div class="quizbox">
             <div class="teaserbild">
@@ -44,6 +28,22 @@
 				<button class="btn1" id="highscoreButton">Highscore</button>
 			</div>
         </div>
+            <div id="highscorecontent">
+		<table class="liste" id="ranking">
+			<tr id="listhead">
+                <th>Rang</th>
+                <th>Spieler</th>
+                <th>Zeit</th>
+                <th>Punkte</th>
+            </tr>
+            <tr id="tabellenranking">
+                <td>{{rankIdx}}.</td>
+                <td>{{player}}</td>
+                <td>{{date}}</td>
+                <td>{{points}}</td>
+            </tr>
+        </table>
+    </div>
 	</div>
 </div>
 

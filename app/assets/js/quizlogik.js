@@ -131,7 +131,7 @@ function neueFrage( data, aktuelleFrage ){
               for(k=0; k<10;k++){
               console.log(antworten[k]);
             }
-            //  createEndscreen(punkte, antworten );
+              createEndscreen(punkte, antworten );
           }
 
     }
