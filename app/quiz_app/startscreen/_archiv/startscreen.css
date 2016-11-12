@@ -1,0 +1,197 @@
+/*Einbindung der Schriftart Oswald */
+@font-face {
+    font-family: Oswald;
+    src: url('Oswald-Regular.tff') format('truetype');
+}
+
+
+.boxbox{
+    width: 80%;
+    margin-left: 10%;
+    display:flex;
+    margin-top: 0.5em;
+}
+.quizbox {
+    max-width: 439px;
+    max-height: 600px;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+}
+.titel {
+    font-family: 'Oswald', sans-serif;
+    background-color: #F8F5E4;
+    text-align: center;
+    color: black;
+    padding-top: 0.0001em;
+    margin-right: 1em;
+    margin-top: -4em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+h2{
+  text-align: center;
+  padding-left: 5em;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.author {
+    background-color:rgba(248, 245, 228, 0.7);
+}
+.teasertext {
+    background-color: rgba(248, 245, 228, 0.7);
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+}
+.teasertext2{
+    margin-top: -60px;
+}
+#highscorecontent {
+    display: inline-block;
+    width:100%;
+}
+.btn {
+    padding: 0em;
+    margin-bottom: 0.5em;
+    background-color: #CB0727 ;
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    text-align: center;
+    line-height: 550%;
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.btn1 {
+    padding: 0em;
+    background-color: #CB0727 ;
+    width: 100%;
+    height: 10%;
+    display: none;
+    text-align: center;
+    line-height: 550%;
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.liste{
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    margin-top: 0em;
+    margin-right: 1em;
+    border-spacing: 0px 10px;
+}
+.liste th{
+    background-color: #E9C20C;
+    text-align: left;
+}
+.liste tr th:nth-child(1),
+.liste tr td:nth-child(1) {
+    width: 10%;
+   text-align: center;
+}
+.liste tr th:nth-child(2),
+.liste tr td:nth-child(2) {
+    width: 40%;
+}
+.liste tr th:nth-child(4),
+.liste tr td:nth-child(4) {
+    width: 10%;
+    text-align: right;
+}
+th, td{
+    padding: 4px;
+    color: black;
+}
+td{
+    background:rgba(248, 245, 228, 0.7);
+}
+/* Mobile Veränderungen (Highsscoreliste verschwindet und wird zu Button*/
+@media screen and (max-width:439px) {
+    .btn1 {
+        display: inline-block;
+    }
+    #highscorecontent {
+        display:none;
+    }
+    .boxbox{
+      /*margin-top: -8em;*/
+      width: 90%;
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+    .quizbox{
+      margin-top: -36em;
+    }
+
+    .titel {
+        margin-top: -3em;
+    }
+}
+
+@media screen and (max-width:800px){
+  .quizbox{
+    margin-top: -32em;
+  }
+  #highscorecontent{
+    margin-top: -33em;
+  }
+
+}
+@media screen and (min-width:750px){
+  .titel{
+    margin-top: -3em;
+  }
+
+}
+
+.toggleBox {
+    position: relative;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+ 
+/* Ausblenden des input-Feldes */
+.toggleBox input {
+    position: absolute;
+    left: -99999px;
+}
+ 
+/* Gestaltung der labels */
+.toggleBox label {
+    display: block;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -40px;
+}
+ 
+.toggleBox label:hover {
+    background: #ddd;
+}
+ 
+/* Der Aufklappmechanismus */
+.toggleBox input:not(:checked) ~ div {
+    opacity: 0;
+    height: 0;
+}
+ 
+.toggleBox input:checked ~ div {
+    opacity: 1;
+    padding: 0em;
+}
+ 
+/* Steuerung der Sichtbarkeit der labels */
+.toggleBox input:not(:checked) ~ .close,
+.toggleBox input:checked ~ .open {
+    display: none;
+}

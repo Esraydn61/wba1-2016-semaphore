@@ -6,10 +6,9 @@
   background-color: rgba(0, 0, 0, 0.1);
   border: solid 1px red;
   padding: 5px;
-  color: #fff;
-  width: 100%; }
+  color: #fff; }
 
-.button.is-primary {
+.button.play {
   background-color: #ff3737; }
 
-/*# sourceMappingURL=schlussscreen.css.map */
+/*# sourceMappingURL=base.css.map */
