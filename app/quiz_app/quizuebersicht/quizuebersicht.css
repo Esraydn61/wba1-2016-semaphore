@@ -8,7 +8,10 @@
   border: solid 1px red;
   padding: 5px;
   color: #fff;
-  width: 100%; }
+  width: 100%; 
+    height: 25pt; 
+    font-family: Noto Sans;
+    font-size: 12pt; }
 
 .button.is-primary {
   background-color: #ff3737; }
@@ -25,8 +28,8 @@
   float: left;
   padding: 0;
   margin-right: 15pt;
-  margin-bottom: 29.5pt;
-  background-color: rgba(248, 245, 228, 0.9);
+  margin-bottom: 7.5pt;
+  background-color: rgba(248, 245, 228, 0.5);
   font-family: Oswald, sans-serif;
   font-style: normal;
   width: 172.5pt;
@@ -55,7 +58,8 @@
 /* wurde an Desktopversion angepasst und ist in einer Reihe, anstatt in 2 Reihen*/
 .Erstellinfos {
   font-family: Oswald;
-  font-weight: 100;
+  font-weight: lighter;
+    font-size: 10pt;
   color: #2F2D2C;
   text-align: left;
   padding-top: 1pt;
@@ -71,14 +75,14 @@
   font-family: Oswald;
   font-size: 10pt;
   color: #2F2D2C;
-  background-color: rgba(248, 245, 228, 0.7); }
+  background-color: rgba(248, 245, 228, 0.5); }
 
 .Beschreibung {
   font-size: 10px;
   color: black;
   text-align: left;
   font-weight: lighter;
-  background-color: #f8f5e4;
+  background-color: rgba(248, 245, 228, 0.5);
   margin: 0em;
   height: 48pt;
   padding-left: 7.5pt;
@@ -88,10 +92,11 @@
 
 /* Schriftgröße wurde verändert */
 .AnzGespielt {
+    color: black;
   font-size: 10pt;
   text-align: right;
   font-weight: lighter;
-  background-color: #f8f5e4;
+  background-color: rgba(248, 245, 228, 0.5);
   margin: 0em;
   height: 16pt;
   padding-right: 7.5pt; }
@@ -101,7 +106,7 @@
     padding-bottom: 8pt;
     margin: 0em;
     height: 25pt;
-}*/
+}
 .Auswahl {
   background-color: #CB0727;
   width: 100%;
@@ -115,7 +120,7 @@
   margin-top: 10pt;
   margin-bottom: 7.5pt;
   padding-top: 3.5pt; }
-
+*/
 /********************************************************************************
 *                                                                               *
 *                               MOBILE-ANSICHT                                  *
@@ -129,7 +134,7 @@
 
   .uebersicht {
     padding: 0;
-    margin: 0;
+    margin: auto 0;
     width: 100%; }
 
   .Quizbild {
@@ -144,7 +149,7 @@
   .Quizkachel {
     height: 70px;
     display: inline-block;
-    width: 100%;
+    width: 90%;
     margin-top: 5px;
     margin-bottom: 5px;
     position: relative;
@@ -170,9 +175,10 @@
     margin-left: 113px;
     z-index: 1;
     width: calc(100% - 113px);
-    background-color: white; }
+    background-color: rgba(248, 245, 228, 1); }
 
   .Erstellinfos {
+      background-color: rgba(248, 245, 228, 0);
     padding: 0;
     font-size: 10px;
     font-style: normal;
@@ -183,6 +189,7 @@
     z-index: 1; }
 
   .AnzGespielt {
+      background-color: rgba(248, 245, 228, 0);
     padding: 0;
     font-size: 8px;
     position: absolute;
