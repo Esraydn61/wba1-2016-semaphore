@@ -1,7 +1,7 @@
 /***************************************************
-Dieses Script liest die Übersicht.html Seite, 
-ersetzt die Platzhalter und erstellt dynamisch die
-Quizelemente
+Hier wird der HTML Code dynamisch erzeugt und mit 
+den Json Daten befüllt. Dieser Code wird dann
+in das Dokument geschrieben.
 
 ****************************************************/
 
