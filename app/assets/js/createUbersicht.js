@@ -34,7 +34,7 @@ function createQuizOverview(){
         temp = temp.replace(/{{name}}/, quiz.name);
         temp = temp.replace(/{{author}}/, quiz.author);
         temp = temp.replace(/{{date}}/, quiz.date);
-        temp = temp.replace(/{{anzahl}}/, quiz.counter);
+        temp = temp.replace(/{{counter}}/, quiz.counter);
         temp = temp.replace(/{{src}}/, quiz.image);
         temp = temp.replace(/{{description}}/, quiz.description);
 
