@@ -33,7 +33,7 @@ for(var i=0; i<dev_antworten.length;i++){
     dev_antworten[i] = false;
 }
 
-item.onclick = function(){ createEndscreen(100, dev_antworten); }
+item.onclick = function(){ createEndscreen(100, dev_antworten, "quiz1"); }
 devnavi.appendChild(item);
 
 document.body.appendChild(devnavi)
