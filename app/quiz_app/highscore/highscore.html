@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Fubuizz Highscore</title>
-        <link href="Highscore.css" rel="stylesheet">
-        <script type="text/javascript" src="Highscore.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>       
-        <!--Überschrift-->
+       <!--Überschrift-->
         <div class="headline">
             <h1 id="headlinetext">Highscore</h1>
         </div>
@@ -16,21 +7,26 @@
         <div class="teaser">
             <!--Dropdown-Menü für Quizauswahl-->
             <select id="auswahl">
-                    <option>Quiztitel 1</option>
-                    <option>Quiztitel 2</option>
-                    <option>Quiztitel 3</option>
-                    <option>Quiztitel 4</option>
-                    <option>Quiztitel 5</option>
+                    <option>{{option1}}</option>
+                    <option>{{option2}}</option>
+                    <option>{{option3}}</option>
+                    <option>{{option4}}</option>
+                    <option>{{option5}}</option>
+                    <option>{{option6}}</option>
+                    <option>{{option7}}</option>
+                    <option>{{option8}}</option>
+                    <option>{{option9}}</option>
+                    <option>{{option10}}</option>
             </select>
             
             <!--Quizbild-->
-            <img id="teaserimage" src="../../assets/images/Platzhalter.jpg"/>
+            <img id="teaserimage" src="{{image}}"/>
             
             <!--Autor und Erstellungsdatum-->
-            <span id="author">von Platzhalter erstellt am Platzhalter</span>
+            <span id="author">von {{author}} erstellt am {{date}}</span>
             
             <!--Quizbeschreibung/Teasertext-->
-            <p id="teasertext">Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter Platzhalter</p>
+            <p id="teasertext">{{description}}</p>
         </div>
         
         <!--Gesamte rechte Seite-->
@@ -117,7 +113,4 @@
                 </tr> 
                 </tbody>
             </table>
-        </div>        
-        
-    </body>
-</html>
+        </div>

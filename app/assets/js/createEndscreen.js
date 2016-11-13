@@ -16,7 +16,7 @@ function createEndscreen(punkte, antworten, quizIdx){
 	document.getElementById('css-for-view').setAttribute('href', sheeturl);
 
     // Snippet ziehen
-    template = templates["schlussscreen"];
+    var template = templates["schlussscreen"];
 
     // JSON Daten holen
     var quizze = jsondata["quizubersicht"];
@@ -33,10 +33,7 @@ function createEndscreen(punkte, antworten, quizIdx){
 
         var rng = Math.floor(Math.random()*(10-1+1)+1);
 
-        console.log(i + " " + rng);
-
         if(rng != quiz.quizIdx && r_quizze.indexOf(rng) == -1){
-            console.log("GEIL");
 
             r_quizze[i] = rng;
             var r_quiz = quizze["quiz"+rng];
@@ -46,7 +43,6 @@ function createEndscreen(punkte, antworten, quizIdx){
 
         }
         else{
-            console.log("KAGGE");
             i--;
             }
     }

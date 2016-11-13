@@ -32,8 +32,13 @@ var dev_antworten = Array(10);
 for(var i=0; i<dev_antworten.length;i++){
     dev_antworten[i] = false;
 }
-
 item.onclick = function(){ createEndscreen(100, dev_antworten, "quiz1"); }
+devnavi.appendChild(item);
+
+// Highscore
+var item = document.createElement("li");
+item.innerHTML = "Highscore";
+item.onclick = function(){ createHighscore(); }
 devnavi.appendChild(item);
 
 document.body.appendChild(devnavi)
