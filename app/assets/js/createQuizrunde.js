@@ -55,8 +55,8 @@ function startQuiz( quizIdx, json ){
 	
 	
 	document.getElementById("content").innerHTML = template;
-	buttonKlick();
-	neueFrage( quizLogik.data, aktuelleFrage, quizIdx);
+	buttonKlick(quizIdx);
+	neueFrage( quizLogik.data, aktuelleFrage);
 
 	// HTML in Wrap einfügen
 	//document.getElementById("content").replaceChild(item.firstChild, document.getElementById("content").firstChild);

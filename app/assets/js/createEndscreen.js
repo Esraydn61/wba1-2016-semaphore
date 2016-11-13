@@ -20,7 +20,7 @@ function createEndscreen(punkte, antworten, quizIdx){
 
     // JSON Daten holen
     var quizze = jsondata["quizubersicht"];
-    var quiz = quizze[quizIdx];
+    var quiz = quizze["quiz"+quizIdx];
 
     // Gespieltes Quiz Informationen
     template = template.replace(/{{name}}/, quiz.name);
