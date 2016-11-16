@@ -1,0 +1,127 @@
+<!DOCTYPE html>  
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--[if IE]><![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<!-- !CSS -->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<!-- Uncomment if you are specifically targeting less enabled mobile browsers
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+	
+	<!-- !Modernizr - All other JS at bottom -->
+	<script src="js/modernizr-1.5.min.js"></script>
+	
+	<style>
+        
+		#timer{
+			height: 20px;
+			max-width: 100%;
+            background: red; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left, yellow , lightyellow); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, yellow, lightyellow); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, yellow, lightyellow); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, yellow ,lightyellow); /* Standard syntax */
+			/*-webkit-transition: width 2s; Safari */
+			transition: max-width 10s;
+		}
+		
+		#timer.start{
+			max-width: 0;
+		}
+		
+	
+		
+		#antworten{
+			opacity: 0;
+			transition: opacity 1s;
+		}
+		
+		#antworten.show{
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+
+ <div class="wrap">
+	 <div id="timer"></div>
+	 
+	 <div id="timer-js"></div>
+	 
+	 <div id="quizfrage">
+		<p> "Wann wurde der Verein -damals noch Fv Werder Bremen - gegründet?"
+		</p>
+	 </div>
+	 
+    
+	 <ul id="antworten">
+         
+		 <li style="background-color: lightgrey;
+                    width:976px;
+                    height:63,36px;
+                    padding: 10px;
+                    margin: 10px;" 
+             id="dieserbutton1" onclick="document.getElementById('dieserbutton1').style.backgroundColor = '#CB0727';"> 1. Oktober 1893</li>
+         
+		 <li style="background-color:lightgrey;
+                    width:976px;
+                    height:64,704px;
+                    padding: 10px;
+                    margin: 10px;"
+             id="dieserbutton2" onclick="document.getElementById('dieserbutton2').style.backgroundColor = '#0FDC00';"> 04. Februar 1899</li>
+		 <li style="background-color:lightgrey;
+                    width:976px;
+                    height:64,896px;
+                    padding: 10px;
+                    margin: 10px;"
+             id="dieserbutton3" onclick="document.getElementById('dieserbutton3').style.backgroundColor = '#CB0727';">07. Juli 1907</li>
+		 <li style="background-color:lightgrey;
+                    width:976px;
+                    height:63.,36px;
+                    padding: 10px;
+                    margin: 10px;"
+             id="dieserbutton4" onclick="document.getElementById('dieserbutton4').style.backgroundColor = '#CB0727';">01. Januar 1920</li>
+	 </ul>
+ </div>	
+	
+<script type="text/javascript">
+	/*
+	setTimeout(startTimer, 1000);
+	function startTimer(){.
+			
+	}*/
+	
+	var zeit = 100;
+	
+	function showAnswers(){
+		document.getElementById("antworten").className = "show";
+        document.getElementById("timer").className = "start";
+        
+        var timer = setInterval(updateTimer, 10 );
+        function updateTimer(){
+	        zeit--;
+	        document.getElementById("timer-js").style.width = zeit + "%";
+	        if(zeit <= 0){ clearInterval(timer); }
+	        
+	        console.log(zeit);
+        }
+
+	}
+	
+	window.onload = function () {
+
+        setTimeout(showAnswers, 1000);
+        
+    }
+
+	
+</script>
+</body>
+</html>
